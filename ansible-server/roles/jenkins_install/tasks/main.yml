@@ -6,7 +6,7 @@
     register: admin_password
     become: true
 
-  - name: Unlock and add admin user
+  - name: unlock and add admin user
     jenkins_script:
       script: |
         import jenkins.model.*
@@ -21,19 +21,19 @@
         instance.save()
       args:
         user_password: "{{ user_password }}"
-    user: admin
-    password: "{{ admin_password.stdout }}"
+      user: admin
+      password: "{{ admin_password.stdout }}"
 
-  - name: Complete the setup wizard
+  - name: complete setup wizard
     jenkins_script:
-      script: |
-        import static jenkins.model.Jenkins.instance as jenkins
-        import jenkins.install.InstallState
-        if (!jenkins.installState.isSetupComplete()) {
-          InstallState.INITIAL_SETUP_COMPLETED.initializeState()
-        }
-    user: admin
-    password: "{{ admin_password.stdout }}"
+     script: |
+      import static jenkins.model.Jenkins.instance as jenkins
+      import jenkins.install.InstallState
+      if (!jenkins.installState.isSetupComplete()) {
+        InstallState.INITIAL_SETUP_COMPLETED.initializeState()
+      }
+     user: admin
+     password: "{{ admin_password.stdout }}"
 
   - name : Restart Jenkins service
     service: 

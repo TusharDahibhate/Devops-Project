@@ -30,3 +30,9 @@
      name: git
      state: present
     become: true
+  
+  - name: Allow port 8080
+    become: true
+    ufw:
+      rule: allow
+      port: '8080'
