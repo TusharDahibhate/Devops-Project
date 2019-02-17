@@ -1,3 +1,9 @@
 ---
 nodejs:
   dist: xenial
+
+mongo:
+  port: 27017
+  username: root
+  role: root
+  database: admin

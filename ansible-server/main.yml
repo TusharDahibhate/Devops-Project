@@ -6,5 +6,5 @@
    - var/checkbox_env_var.yml
 
   roles:
-    - jenkins_install   
+    # - jenkins_install   
     - checkbox_env

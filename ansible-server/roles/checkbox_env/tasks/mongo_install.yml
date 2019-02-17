@@ -8,7 +8,7 @@
   - name: Allow all access to tcp port 80
     ufw:
       rule: allow
-      port: 27017
+      port: "{{ mongo.port }}"
     become: yes
 
   - name: Install the package "python3-pip"
@@ -30,12 +30,12 @@
 
   - name: Create a new user
     mongodb_user:
-      database: admin
-      user: root
-      password: akshay
+      database: "{{ mongo.database }}"
+      user: "{{ mongo.username }}"
+      password: "{{ mongo_secrets.user_password }}"
       state: present
       roles:
-        - db: admin
-          role: root
+        - db: "{{ mongo.database }}"
+          role: "{{ mongo.role }}"
     become: yes
 
