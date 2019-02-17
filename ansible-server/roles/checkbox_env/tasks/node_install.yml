@@ -1,0 +1,19 @@
+---
+  - name: add apt key for nodesource
+    apt_key: url=https://deb.nodesource.com/gpgkey/nodesource.gpg.key
+    become: yes
+
+  - name: add repo for nodesource
+    apt_repository:
+      repo: 'deb https://deb.nodesource.com/node_0.10 {{ nodejs.dist }} main' 
+      update_cache: yes
+    become: yes
+    
+  - name: install nodejs
+    apt: name=nodejs
+    become: yes
+
+  - name: Install the package "npm"
+    apt:
+      name: npm
+    become: yes  

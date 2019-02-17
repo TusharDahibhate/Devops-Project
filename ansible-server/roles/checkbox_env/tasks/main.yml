@@ -1,0 +1,3 @@
+---
+  - import_tasks: node_install.yml
+  - import_tasks: mongo_install.yml

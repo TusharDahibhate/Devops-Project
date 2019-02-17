@@ -1,0 +1,41 @@
+---
+  - name: Install the package "mongodb"
+    apt:
+      name: mongodb
+    become: yes  
+
+#TO-DO: Check unrestricted db access  
+  - name: Allow all access to tcp port 80
+    ufw:
+      rule: allow
+      port: 27017
+    become: yes
+
+  - name: Install the package "python3-pip"
+    apt:
+      name: python3-pip
+    become: yes  
+
+  - name: Install pip
+    become: yes
+    apt:
+      name: python-pip
+      state: present
+
+  - name: Install the Python pymongo module
+    become: yes
+    pip: 
+      name: pymongo
+      executable: /usr/bin/pip3
+
+  - name: Create a new user
+    mongodb_user:
+      database: admin
+      user: root
+      password: akshay
+      state: present
+      roles:
+        - db: admin
+          role: root
+    become: yes
+
