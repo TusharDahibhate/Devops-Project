@@ -20,3 +20,4 @@ os_environment:
   - key: MONGO_USER
     value: root
   
+checkbox_location: /home/vagrant/
