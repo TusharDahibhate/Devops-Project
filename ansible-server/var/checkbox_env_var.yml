@@ -7,3 +7,16 @@ mongo:
   username: root
   role: root
   database: admin
+
+os_environment:
+  - key: MAIL_SMTP 
+    value : smtp.zoho.com
+  - key: MAIL_USER
+    value: csc519S19_asaxena5@zoho.com
+  - key: APP_PORT
+    value: 3002
+  - key: MONGO_IP
+    value: 127.0.0.1
+  - key: MONGO_USER
+    value: root
+  
