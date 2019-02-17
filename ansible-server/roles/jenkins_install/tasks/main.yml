@@ -1,0 +1,49 @@
+---
+  - import_tasks: install.yml
+
+  - name: Read Admin password
+    shell: cat /var/lib/jenkins/secrets/initialAdminPassword
+    register: admin_password
+    become: true
+
+  - name: Unlock and add admin user
+    jenkins_script:
+      script: |
+        import jenkins.model.*
+        import hudson.security.*
+        def instance = Jenkins.getInstance()
+        def hudsonRealm = new HudsonPrivateSecurityRealm(false)
+        hudsonRealm.createAccount('jenkins', '${user_password}')
+        instance.setSecurityRealm(hudsonRealm)
+        def strategy = new FullControlOnceLoggedInAuthorizationStrategy()
+        strategy.setAllowAnonymousRead(false)
+        instance.setAuthorizationStrategy(strategy)
+        instance.save()
+      args:
+        user_password: "{{ user_password }}"
+    user: admin
+    password: "{{ admin_password.stdout }}"
+
+  - name: Complete the setup wizard
+    jenkins_script:
+      script: |
+        import static jenkins.model.Jenkins.instance as jenkins
+        import jenkins.install.InstallState
+        if (!jenkins.installState.isSetupComplete()) {
+          InstallState.INITIAL_SETUP_COMPLETED.initializeState()
+        }
+    user: admin
+    password: "{{ admin_password.stdout }}"
+
+  - name : Restart Jenkins service
+    service: 
+      name: jenkins
+      state: restarted  
+    become: yes
+       
+  - name : Wait for the the jenkins service to start
+    wait_for:
+      port: 8080
+      delay: 45    
+
+  

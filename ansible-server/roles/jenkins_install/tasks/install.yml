@@ -1,0 +1,32 @@
+---  
+  - name: Install Java
+    apt:
+     name: openjdk-8-jre
+     state: present
+     update_cache: yes
+    become: true
+
+  - name: Add jenkins repository key
+    apt_key:
+     url: https://pkg.jenkins.io/debian/jenkins.io.key
+     state: present
+    become: true
+
+  - name: Add jenkins repo list file into sources.list.d
+    apt_repository:
+     repo: deb http://pkg.jenkins.io/debian-stable binary/
+     state: present
+    become: true
+
+  - name: Install jenkins
+    apt:
+     name: jenkins
+     state: present
+     update_cache: yes
+    become: true
+
+  - name: Install git
+    apt:
+     name: git
+     state: present
+    become: true

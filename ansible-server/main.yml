@@ -1,0 +1,8 @@
+---
+- hosts: jenkins_server
+  
+  vars_files:
+   - var/secrets.yml
+
+  roles:
+    - jenkins_install    
