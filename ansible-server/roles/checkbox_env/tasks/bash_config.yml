@@ -1,5 +1,5 @@
 ---
-  - name: populate /etc/environment
+  - name: Populate /etc/environment
     lineinfile:
       dest: "/etc/environment"
       state: present
