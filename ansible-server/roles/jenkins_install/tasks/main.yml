@@ -13,12 +13,18 @@
         import hudson.security.*
         def instance = Jenkins.getInstance()
         def hudsonRealm = new HudsonPrivateSecurityRealm(false)
-        hudsonRealm.createAccount('jenkins', '${user_password}')
-        instance.setSecurityRealm(hudsonRealm)
-        def strategy = new FullControlOnceLoggedInAuthorizationStrategy()
-        strategy.setAllowAnonymousRead(false)
-        instance.setAuthorizationStrategy(strategy)
-        instance.save()
+        def users = hudsonRealm.getAllUsers()
+        users_s = users.collect { it.toString() }
+        if ("jenkins" in users_s) {
+            println "Admin user already exists"
+        } else {
+          hudsonRealm.createAccount('jenkins', '${user_password}')
+          instance.setSecurityRealm(hudsonRealm)
+          def strategy = new FullControlOnceLoggedInAuthorizationStrategy()
+          strategy.setAllowAnonymousRead(false)
+          instance.setAuthorizationStrategy(strategy)
+          instance.save()
+        }
       args:
         user_password: "{{ user_password }}"
       user: admin
@@ -35,12 +41,27 @@
      user: admin
      password: "{{ admin_password.stdout }}"
 
+  - name: Install Jenkins plugins
+    jenkins_plugin:
+      jenkins_home: "/var/lib/jenkins"
+      name: "{{ item }}"
+      url_username: "jenkins"
+      url_password: "{{ user_password }}"
+    with_items:
+      - git
+      - nodeJS
+      - pipeline-npm-integration
+    register: plugin_result
+    until: plugin_result is success
+    retries: 3
+    delay: 2
+
   - name : Restart Jenkins service
     service: 
       name: jenkins
       state: restarted  
     become: yes
-       
+
   - name : Wait for the the jenkins service to start
     wait_for:
       port: 8080
