@@ -8,16 +8,18 @@ mongo:
   role: root
   database: admin
 
+checkbox:
+  port: 3002
+  location: /home/vagrant/
+
 os_environment:
   - key: MAIL_SMTP 
     value : smtp.zoho.com
   - key: MAIL_USER
     value: csc519S19_asaxena5@zoho.com
   - key: APP_PORT
-    value: 3002
+    value: '{{ checkbox.port }}'
   - key: MONGO_IP
     value: 127.0.0.1
   - key: MONGO_USER
     value: root
-  
-checkbox_location: /home/vagrant/
