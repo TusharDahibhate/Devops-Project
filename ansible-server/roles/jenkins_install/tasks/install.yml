@@ -17,13 +17,34 @@
      state: present
     become: true
 
-  - name: Install all the necessary pre-requisites
+  - name: Install java
     apt:
-      name: ['openjdk-8-jre', 'jenkins', 'git', 'maven']
+      name: 'openjdk-8-jre'
       state: present
       update_cache: yes    
     become: true  
-  
+
+  - name: Install Jenkins
+    apt:
+      name: 'jenkins'
+      state: present
+      update_cache: yes    
+    become: true
+
+  - name: Install Git
+    apt:
+      name: 'git'
+      state: present
+      update_cache: yes    
+    become: true
+
+  - name: Install Maven
+    apt:
+      name: 'maven'
+      state: present
+      update_cache: yes    
+    become: true
+
   - name: Allow port 8080
     become: true
     ufw:
