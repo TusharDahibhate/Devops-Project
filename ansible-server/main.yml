@@ -7,4 +7,4 @@
 
   roles:
     - jenkins_install   
-    #- checkbox_env
+    - checkbox_env
