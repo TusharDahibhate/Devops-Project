@@ -52,6 +52,10 @@
       - git
       - nodeJS
       - pipeline-npm-integration
+      - workflow-job
+      - workflow-scm-step
+      - build-pipeline-plugin
+      - workflow-aggregator
     register: plugin_result
     until: plugin_result is success
     retries: 3
