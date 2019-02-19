@@ -5,13 +5,6 @@
       upgrade: yes
       update_cache: yes
       
-  - name: Install Java
-    apt:
-     name: openjdk-8-jre
-     state: present
-     update_cache: yes
-    become: true
-
   - name: Add jenkins repository key
     apt_key:
      url: https://pkg.jenkins.io/debian/jenkins.io.key
@@ -24,18 +17,12 @@
      state: present
     become: true
 
-  - name: Install jenkins
+  - name: Install all the necessary pre-requisites
     apt:
-     name: jenkins
-     state: present
-     update_cache: yes
-    become: true
-
-  - name: Install git
-    apt:
-     name: git
-     state: present
-    become: true
+      name: ['openjdk-8-jre', 'jenkins', 'git', 'maven']
+      state: present
+      update_cache: yes    
+    become: true  
   
   - name: Allow port 8080
     become: true
@@ -43,7 +30,7 @@
       rule: allow
       port: '8080'
 
-  - name: start the server
+  - name: Start the server
     service:
       name: jenkins
       state: started

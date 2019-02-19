@@ -1,5 +1,5 @@
 ---
-- hosts: jenkins-server-test2
+- hosts: jenkins-server
   
   vars_files:
    - var/secrets.yml
@@ -7,4 +7,4 @@
 
   roles:
     - jenkins_install   
-    - checkbox_env
+    #- checkbox_env

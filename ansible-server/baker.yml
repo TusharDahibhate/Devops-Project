@@ -1,4 +1,4 @@
-name: ansible-server-test2
+name: ansible-server
 vm:
   ip: 192.168.33.11
 tools:

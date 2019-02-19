@@ -6,7 +6,7 @@
     register: admin_password
     become: true
 
-  - name: unlock and add admin user
+  - name: Unlock and add admin user
     jenkins_script:
       script: |
         import jenkins.model.*
@@ -30,7 +30,7 @@
       user: admin
       password: "{{ admin_password.stdout }}"
 
-  - name: complete setup wizard
+  - name: Complete the setup wizard
     jenkins_script:
      script: |
       import static jenkins.model.Jenkins.instance as jenkins
@@ -48,6 +48,7 @@
       url_username: "jenkins"
       url_password: "{{ user_password }}"
     with_items:
+      - maven-plugin
       - git
       - nodeJS
       - pipeline-npm-integration
