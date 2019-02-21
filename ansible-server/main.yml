@@ -1,5 +1,5 @@
 ---
-- hosts: jenkins-server
+- hosts: jenkins-server-test2
   
   vars_files:
    - var/secrets.yml
