@@ -95,14 +95,40 @@
   - name: Creates production.git directory
     become: yes
     file:
-      path: {{ git_repository_path }}
+      path: '{{ git_repository_path }}'
       state: directory
+      mode: ug+rw
   
   - name: git init
     command: git init --bare
     args:
-      chdir: {{ git_repository_path }}
+      chdir: '{{ git_repository_path }}'
     become: yes
   
-  - name: Copy post-receive scripts 
-      action: template src=hooks/postreceive.j2 dest={{ git_repository_path }}/hooks/post-receive mode=0755
+  - name: Copy post-receive script
+    action: template src=hooks/postreceive.j2 dest={{ git_repository_path }}/hooks/post-receive mode=0755
+    become: yes
+
+  - name: Get list of jobs
+    uri: url="http://localhost:8080/api/json?tree=jobs[name]" return_content=yes
+    register: jobs
+
+  - name: Check if job exists
+    set_fact:
+      seed_exists: "{{ seed_name in jobs.json.jobs|map(attribute='name')|list }}"
+
+  - name: Create job
+    uri:
+      url: "http://localhost:8080/createItem?name={{ seed_name }}"
+      method: POST
+      HEADER_Content-Type: application/xml
+      body: "{{ lookup('template', 'templates/pipelineJob.xml') }}"
+    register: jenkins_seed_updated
+    when: not seed_exists
+
+  - name: Build job
+    uri:
+      url: "http://localhost:8080/job/{{ seed_name }}/build"
+      method: POST
+      status_code: 201
+    when: jenkins_seed_updated is success

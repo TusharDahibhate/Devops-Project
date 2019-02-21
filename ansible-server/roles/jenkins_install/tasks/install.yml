@@ -59,4 +59,4 @@
   - name : Wait for the the jenkins service to start
     wait_for:
       port: 8080
-      delay: 45    
+      delay: 45
