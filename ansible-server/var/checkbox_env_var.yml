@@ -1,6 +1,12 @@
 ---
 nodejs:
-  dist: xenial
+  version: "10.15.1"
+  base: "/opt"
+  dir: "/opt/node-v10.15.1-linux-x64"
+  home: "/opt/node"
+  url: "https://nodejs.org/download/release/v10.15.1/node-v10.15.1-linux-x64.tar.gz"
+  owner: root
+  group: root
 
 mongo:
   port: 27017

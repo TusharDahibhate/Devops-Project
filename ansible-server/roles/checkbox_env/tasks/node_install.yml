@@ -1,21 +1,34 @@
 ---
-  - name: Add apt key for nodesource
-    apt_key: 
-      url: https://deb.nodesource.com/gpgkey/nodesource.gpg.key
-    become: yes
+  - name: "Check if nodejs is already installed"
+    stat:
+      path: "{{ nodejs.dir }}/bin/node"
+    register: nodejs_available
 
-  - name: Add repo for nodesource
-    apt_repository:
-      repo: 'deb https://deb.nodesource.com/node_0.10 {{ nodejs.dist }} main' 
-      update_cache: yes
-    become: yes
-    
-  - name: Install nodejs
-    apt: 
-      name: nodejs
-    become: yes
+  - name: "Download and unarchive nodejs {{ nodejs.version }}"
+    unarchive:
+      src: "{{ nodejs.url }}"
+      dest: "{{ nodejs.base }}"
+      remote_src: yes
+      owner: "{{ nodejs.owner }}"
+      group: "{{ nodejs.group }}"
+    become: true
+    when: nodejs_available.stat.exists == false
 
-  - name: Install the package "npm"
-    apt:
-      name: npm
-    become: yes  
+  - name: "Create symlink to current version"
+    file:
+      path: "{{ nodejs.home }}"
+      src: "{{ nodejs.dir }}"
+      state: link
+      owner: "{{ nodejs.owner }}"
+      group: "{{ nodejs.group }}"
+    become: true
+
+  - name: "create /usr/bin links"
+    file:
+      path: "/usr/bin/{{ item }}"
+      src: "{{ nodejs.home }}/bin/{{ item }}"
+      state: link
+    with_items:
+      - node
+      - npm
+    become: true
