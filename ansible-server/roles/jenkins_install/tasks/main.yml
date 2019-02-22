@@ -27,6 +27,7 @@
         }
       args:
         jenkins_password: "{{ jenkins_password }}"
+      url: http://localhost:8081
       user: admin
       password: "{{ admin_password.stdout }}"
 
@@ -38,6 +39,7 @@
       if (!jenkins.installState.isSetupComplete()) {
         InstallState.INITIAL_SETUP_COMPLETED.initializeState()
       }
+     url: http://localhost:8081
      user: admin
      password: "{{ admin_password.stdout }}"
 
@@ -47,6 +49,7 @@
       name: "{{ item }}"
       url_username: "{{jenkins_user}}"
       url_password: "{{ jenkins_password }}"
+      url: http://localhost:8081
     with_items:
       - maven-plugin
       - git
