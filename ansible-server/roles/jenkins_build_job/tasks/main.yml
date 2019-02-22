@@ -32,7 +32,7 @@
     become: yes
   
   - name: Copy post-receive script
-    action: template src=hooks/postreceive.j2 dest={{ git_repository_path }}/hooks/post-receive mode=0755
+    action: template src=roles/jenkins_build_job/templates/hooks/postreceive.j2 dest={{ git_repository_path }}/hooks/post-receive mode=0755
     become: yes
 
   - name: Get list of jobs
@@ -48,7 +48,7 @@
       url: "http://localhost:8080/createItem?name={{ seed_name }}"
       method: POST
       HEADER_Content-Type: application/xml
-      body: "{{ lookup('template', 'templates/pipelineJob.xml') }}"
+      body: "{{ lookup('template', 'roles/jenkins_build_job/templates/pipelineJob.xml') }}"
     register: jenkins_seed_updated
     when: not seed_exists
 
