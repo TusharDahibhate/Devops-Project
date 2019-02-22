@@ -2,17 +2,17 @@
   - name: Copy Jenkinsfile for Jenkins use
     copy:
       src: files/Jenkinsfile
-      dest: /jenkins-server/iTrust2-v4/iTrust2/Jenkinsfile
+      dest: "{{repo_path}}iTrust2/Jenkinsfile"
       
   - name: Copy db properties file for Jenkins use
     copy:
       src: files/db.properties
-      dest: /jenkins-server/iTrust2-v4/iTrust2/src/main/java/db.properties
+      dest: "{{repo_path}}iTrust2/src/main/java/db.properties"
 
   - name: Copy email properties file for Jenkins use
     copy:
       src: files/email.properties
-      dest: /jenkins-server/iTrust2-v4/iTrust2/src/main/java/email.properties  
+      dest: "{{repo_path}}iTrust2/src/main/java/email.properties"  
   
   - name: Copy credentials upload script to jenkins server 
     copy:

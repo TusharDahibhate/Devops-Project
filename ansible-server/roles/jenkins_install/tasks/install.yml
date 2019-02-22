@@ -44,23 +44,26 @@
      state: present
     become: true
   
-  - name: Start the server
+  - name: Configure jenkins to use port 8081
+    lineinfile:
+      path: /etc/default/jenkins
+      regexp: '^HTTP_PORT='
+      line: 'HTTP_PORT=8081'
+    become: true
+  
+  - name: Allow port 8081
+    become: true
+    ufw:
+      rule: allow
+      port: '8081'
+  
+  - name: Restart the server
     service:
       name: jenkins
-      state: started
-  
-  - name: read the passwd file
-    command: cat /etc/default/jenkins
-    register: jenkins_default
+      state: restarted
+    become: true
     
   - name : Wait for the the jenkins service to start on 8081
     wait_for:
       port: 8081
       delay: 45
-    when: jenkins_default.stdout.find('HTTP_PORT=8081') != -1
-  
-  - name : Wait for the the jenkins service to start on port 8080
-    wait_for:
-      port: 8080
-      delay: 45
-    when: jenkins_default.stdout.find('HTTP_PORT=8081') == -1
