@@ -29,3 +29,9 @@ os_environment:
     value: 127.0.0.1
   - key: MONGO_USER
     value: root
+      
+checkbox_deploy_path: deploy/production.git
+git_repository_path: '{{ checkbox.location }}deploy/production.git'
+checkbox_job_name: test2
+jenkins_seed_template: 'pipelineJob'
+

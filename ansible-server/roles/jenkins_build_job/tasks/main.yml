@@ -7,7 +7,7 @@
   - name: Create a jenkins job for checkbox using basic authentication
     jenkins_job:
       config: "{{ lookup('file', 'templates/pipelineJob.xml') }}"
-      name: "{{seed_name}}"
+      name: "{{checkbox_job_name}}"
       password: "{{jenkins_password}}"
       url: http://localhost:8081
       user: "{{jenkins_user}}"
