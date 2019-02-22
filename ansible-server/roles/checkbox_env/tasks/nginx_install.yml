@@ -12,9 +12,9 @@
       state: started
 
 - name: Copy nginx.conf file to /etc/nginx
-  template: src=templates/nginx.conf dest=/etc/nginx/ owner=root mode=600
+  template: src=roles/checkbox_env/templates/nginx/nginx.conf dest=/etc/nginx/ owner=root mode=600
   become: yes
 
 - name: Copy default.conf file to /etc/nginx/conf.d
-  template: src=templates/default.conf dest=/etc/nginx/conf.d/ owner=root mode=600
+  template: src=roles/checkbox_env/templates/nginx/default.conf dest=/etc/nginx/conf.d/ owner=root mode=600
   become: yes
