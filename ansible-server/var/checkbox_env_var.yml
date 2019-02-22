@@ -10,7 +10,7 @@ mongo:
 
 checkbox:
   port: 3002
-  location: /home/vagrant/
+  location: /home/vagrant/checkbox/
 
 os_environment:
   - key: MAIL_SMTP 

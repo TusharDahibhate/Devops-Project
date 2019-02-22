@@ -1,5 +1,7 @@
 ---
   #TO-DO clean up login related vars
+  #TO-DO move paths to var
+
   - name: Copy private_key file to server
     template: 
       src: roles/checkbox_env/templates/key 
@@ -12,21 +14,26 @@
   - name: Clone checkbox private repository
     git:
       repo: git@github.ncsu.edu:asaxena5/checkbox.io-private.git
-      dest: /home/checkbox/
+      dest: '{{ checkbox.location }}'
       accept_hostkey: yes
       key_file: /home/vagrant/.ssh/id_rsa_github2 
     become: true
+
+  - name: Install packages based on package.json
+    npm: 
+      path: '{{ checkbox.location }}server-side/site'
+    become: yes
   
   - name: Creates deploy directory
     become: yes
     file:
-      path: /home/checkbox/deploy
+      path: '{{ checkbox.location }}deploy'
       state: directory
   
   - name: Creates production-www directory
     become: yes
     file:
-      path: /home/checkbox/deploy/production-www
+      path: '{{ checkbox.location }}deploy/production-www'
       state: directory
   
   - name: Creates production.git directory
@@ -43,5 +50,5 @@
     become: yes
   
   - name: Copy post-receive script
-    action: template src=roles/checkbox_env/templates/hooks/postreceive.j2 dest={{ git_repository_path }}/hooks/post-receive mode=0755
+    template: src=roles/checkbox_env/templates/hooks/postreceive.j2 dest={{ git_repository_path }}/hooks/post-receive mode=0755
     become: yes
