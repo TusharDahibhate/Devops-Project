@@ -1,0 +1,6 @@
+#!/bin/sh
+
+crumbLine=$(curl --user jenkins:admin 'http://localhost:8081/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,":",//crumb)')
+
+
+curl -X POST http://localhost:8081/job/itrust/build?TOKEN=itrust --user $GIT_PUSH_OPTION_0:$GIT_PUSH_OPTION_1 -H "$crumbLine"

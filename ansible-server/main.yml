@@ -1,5 +1,5 @@
 ---
-- hosts: jenkins-server-test2
+- hosts: jenkins-server
   
   vars_files:
    - var/secrets.yml
@@ -9,3 +9,5 @@
     - jenkins_install   
     - checkbox_env
     - jenkins_build_job
+    - mysql   
+    - itrust_env

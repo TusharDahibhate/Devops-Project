@@ -1,3 +1,7 @@
-name: jenkins-server-test2
+name: jenkins-server
 vm:
-  ip: 192.168.33.108
+  ip: 192.168.33.10
+  memory: 4096
+lang:
+  - java8
+

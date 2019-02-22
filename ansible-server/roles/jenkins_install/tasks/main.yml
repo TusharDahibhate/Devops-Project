@@ -61,6 +61,19 @@
     until: plugin_result is success
     retries: 3
     delay: 2
+  
+  - name: Configure jenkins to use port 8081
+    lineinfile:
+      path: /etc/default/jenkins
+      regexp: '^HTTP_PORT='
+      line: 'HTTP_PORT=8081'
+    become: true
+  
+  - name: Allow port 8081
+    become: true
+    ufw:
+      rule: allow
+      port: '8081'
 
   - name : Restart Jenkins service
     service: 
@@ -70,5 +83,5 @@
 
   - name : Wait for the the jenkins service to start
     wait_for:
-      port: 8080
+      port: 8081
       delay: 45
