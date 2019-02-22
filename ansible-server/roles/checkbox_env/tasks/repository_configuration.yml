@@ -1,0 +1,36 @@
+---
+  - name: Clone checkbox private repository
+    git:
+      repo: "https://{{ github_username }}:{{ github_password }}@github.ncsu.edu/asaxena5/checkbox.io-private.git"
+      dest: /home/checkbox/
+      version: master
+    become: yes
+  
+  - name: Creates deploy directory
+    become: yes
+    file:
+      path: /home/checkbox/deploy
+      state: directory
+  
+  - name: Creates production-www directory
+    become: yes
+    file:
+      path: /home/checkbox/deploy/production-www
+      state: directory
+  
+  - name: Creates production.git directory
+    become: yes
+    file:
+      path: '{{ git_repository_path }}'
+      state: directory
+      mode: ug+rw
+  
+  - name: git init
+    command: git init --bare
+    args:
+      chdir: '{{ git_repository_path }}'
+    become: yes
+  
+  - name: Copy post-receive script
+    action: template src=roles/checkbox_env/templates/hooks/postreceive.j2 dest={{ git_repository_path }}/hooks/post-receive mode=0755
+    become: yes

@@ -3,3 +3,4 @@
   - import_tasks: mongo_install.yml
   - import_tasks: nginx_install.yml
   - import_tasks: bash_config.yml
+  - import_tasks: repository_configuration.yml
