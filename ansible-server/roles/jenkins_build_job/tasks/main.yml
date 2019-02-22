@@ -1,24 +1,30 @@
 ---
-  - name: Get list of jobs
-    uri: url="http://localhost:8081/api/json?tree=jobs[name]" return_content=yes
-    register: jobs
-
-  - name: Check if job exists
+  - name: Set the python interpreter to symlink (version 2.7) for jenkins_job module
     set_fact:
-      seed_exists: "{{ seed_name in jobs.json.jobs|map(attribute='name')|list }}"
+      ansible_python_interpreter: '/usr/bin/python'
+    become: true
 
-  - name: Create job
-    uri:
-      url: "http://localhost:8081/createItem?name={{ seed_name }}"
-      method: POST
-      HEADER_Content-Type: application/xml
-      body: "{{ lookup('template', 'roles/jenkins_build_job/templates/pipelineJob.xml') }}"
-    register: jenkins_seed_updated
-    when: not seed_exists
-
-  - name: Build job
-    uri:
-      url: "http://localhost:8081/job/{{ seed_name }}/build"
-      method: POST
-      status_code: 201
-    when: jenkins_seed_updated is success
+  - name: Create a jenkins job for checkbox using basic authentication
+    jenkins_job:
+      config: "{{ lookup('file', 'templates/pipelineJob.xml') }}"
+      name: "{{seed_name}}"
+      password: "{{jenkins_password}}"
+      url: http://localhost:8081
+      user: "{{jenkins_user}}"
+      state: present
+    become: true
+    
+  - name: Create a jenkins job for iTrust2 using basic authentication
+    jenkins_job:
+      config: "{{ lookup('file', 'templates/iTrustJenkinsConfig.xml') }}"
+      name: itrust
+      password: "{{jenkins_password}}"
+      url: http://localhost:8081
+      user: "{{jenkins_user}}"
+      state: present
+    become: true
+  
+  - name: Set the python interpreter back to version 3
+    set_fact:
+      ansible_python_interpreter: '/usr/bin/python3'
+    become: true

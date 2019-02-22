@@ -1,6 +1,12 @@
 ---
-  - apt_repository:
+  - name: Add git repo for minimum 2.10 version.
+    apt_repository:
       repo: ppa:git-core/ppa
+    become: true
+
+  - name: Add Oracle Java Repository
+    apt_repository:
+      repo: ppa:webupd8team/java
     become: true
 
   - name: Update and upgrade apt packages
@@ -21,50 +27,40 @@
      state: present
     become: true
 
-  - name: Install java
-    apt:
-      name: 'openjdk-8-jre'
-      state: present
-      update_cache: yes    
-    become: true  
-
-  - name: Install Jenkins
-    apt:
-      name: 'jenkins'
-      state: present
-      update_cache: yes    
-    become: true
-
-  - name: Install Git
-    apt:
-      name: 'git'
-      state: present
-      update_cache: yes    
-    become: true
-
-  - name: Install Maven
-    apt:
-      name: 'maven'
-      state: present
-      update_cache: yes    
+  - name: agree to license
+    debconf: name='oracle-java8-installer' question='shared/accepted-oracle-license-v1-1' value='true' vtype='select'
     become: true
 
   - name: Install jenkins and python wrapper and git
     apt:
      pkg:
-       - jenkins
+       - git
+       - oracle-java8-installer
+       - python-dev
        - python-jenkins
+       - jenkins
        - python-lxml
+       - maven
      state: present
     become: true
-
+  
   - name: Start the server
     service:
       name: jenkins
       state: started
-
-  - name : Wait for the the jenkins service to start
+  
+  - name: read the passwd file
+    command: cat /etc/default/jenkins
+    register: jenkins_default
+    
+  - name : Wait for the the jenkins service to start on 8081
     wait_for:
       port: 8081
       delay: 45
-
+    when: jenkins_default.stdout.find('HTTP_PORT=8081') != -1
+  
+  - name : Wait for the the jenkins service to start on port 8080
+    wait_for:
+      port: 8080
+      delay: 45
+    when: jenkins_default.stdout.find('HTTP_PORT=8081') == -1
