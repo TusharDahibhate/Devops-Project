@@ -1,0 +1,4 @@
+mysql_package_name: mysql-server
+database_user_name: itrust
+database_pwd: itrust
+itrust_db_name: iTrust2

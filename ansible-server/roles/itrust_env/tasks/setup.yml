@@ -1,0 +1,21 @@
+---
+  - name: Add Google Chrome key
+    apt_key:
+      url: "https://dl-ssl.google.com/linux/linux_signing_key.pub"
+      state: present
+    become: yes
+  
+  - name: Add Google Chrome repo
+    apt_repository:
+      repo: deb http://dl.google.com/linux/chrome/deb/ stable main
+      state: present
+      filename: google-chrome
+    become: true
+    
+  - name: Install maven and google chrome
+    apt:
+      pkg:
+        - maven
+        - google-chrome-stable
+      state: present
+    become: yes

@@ -1,10 +1,14 @@
----  
+---
+  - apt_repository:
+      repo: ppa:git-core/ppa
+    become: true
+
   - name: Update and upgrade apt packages
     become: true
     apt:
-      upgrade: yes
+      upgrade: dist
       update_cache: yes
-      
+
   - name: Add jenkins repository key
     apt_key:
      url: https://pkg.jenkins.io/debian/jenkins.io.key
@@ -45,11 +49,14 @@
       update_cache: yes    
     become: true
 
-  - name: Allow port 8080
+  - name: Install jenkins and python wrapper and git
+    apt:
+     pkg:
+       - jenkins
+       - python-jenkins
+       - python-lxml
+     state: present
     become: true
-    ufw:
-      rule: allow
-      port: '8080'
 
   - name: Start the server
     service:
@@ -60,3 +67,4 @@
     wait_for:
       port: 8080
       delay: 45
+

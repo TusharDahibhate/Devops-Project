@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+    stages {
+        stage('Setup') {
+            steps {
+                withCredentials([file(credentialsId: 'db_properties', variable: 'db_properties'),
+                                 file(credentialsId: 'email_properties', variable: 'email_properties')]) {
+                    sh 'cp -f \$db_properties iTrust2/src/main/java/db.properties'
+                    sh 'cp -f \$email_properties iTrust2/src/main/java/email.properties'
+                    sh 'cd iTrust2 && mvn -f pom-data.xml process-test-classes'
+                }
+            }
+        }
+        stage('Build') { 
+            steps {
+                sh 'cd iTrust2 && mvn -f pom.xml clean test verify checkstyle:checkstyle -Dmaven.test.failure.ignore=false' 
+            }
+        }
+    }
+}
+
