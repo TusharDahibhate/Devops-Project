@@ -23,7 +23,7 @@
       group: "{{ nodejs.group }}"
     become: true
 
-  - name: "create /usr/bin links"
+  - name: "Create /usr/bin links"
     file:
       path: "/usr/bin/{{ item }}"
       src: "{{ nodejs.home }}/bin/{{ item }}"

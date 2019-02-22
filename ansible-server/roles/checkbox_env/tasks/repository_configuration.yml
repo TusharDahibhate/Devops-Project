@@ -10,6 +10,11 @@
       group: root
       mode: 0600
     become: yes
+
+  - name: "Check if checkbox private repository is already cloned"
+    stat:
+      path: '{{ checkbox.location }}'
+    register: checkbox_available
      
   - name: Clone checkbox private repository
     git:
@@ -17,6 +22,7 @@
       dest: '{{ checkbox.location }}'
       accept_hostkey: yes
       key_file: /home/vagrant/.ssh/id_rsa_github2 
+    when: checkbox_available.stat.exists == false
     become: true
 
   - name: Install packages based on package.json
@@ -43,12 +49,21 @@
       state: directory
       mode: ug+rw
   
+  #TO-DO use git module
   - name: git init
     command: git init --bare
     args:
       chdir: '{{ git_repository_path }}'
     become: yes
-  
+
+  - name: Add deploy remote url
+    git_config:
+      name: remote.deploy.url
+      value: '{{ checkbox_deploy_path }}'
+      scope: local
+      repo: '{{ checkbox.location }}'
+    become: yes
+
   - name: Copy post-receive script
     template: src=roles/checkbox_env/templates/hooks/postreceive.j2 dest={{ git_repository_path }}/hooks/post-receive mode=0755
     become: yes
