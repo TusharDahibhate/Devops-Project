@@ -32,6 +32,6 @@ os_environment:
       
 checkbox_deploy_path: deploy/production.git
 git_repository_path: '{{ checkbox.location }}deploy/production.git'
-checkbox_job_name: test2
+checkbox_job_name: checkbox
 jenkins_seed_template: 'pipelineJob'
 

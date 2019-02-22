@@ -33,3 +33,22 @@
       scope: local
       repo: /jenkins-server/iTrust2-v4/build/jenkins.git/
 
+  - name: Add jenkins remote url
+    git_config:
+      name: remote.jenkins.url
+      value: build/jenkins.git/
+      scope: local
+      repo: /jenkins-server/iTrust2-v4/
+  
+  - name: Add jenkins remote refs for jenkins
+    git_config:
+      name: remote.jenkins.fetch
+      value: +refs/heads/*:refs/remotes/jenkins/*
+      scope: local
+      repo: /jenkins-server/iTrust2-v4/
+  
+  - name: Copy post receive hook to jenkins
+    copy:
+      src: templates/post-receive
+      dest: /jenkins-server/iTrust2-v4/build/jenkins.git/hooks/
+

@@ -24,6 +24,16 @@
       key_file: /home/vagrant/.ssh/id_rsa_github2 
     when: checkbox_available.stat.exists == false
     become: true
+    
+  - name: Configure git post-receive push options for jenkins user
+    command: chdir='{{ checkbox.location }}' git config --local push.pushOption {{jenkins_user}}
+    become: true
+    when: checkbox_available.stat.exists == false
+  
+  - name: Configure git post-receive push options for jenkins password
+    command: chdir='{{ checkbox.location }}' git config --local push.pushOption {{jenkins_password}} {{jenkins_password}}
+    become: true
+    when: checkbox_available.stat.exists == false
 
   - name: Install packages based on package.json
     npm: 
@@ -64,6 +74,15 @@
       repo: '{{ checkbox.location }}'
     become: yes
 
+  - name: Configure bare repo to receive push options
+    git_config:
+      name: receive.advertisePushOptions
+      value: true
+      scope: local
+      repo: '{{ git_repository_path }}'
+    become: true
+  
   - name: Copy post-receive script
     template: src=roles/checkbox_env/templates/hooks/postreceive.j2 dest={{ git_repository_path }}/hooks/post-receive mode=0755
     become: yes
+    

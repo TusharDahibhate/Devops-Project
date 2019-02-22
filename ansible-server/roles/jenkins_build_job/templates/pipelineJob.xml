@@ -22,4 +22,6 @@
             <gitTool>Default</gitTool>
         </scm>
     </definition>
+    <authToken>checkbox</authToken>
+    <disabled>false</disabled>
 </flow-definition>
