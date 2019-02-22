@@ -42,11 +42,11 @@
     become: true
 
   - name: Configure git post-receive push options
-    command: chdir=/jenkins-server/iTrust2-v4 git config --local push.pushOption jenkins
+    command: chdir=/jenkins-server/iTrust2-v4 git config --local push.pushOption {{jenkins_user}}
     when: src_repo.stat.exists == False
   
   - name: Configure git post-receive push options
-    command: chdir=/jenkins-server/iTrust2-v4 git config --local push.pushOption admin admin
+    command: chdir=/jenkins-server/iTrust2-v4 git config --local push.pushOption {{jenkins_password}} {{jenkins_password}}
     when: src_repo.stat.exists == False
 
   - name: Create bare repository for hook
@@ -101,28 +101,5 @@
       dest: /jenkins-server/copy_creds_to_jenkins.sh
     
   - name: Upolad db.properties to Jenkins credentials
-    command: "/jenkins-server/copy_creds_to_jenkins.sh jenkins admin"
+    command: "/jenkins-server/copy_creds_to_jenkins.sh {{jenkins_user}} {{jenkins_password}}"
 
-  - name: Install dependency
-    package: "name=python-dev state=present"
-    become: true
-    
-  - name: Set the python interpreter to the symlink (which points at version 2.7)
-    set_fact:
-      ansible_python_interpreter: '/usr/bin/python'
-    become: true
-    
-  - name: Create a jenkins job using basic authentication
-    jenkins_job:
-      config: "{{ lookup('file', 'files/iTrustJenkinsConfig.xml') }}"
-      name: itrust
-      password: admin
-      url: http://localhost:8081
-      user: jenkins
-      state: present
-    become: true
-  
-  - name: Set the python interpreter back to version 3
-    set_fact:
-      ansible_python_interpreter: '/usr/bin/python3'
-    become: true

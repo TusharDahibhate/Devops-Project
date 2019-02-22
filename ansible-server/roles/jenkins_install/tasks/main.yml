@@ -18,7 +18,7 @@
         if ("jenkins" in users_s) {
             println "Admin user already exists"
         } else {
-          hudsonRealm.createAccount('jenkins', '${user_password}')
+          hudsonRealm.createAccount('jenkins', '${jenkins_password}')
           instance.setSecurityRealm(hudsonRealm)
           def strategy = new FullControlOnceLoggedInAuthorizationStrategy()
           strategy.setAllowAnonymousRead(false)
@@ -26,7 +26,7 @@
           instance.save()
         }
       args:
-        user_password: "{{ user_password }}"
+        jenkins_password: "{{ jenkins_password }}"
       user: admin
       password: "{{ admin_password.stdout }}"
 
@@ -45,8 +45,8 @@
     jenkins_plugin:
       jenkins_home: "/var/lib/jenkins"
       name: "{{ item }}"
-      url_username: "jenkins"
-      url_password: "{{ user_password }}"
+      url_username: "{{jenkins_user}}"
+      url_password: "{{ jenkins_password }}"
     with_items:
       - maven-plugin
       - git
@@ -81,7 +81,7 @@
       state: restarted  
     become: yes
 
-  - name : Wait for the the jenkins service to start
+  - name : Wait for the the jenkins service to restart
     wait_for:
       port: 8081
       delay: 45
