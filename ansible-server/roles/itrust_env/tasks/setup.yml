@@ -1,13 +1,13 @@
 ---
   - name: Add Google Chrome key
     apt_key:
-      url: "https://dl-ssl.google.com/linux/linux_signing_key.pub"
+      url: "{{google_chrome_key}}"
       state: present
     become: yes
   
   - name: Add Google Chrome repo
     apt_repository:
-      repo: deb http://dl.google.com/linux/chrome/deb/ stable main
+      repo: deb "{{google_chrome_url}}" stable main
       state: present
       filename: google-chrome
     become: true
@@ -21,25 +21,25 @@
   
   - name: set timezone to America/New_York
     timezone:
-      name: America/New_York
+      name: "{{timezone}}"
     become: true
 
   - name: Configure git email
     git_config:
       name: user.email
-      value: sbhoyar@ncsu.edu
+      value: "{{git_email}}"
       scope: global
 
   - name: Configure git name
     git_config:
       name: user.name
-      value: Shantanu Bhoyar
+      value: "{{git_user_name}}"
       scope: global
   
   - name: Add github ssh key
     copy:
       src: files/id_rsa_github
-      dest: /root/.ssh/id_rsa_github
+      dest: "{{git_rsa_path}}"
       owner: root
       group: root
       mode: 0600
