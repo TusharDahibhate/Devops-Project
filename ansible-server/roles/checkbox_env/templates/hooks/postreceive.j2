@@ -3,4 +3,4 @@ echo "Current location: $GIT_DIR"
 GIT_WORK_TREE=../production-www/ git checkout -f
 echo "Pushed to production!"
 cd ../production-www
-curl -X POST curl -X POST http://localhost:8080/job/test/build?token=richa
+curl -X POST curl -X POST http://localhost:8081/job/test/build?token=richa

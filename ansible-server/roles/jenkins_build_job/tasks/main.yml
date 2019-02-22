@@ -1,6 +1,6 @@
 ---
   - name: Get list of jobs
-    uri: url="http://localhost:8080/api/json?tree=jobs[name]" return_content=yes
+    uri: url="http://localhost:8081/api/json?tree=jobs[name]" return_content=yes
     register: jobs
 
   - name: Check if job exists
@@ -9,7 +9,7 @@
 
   - name: Create job
     uri:
-      url: "http://localhost:8080/createItem?name={{ seed_name }}"
+      url: "http://localhost:8081/createItem?name={{ seed_name }}"
       method: POST
       HEADER_Content-Type: application/xml
       body: "{{ lookup('template', 'roles/jenkins_build_job/templates/pipelineJob.xml') }}"
@@ -18,7 +18,7 @@
 
   - name: Build job
     uri:
-      url: "http://localhost:8080/job/{{ seed_name }}/build"
+      url: "http://localhost:8081/job/{{ seed_name }}/build"
       method: POST
       status_code: 201
     when: jenkins_seed_updated is success

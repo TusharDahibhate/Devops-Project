@@ -1,4 +1,5 @@
 ---
+  #TO-DO clean up login related vars
   - name: Copy private_key file to server
     template: 
       src: roles/checkbox_env/templates/key 
