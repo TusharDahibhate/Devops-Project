@@ -9,7 +9,7 @@
         <scm class='hudson.plugins.git.GitSCM'>
             <userRemoteConfigs>
                 <hudson.plugins.git.UserRemoteConfig>
-                    <url>/home/vagrant/checkbox.io-private</url>
+                    <url>{{ checkbox.location }}</url>
                 </hudson.plugins.git.UserRemoteConfig>
             </userRemoteConfigs>
             <branches>
