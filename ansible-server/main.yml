@@ -3,7 +3,6 @@
   
   vars_files:
    - var/secrets.yml
-   - var/checkbox_env_var.yml
 
   roles:
     - jenkins_install   
