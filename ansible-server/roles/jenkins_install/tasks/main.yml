@@ -1,134 +1,74 @@
 ---
   - import_tasks: install.yml
 
-  # - name: Read Admin password
-  #   shell: cat /var/lib/jenkins/secrets/initialAdminPassword
-  #   register: admin_password
-  #   become: true
+  - name: Read Admin password
+    shell: cat /var/lib/jenkins/secrets/initialAdminPassword
+    register: admin_password
+    become: true
 
-  # - name: Unlock and add admin user
-  #   jenkins_script:
-  #     script: |
-  #       import jenkins.model.*
-  #       import hudson.security.*
-  #       def instance = Jenkins.getInstance()
-  #       def hudsonRealm = new HudsonPrivateSecurityRealm(false)
-  #       def users = hudsonRealm.getAllUsers()
-  #       users_s = users.collect { it.toString() }
-  #       if ("jenkins" in users_s) {
-  #           println "Admin user already exists"
-  #       } else {
-  #         hudsonRealm.createAccount('jenkins', '${user_password}')
-  #         instance.setSecurityRealm(hudsonRealm)
-  #         def strategy = new FullControlOnceLoggedInAuthorizationStrategy()
-  #         strategy.setAllowAnonymousRead(false)
-  #         instance.setAuthorizationStrategy(strategy)
-  #         instance.save()
-  #       }
-  #     args:
-  #       user_password: "{{ user_password }}"
-  #     user: admin
-  #     password: "{{ admin_password.stdout }}"
+  - name: Unlock and add admin user
+    jenkins_script:
+      script: |
+        import jenkins.model.*
+        import hudson.security.*
+        def instance = Jenkins.getInstance()
+        def hudsonRealm = new HudsonPrivateSecurityRealm(false)
+        def users = hudsonRealm.getAllUsers()
+        users_s = users.collect { it.toString() }
+        if ("jenkins" in users_s) {
+            println "Admin user already exists"
+        } else {
+          hudsonRealm.createAccount('jenkins', '${user_password}')
+          instance.setSecurityRealm(hudsonRealm)
+          def strategy = new FullControlOnceLoggedInAuthorizationStrategy()
+          strategy.setAllowAnonymousRead(false)
+          instance.setAuthorizationStrategy(strategy)
+          instance.save()
+        }
+      args:
+        user_password: "{{ user_password }}"
+      user: admin
+      password: "{{ admin_password.stdout }}"
 
-  # - name: Complete the setup wizard
-  #   jenkins_script:
-  #    script: |
-  #     import static jenkins.model.Jenkins.instance as jenkins
-  #     import jenkins.install.InstallState
-  #     if (!jenkins.installState.isSetupComplete()) {
-  #       InstallState.INITIAL_SETUP_COMPLETED.initializeState()
-  #     }
-  #    user: admin
-  #    password: "{{ admin_password.stdout }}"
+  - name: Complete the setup wizard
+    jenkins_script:
+     script: |
+      import static jenkins.model.Jenkins.instance as jenkins
+      import jenkins.install.InstallState
+      if (!jenkins.installState.isSetupComplete()) {
+        InstallState.INITIAL_SETUP_COMPLETED.initializeState()
+      }
+     user: admin
+     password: "{{ admin_password.stdout }}"
 
-  # - name: Install Jenkins plugins
-  #   jenkins_plugin:
-  #     jenkins_home: "/var/lib/jenkins"
-  #     name: "{{ item }}"
-  #     url_username: "jenkins"
-  #     url_password: "{{ user_password }}"
-  #   with_items:
-  #     - maven-plugin
-  #     - git
-  #     - github
-  #     - nodeJS
-  #     - pipeline-npm-integration
-  #     - workflow-job
-  #     - workflow-scm-step
-  #     - build-pipeline-plugin
-  #     - workflow-aggregator
-  #   register: plugin_result
-  #   until: plugin_result is success
-  #   retries: 3
-  #   delay: 2
+  - name: Install Jenkins plugins
+    jenkins_plugin:
+      jenkins_home: "/var/lib/jenkins"
+      name: "{{ item }}"
+      url_username: "jenkins"
+      url_password: "{{ user_password }}"
+    with_items:
+      - maven-plugin
+      - git
+      - github
+      - nodeJS
+      - pipeline-npm-integration
+      - workflow-job
+      - workflow-scm-step
+      - build-pipeline-plugin
+      - workflow-aggregator
+    register: plugin_result
+    until: plugin_result is success
+    retries: 3
+    delay: 2
 
-  # - name : Restart Jenkins service
-  #   service: 
-  #     name: jenkins
-  #     state: restarted  
-  #   become: yes
-
-  # - name : Wait for the the jenkins service to start
-  #   wait_for:
-  #     port: 8080
-  #     delay: 45
-  
-  - name: Clone checkbox private repository
-    git:
-      repo: "https://{{ github_username }}:{{ github_password }}@github.ncsu.edu/asaxena5/checkbox.io-private.git"
-      dest: /home/checkbox/
-      version: master
-    become: yes
-  
-  - name: Creates deploy directory
-    become: yes
-    file:
-      path: /home/checkbox/deploy
-      state: directory
-  
-  - name: Creates production-www directory
-    become: yes
-    file:
-      path: /home/checkbox/deploy/production-www
-      state: directory
-  
-  - name: Creates production.git directory
-    become: yes
-    file:
-      path: '{{ git_repository_path }}'
-      state: directory
-      mode: ug+rw
-  
-  - name: git init
-    command: git init --bare
-    args:
-      chdir: '{{ git_repository_path }}'
-    become: yes
-  
-  - name: Copy post-receive script
-    action: template src=hooks/postreceive.j2 dest={{ git_repository_path }}/hooks/post-receive mode=0755
+  - name : Restart Jenkins service
+    service: 
+      name: jenkins
+      state: restarted  
     become: yes
 
-  - name: Get list of jobs
-    uri: url="http://localhost:8080/api/json?tree=jobs[name]" return_content=yes
-    register: jobs
-
-  - name: Check if job exists
-    set_fact:
-      seed_exists: "{{ seed_name in jobs.json.jobs|map(attribute='name')|list }}"
-
-  - name: Create job
-    uri:
-      url: "http://localhost:8080/createItem?name={{ seed_name }}"
-      method: POST
-      HEADER_Content-Type: application/xml
-      body: "{{ lookup('template', 'templates/pipelineJob.xml') }}"
-    register: jenkins_seed_updated
-    when: not seed_exists
-
-  - name: Build job
-    uri:
-      url: "http://localhost:8080/job/{{ seed_name }}/build"
-      method: POST
-      status_code: 201
-    when: jenkins_seed_updated is success
+  - name : Wait for the the jenkins service to start
+    wait_for:
+      port: 8080
+      delay: 45

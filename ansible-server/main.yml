@@ -8,3 +8,4 @@
   roles:
     - jenkins_install   
     - checkbox_env
+    - jenkins_build_job
