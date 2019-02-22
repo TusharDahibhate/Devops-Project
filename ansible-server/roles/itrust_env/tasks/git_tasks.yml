@@ -14,11 +14,11 @@
     become: true
 
   - name: Configure git post-receive push options
-    command: chdir="{{repo_path}} git config --local push.pushOption {{jenkins_user}}"
+    command: chdir="{{repo_path}}" git config --local push.pushOption {{jenkins_user}}
     when: src_repo.stat.exists == False
   
   - name: Configure git post-receive push options
-    command: chdir="{{repo_path}} git config --local push.pushOption {{jenkins_password}} {{jenkins_password}}"
+    command: chdir="{{repo_path}}" git config --local push.pushOption {{jenkins_password}} {{jenkins_password}}
     when: src_repo.stat.exists == False
 
   - name: Create bare repository for hook
