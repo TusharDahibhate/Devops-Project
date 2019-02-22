@@ -1,0 +1,43 @@
+---
+  - name: Add jenkins remote url
+    git_config:
+      name: remote.jenkins.url
+      value: build/jenkins.git/
+      scope: local
+      repo: /jenkins-server/iTrust2-v4/
+  
+  - name: Add jenkins remote refs for jenkins
+    git_config:
+      name: remote.jenkins.fetch
+      value: +refs/heads/*:refs/remotes/jenkins/*
+      scope: local
+      repo: /jenkins-server/iTrust2-v4/
+  
+  - name: Copy post receive hook to jenkins
+    copy:
+      src: templates/post-receive
+      dest: /jenkins-server/iTrust2-v4/build/jenkins.git/hooks/
+  
+  - name: Copy Jenkinsfile for Jenkins use
+    copy:
+      src: files/Jenkinsfile
+      dest: /jenkins-server/iTrust2-v4/iTrust2/Jenkinsfile
+      
+  - name: Copy db properties file for Jenkins use
+    copy:
+      src: files/db.properties
+      dest: /jenkins-server/iTrust2-v4/iTrust2/src/main/java/db.properties
+
+  - name: Copy email properties file for Jenkins use
+    copy:
+      src: files/email.properties
+      dest: /jenkins-server/iTrust2-v4/iTrust2/src/main/java/email.properties  
+  
+  - name: Copy credentials upload script to jenkins server 
+    copy:
+      src: templates/copy_creds_to_jenkins.sh
+      dest: /jenkins-server/copy_creds_to_jenkins.sh
+    
+  - name: Upolad db.properties to Jenkins credentials
+    command: "/jenkins-server/copy_creds_to_jenkins.sh {{jenkins_user}} {{jenkins_password}}"
+

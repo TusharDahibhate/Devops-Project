@@ -12,10 +12,35 @@
       filename: google-chrome
     become: true
     
-  - name: Install maven and google chrome
+  - name: Install and google chrome
     apt:
       pkg:
-        - maven
         - google-chrome-stable
       state: present
     become: yes
+  
+  - name: set timezone to America/New_York
+    timezone:
+      name: America/New_York
+    become: true
+
+  - name: Configure git email
+    git_config:
+      name: user.email
+      value: sbhoyar@ncsu.edu
+      scope: global
+
+  - name: Configure git name
+    git_config:
+      name: user.name
+      value: Shantanu Bhoyar
+      scope: global
+  
+  - name: Add github ssh key
+    copy:
+      src: files/id_rsa_github
+      dest: /root/.ssh/id_rsa_github
+      owner: root
+      group: root
+      mode: 0600
+    become: true
