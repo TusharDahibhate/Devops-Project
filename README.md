@@ -87,6 +87,8 @@ itrust_env contains 3 playbooks:
 We have mirrored the checkbox repository in a private repository at: https://github.ncsu.edu/asaxena5/checkbox.io-private
 The repository contains the Jenkinsfile and the mocha test suite.
 
+### checkbox_env
+
 For the role of setting up checkbox, we have 5 playbooks that are being called from the main.yml playbook viz. bash_config.yml, mongo_install.yml, nginx_install.yml, node_install.yml, repository_configuration.yml. The functions of each are:
 
  * bash_config.yml
