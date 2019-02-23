@@ -30,21 +30,30 @@
 Jenkins is a tool which is used to set up a continuous integration or a continuous delivery environment. As the goal of this milestone is to setup build jobs for 2 applications, setting up Jenkins using ansible is the first task that we performed.
 
 #### Steps:
-1. We used the Baker tool for VM provisioning. We created 2 VMs. One for ansible sever(192.168.33.11) and another for jenkins server(192.168.33.10).
-2. We created a seperate role for jenkins installation and configuration. 
-3. The install.yml playbook installs java, git, maven, jenkins and starts the jenkins server.
-4. The main.yml playbook performs the following tasks:
-    * Copy the initial password from /var/lib/jenkins/secrets/initialAdminPassword.
-    * Create an admin user using groovy script and the jenkins_script module of ansible.
-    * Complete the setup wizard using groovy script. 
-    * Install different Jenkins plugins required.
-    * Setting up bare repository and post receive hooks for checkbox.io and iTrust so that a build job will be triggered whenever a push is made to the repositories.
-    * Creating build jobs for checkbox.io and iTrust
+We used the Baker tool for VM provisioning. We created 2 VMs. One for ansible sever(192.168.33.11) and another for jenkins server(192.168.33.10).
+
+We have created 2 roles for configuring Jenkins server and creating build jobs:
+  * jenkins_install
+  * jenkins_build_job
+
+#### jenkins_install
+jenkins_install contains 2 playbooks:
+  * install.yml
+      * This playbook installs java, git, maven, jenkins and starts the jenkins server.
+  * main.yml 
+      * This playbook will copy the initial password from /var/lib/jenkins/secrets/initialAdminPassword.
+      * Create an admin user using groovy script and the jenkins_script module of ansible.
+      * Complete the setup wizard using groovy script. 
+      * Install different Jenkins plugins required.
+      * Restarts the Jenkins server.
+
+#### jenkins_build_job
+jenkins_build_job contains a single playbook main.yml which create jenkins jobs for iTrust and checkbox.io
 
 
 ## Setting up iTrust
 
-#### Steps
+### Steps
 We have created 2 roles for setting up iTrust environment and build jobs:
   * mysql
   * itrust_env
