@@ -138,6 +138,7 @@ Update "os_environment_secrets: MAIL_PASSWORD" value (shown above) and "os_envir
 * A private key for cloning the [private checkbox.io repo](https://github.ncsu.edu/asaxena5/checkbox.io-private) is required to be copied to [ansible-server/roles/checkbox_env/templates/key](ansible-server/roles/checkbox_env/templates/key).
 
 ### Screencast:
+https://www.youtube.com/watch?v=sLBIyCZKpxE
 
 ### References:
   * https://www.tecmint.com/install-mongodb-on-ubuntu-18-04/
