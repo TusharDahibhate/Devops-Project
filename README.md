@@ -82,7 +82,7 @@ itrust_env contains 3 playbooks:
 
 ![alt nodejs image](https://github.ncsu.edu/asaxena5/Devops-Project1/blob/master/imgs/checkbox_webserv.jpg)
 
-We have mirrored the checkbox repository in a private repository at: https://github.ncsu.edu/asaxena5/checkbox.io-private
+We have mirrored the [checkbox repository](https://github.com/chrisparnin/checkbox.io) in a private repository at: https://github.ncsu.edu/asaxena5/checkbox.io-private
 The repository contains the Jenkinsfile and the mocha test suite.
 
 ### checkbox_env
@@ -102,7 +102,7 @@ For the role of setting up checkbox, we have 5 playbooks that are being called f
     * Installs node.js (version: 10.15.1) and npm (version: 6.4.1)
  
  * repository_configuration.yml
-    * This playbook is used to clone the checkbox repository.
+    * This playbook is used to clone the checkbox [private checkbox.io repository](https://github.ncsu.edu/asaxena5/checkbox.io-private).
     * Initiate a bare git repository
     * Create post-receive web hook to trigger jenkins build on git push.
 
@@ -129,7 +129,7 @@ os_environment_secrets:
     value : #######
   - key: MONGO_PASSWORD
     value: "{{ mongo_secrets.user_password }}"
-~
+
     
 ```
 Please recreate a file with the above format and names of the variables.  
