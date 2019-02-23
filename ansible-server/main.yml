@@ -8,6 +8,6 @@
     - jenkins_install   
     - checkbox_env
     - jenkins_build_job
-    - mysql   
-    - itrust_env
+    # - mysql   
+    # - itrust_env
     

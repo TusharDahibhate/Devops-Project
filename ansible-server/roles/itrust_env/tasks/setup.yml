@@ -19,7 +19,7 @@
       state: present
     become: yes
   
-  - name: set timezone to America/New_York
+  - name: Set timezone to that of New York
     timezone:
       name: "{{timezone}}"
     become: true

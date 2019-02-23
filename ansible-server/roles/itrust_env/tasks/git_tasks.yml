@@ -1,5 +1,5 @@
 ---
-  - name: check if src repo exists
+  - name: Check if src repo exists
     stat: 
       path: "{{repo_path}}"
     register: src_repo

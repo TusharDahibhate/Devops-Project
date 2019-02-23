@@ -4,8 +4,7 @@
       name: mongodb
     become: yes  
 
-#TO-DO: Check unrestricted db access  
-  - name: Allow all access to tcp port 80
+  - name: Allow all access to TCP port 80
     ufw:
       rule: allow
       port: "{{ mongo.port }}"

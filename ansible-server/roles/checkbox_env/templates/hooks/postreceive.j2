@@ -2,5 +2,4 @@
 
 crumbLine=$(curl --user $GIT_PUSH_OPTION_0:$GIT_PUSH_OPTION_1 'http://localhost:8081/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,":",//crumb)')
 
-
 curl -X POST  http://localhost:8081/job/{{checkbox_job_name}}/build?token=checkbox --user $GIT_PUSH_OPTION_0:$GIT_PUSH_OPTION_1 -H "$crumbLine"

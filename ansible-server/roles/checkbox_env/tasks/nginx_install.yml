@@ -16,8 +16,3 @@
 - name: Copy default.conf file to /etc/nginx/conf.d
   template: src=roles/checkbox_env/templates/nginx/default.conf dest=/etc/nginx/conf.d/ owner=root mode=600
   become: yes
-
-- name: Restart nginx
-  service: 
-      name: nginx
-      state: restarted

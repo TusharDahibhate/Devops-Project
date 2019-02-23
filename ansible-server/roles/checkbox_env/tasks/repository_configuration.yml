@@ -1,7 +1,4 @@
 ---
-  #TO-DO clean up login related vars
-  #TO-DO move paths to var
-
   - name: Copy private_key file to server
     template: 
       src: roles/checkbox_env/templates/key 
@@ -11,7 +8,7 @@
       mode: 0600
     become: yes
 
-  - name: "Check if checkbox private repository is already cloned"
+  - name: Check if checkbox private repository is already cloned
     stat:
       path: '{{ checkbox.location }}'
     register: checkbox_available
@@ -40,7 +37,7 @@
       path: '{{ checkbox.location }}server-side/site'
     become: yes
   
-  - name: Creates deploy directory
+  - name: Creates a directory named deploy
     become: yes
     file:
       path: '{{ checkbox.location }}deploy'
@@ -59,7 +56,6 @@
       state: directory
       mode: ug+rw
   
-  #TO-DO use git module
   - name: git init
     command: git init --bare
     args:

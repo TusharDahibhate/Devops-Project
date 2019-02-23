@@ -1,6 +1,6 @@
 ---
   - include_vars: ../vars/main.yml
-
+  
   - import_tasks: node_install.yml
   - import_tasks: mongo_install.yml
   - import_tasks: nginx_install.yml

@@ -27,7 +27,7 @@
      state: present
     become: true
 
-  - name: agree to license
+  - name: Agree to license
     debconf: name='oracle-java8-installer' question='shared/accepted-oracle-license-v1-1' value='true' vtype='select'
     become: true
 
