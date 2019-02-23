@@ -93,23 +93,50 @@ For the role of setting up checkbox, we have 5 playbooks that are being called f
    * This is used to setup the following environment variables required to run checkbox: MAIL_SMTP, MAIL_PASSWORD, MAIL_USER, APP_PORT, MONGO_IP, MONGO_USER, MONGO_PASSWORD
  
  * mongo_install.yml
-    * Installs mongodb and creates a new user in the database with "root" role.
+    * Installs mongodb and creates a new user in the admin database with "root" role.
   
  * nginx_install.yml
-    * Installs nginx and copies nginx configuration and default configuration to setup proxy for web port 80 and upstream for port 3002.
+    * Installs nginx and copies nginx.conf and default.conf (located in /etc/nginx/conf.d/) to setup proxy for web port 80 and upstream for port 3002.
   
  * node_install.yml
     * Installs node.js (version: 10.15.1) and npm (version: 6.4.1)
  
  * repository_configuration.yml
     * This playbook is used to clone the checkbox repository.
-    * Initiates a bare git repository
-    * Creates post-receive web hook to trigger jenkins build on git push.
+    * Initiate a bare git repository
+    * Create post-receive web hook to trigger jenkins build on git push.
 
-If we make changes in any of the repository files and push it to the deploy remote that points to the deploy/production.git folder, it will trigger Jenkins to create a build as mentioned in the post-receive hook in the bare repository created in deploy/production.git folder.
+To trigger a Jenkins build job:
+
+Make changes in any of the repository files, perform (w/ sudo) git add, commit & push the changes to the deploy remote that points to the deploy/production.git folder. This will trigger Jenkins to create a build as mentioned in the post-receive hook in the bare repository created in deploy/production.git folder.
 
 ![alt checkbox image](https://github.ncsu.edu/asaxena5/Devops-Project1/blob/master/imgs/checkbox_job.jpg)
   
+### Ansible Vault files:
+* The passwords are stored in an ansible-vault created file @ ansible-server/vars/secrets.yml
+
+
+```
+---
+jenkins_user: #######
+jenkins_password: #######
+
+mongo_secrets:
+  user_password: #######
+
+os_environment_secrets:
+  - key: MAIL_PASSWORD
+    value : #######
+  - key: MONGO_PASSWORD
+    value: "{{ mongo_secrets.user_password }}"
+~
+    
+```
+Please recreate a file with the above format and names of the variables.  
+Update "os_environment_secrets: MAIL_PASSWORD" value (shown above) and "os_environment: MAIL_USER" value (in ansible-server/roles/checkbox_env/vars/main.yml) for using your own SMTP email.
+
+* A private key for cloning the [private checkbox.io repo](https://github.ncsu.edu/asaxena5/checkbox.io-private) is required to be copied to [ansible-server/roles/checkbox_env/templates/key](ansible-server/roles/checkbox_env/templates/key).
+
 ### Screencast:
 
 ### References:
