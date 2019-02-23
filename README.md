@@ -80,8 +80,6 @@ itrust_env contains 3 playbooks:
 
 ## Setting up checkbox.io
 
-![alt checkbox image](https://github.ncsu.edu/asaxena5/Devops-Project1/blob/master/imgs/checkbox_job.jpg)
-
 ![alt nodejs image](https://github.ncsu.edu/asaxena5/Devops-Project1/blob/master/imgs/checkbox_webserv.jpg)
 
 We have mirrored the checkbox repository in a private repository at: https://github.ncsu.edu/asaxena5/checkbox.io-private
@@ -107,10 +105,13 @@ For the role of setting up checkbox, we have 5 playbooks that are being called f
     * This playbook is used to clone the checkbox repository.
     * Initiates a bare git repository
     * Creates post-receive web hook to trigger jenkins build on git push.
+
+If we make changes in any of the repository files and push it to the deploy remote that points to the deploy/production.git folder, it will trigger Jenkins to create a build as mentioned in the post-receive hook in the bare repository created in deploy/production.git folder.
+
+![alt checkbox image](https://github.ncsu.edu/asaxena5/Devops-Project1/blob/master/imgs/checkbox_job.jpg)
   
 ### Screencast:
 
-
 ### References:
-
-
+https://www.tecmint.com/install-mongodb-on-ubuntu-18-04/
+https://www.nginx.com/blog/setting-up-nginx/
