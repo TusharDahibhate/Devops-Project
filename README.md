@@ -79,8 +79,25 @@ itrust_env contains 3 playbooks:
     * Configures Jenkins with database and email credentials. 
 
 ## Setting up checkbox.io
+For the role of setting up checkbox, we have 5 playbooks that are being called from the main.yml playbook viz. bash_config.yml, mongo_install.yml, nginx_install.yml, node_install.yml, repository_configuration.yml. The functions of each are:
 
-
+ * bash_config.yml
+  * This is used to setup the following environment variable required to run checkbox.
+ 
+ * mongo_install.yml
+  * Installs mongodb and creates a new user in the database.
+  
+ * nginx_install.yml
+  * Installs nginx and copy nginx configuration and default configuration to setup proxy for web port 80.
+  
+ * node_install.yml
+  * Installs node.js (version: 10.15.1) and npm
+ 
+ * repository_configuration.yml
+  * This playbook is used to clone the checkbox repository.
+  * Initiates a bare git repository
+  * Creates post-receive web hook to trigger jenkins build on git push.
+  
 ### Screencast:
 
 
