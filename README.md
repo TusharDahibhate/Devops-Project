@@ -113,5 +113,5 @@ If we make changes in any of the repository files and push it to the deploy remo
 ### Screencast:
 
 ### References:
-https://www.tecmint.com/install-mongodb-on-ubuntu-18-04/
-https://www.nginx.com/blog/setting-up-nginx/
+  * https://www.tecmint.com/install-mongodb-on-ubuntu-18-04/
+  * https://www.nginx.com/blog/setting-up-nginx/
