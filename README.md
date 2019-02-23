@@ -79,19 +79,27 @@ itrust_env contains 3 playbooks:
     * Configures Jenkins with database and email credentials. 
 
 ## Setting up checkbox.io
+
+![alt checkbox image](https://github.ncsu.edu/asaxena5/Devops-Project1/blob/master/imgs/checkbox_job.jpg)
+
+![alt nodejs image](https://github.ncsu.edu/asaxena5/Devops-Project1/blob/master/imgs/checkbox_webserv.jpg)
+
+We have mirrored the checkbox repository in a private repository at: https://github.ncsu.edu/asaxena5/checkbox.io-private
+The repository contains the Jenkinsfile and the mocha test suite.
+
 For the role of setting up checkbox, we have 5 playbooks that are being called from the main.yml playbook viz. bash_config.yml, mongo_install.yml, nginx_install.yml, node_install.yml, repository_configuration.yml. The functions of each are:
 
  * bash_config.yml
-   * This is used to setup the following environment variable required to run checkbox.
+   * This is used to setup the following environment variables required to run checkbox: MAIL_SMTP, MAIL_PASSWORD, MAIL_USER, APP_PORT, MONGO_IP, MONGO_USER, MONGO_PASSWORD
  
  * mongo_install.yml
-    * Installs mongodb and creates a new user in the database.
+    * Installs mongodb and creates a new user in the database with "root" role.
   
  * nginx_install.yml
-    * Installs nginx and copy nginx configuration and default configuration to setup proxy for web port 80.
+    * Installs nginx and copies nginx configuration and default configuration to setup proxy for web port 80 and upstream for port 3002.
   
  * node_install.yml
-    * Installs node.js (version: 10.15.1) and npm
+    * Installs node.js (version: 10.15.1) and npm (version: 6.4.1)
  
  * repository_configuration.yml
     * This playbook is used to clone the checkbox repository.
