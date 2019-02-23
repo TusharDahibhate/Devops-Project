@@ -41,10 +41,33 @@ Jenkins is a tool which is used to set up a continuous integration or a continuo
     * Setting up bare repository and post receive hooks for checkbox.io and iTrust so that a build job will be triggered whenever a push is made to the repositories.
     * Creating build jobs for checkbox.io and iTrust
 
-#### Challenges faced:
-
 
 ## Setting up iTrust
+
+#### Steps
+We have created 2 roles for setting up iTrust environment and build jobs:
+  * mysql
+  * itrust_env
+  
+#### mysql
+- This role basically installs and configures mysql on the jenkins server. 
+
+#### itrust_env
+itrust_env contains 3 playbooks:
+  * setup.yml
+    * Installs google chrome.
+    * Sets timezone to America/New_York
+    * Configures git email, username, ssh key.
+    
+ * git_tasks.yml
+    * This playbook clones the source repository from GitHub.
+    * Creates a bare repository which serves as the remote for the cloned repository.
+    * Congigures git push options.
+    * Copies the post receive hook to the bare repository.     
+ 
+ * jenkins_tasks.yml
+    * Copies the Jenkinsfile, db.properties, email.properties to the cloned repo.
+    * Configures Jenkins with database and email credentials. 
 
 ## Setting up checkbox.io
 
