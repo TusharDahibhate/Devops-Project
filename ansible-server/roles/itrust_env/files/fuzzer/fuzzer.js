@@ -1,7 +1,6 @@
 var fs = require('fs');
 var Random = require('random-js');
 var randomizer = new Random(Random.engines.mt19937().autoSeed());
-var walk = require('walk');
 var path = require('path');
 
 //------------------------------------------------------------------------------------------------------------------
@@ -27,10 +26,13 @@ function fuzz(file) {
 
     for (var i = 0; i < y.length; i++) {
 
-        var st = y[i].match(/\"[a-zA-Z0-9]*\"/i);
-
+        if(y[i].match(/(.*\@.*)/i)){
+            continue;
+        }
+        var st = y[i].match(/\=\s*\"[a-zA-Z0-9]*\"/i);
+        
         if (st != undefined) {
-
+            console.log(st);
             if (randomizer.bool(0.15)) {
                 // Reverse the string
                 y[i] = y[i].replace(st[0], st[0].split('').reverse().join(''));
@@ -100,8 +102,7 @@ function write(fileName, fileContent) {
     fs.writeFile(fileName, fileContent, function (err) {
         if (err) {
             return console.log(err);
-        }
-        console.log("The file was saved!");
+        }        
     });
 }
 //------------------------------------------------------------------------------------------------------------------
@@ -123,13 +124,12 @@ function traverseDir(dir, result) {
 //------------------------------------------------------------------------------------------------------------------
 function main() {
 
-    var dir = "/home/tushar/Desktop/Devops-Project1/jenkins-server/iTrust2-v4/iTrust2/src/main/java/edu/";
+    var dir = "/home/tushar/Desktop/Fuzzer/edu/";
     var files = [];
 
-    files =  traverseDir(dir, files);
-    console.log(files);
+    files = traverseDir(dir, files);
 
-    for(var i = 0; i < files.length; i++){
+    for (var i = 0; i < files.length; i++) {
         var content = fuzz(files[i]);
         write(files[i], content);
     }
