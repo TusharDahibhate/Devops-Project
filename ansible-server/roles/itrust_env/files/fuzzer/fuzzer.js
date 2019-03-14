@@ -128,6 +128,11 @@ function main() {
 
     files =  traverseDir(dir, files);
     console.log(files);
+
+    for(var i = 0; i < files.length; i++){
+        var content = fuzz(files[i]);
+        write(files[i], content);
+    }
 }
 //------------------------------------------------------------------------------------------------------------------
 main()
