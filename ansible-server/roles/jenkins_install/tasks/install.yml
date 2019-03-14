@@ -37,9 +37,10 @@
        - git
        - oracle-java8-installer
        - python-dev
-       - python-jenkins
        - jenkins
        - python-lxml
+       - python3-pip
+       - python-pip
        - maven
      state: present
     become: true

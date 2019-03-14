@@ -3,11 +3,15 @@
     set_fact:
       ansible_python_interpreter: '/usr/bin/python'
     become: true
+  
+  - name: Install python-jenkins for jobs
+    pip:
+      name: python-jenkins
 
   - name: Create a jenkins job for checkbox using basic authentication
     jenkins_job:
       config: "{{ lookup('file', 'templates/pipelineJob.xml') }}"
-      name: "{{checkbox_job_name}}"
+      name: checkbox
       password: "{{jenkins_password}}"
       url: http://localhost:8081
       user: "{{jenkins_user}}"

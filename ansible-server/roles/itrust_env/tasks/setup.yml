@@ -12,10 +12,10 @@
       filename: google-chrome
     become: true
     
-  - name: Install and google chrome
+  - name: Install google chrome
     apt:
       pkg:
-        - google-chrome-stable
+        - google-chrome-unstable
       state: present
     become: yes
   

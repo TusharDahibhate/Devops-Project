@@ -8,17 +8,19 @@
     copy:
       src: files/db.properties
       dest: "{{repo_path}}iTrust2/src/main/java/db.properties"
+      mode: 0755
 
   - name: Copy email properties file for Jenkins use
     copy:
       src: files/email.properties
       dest: "{{repo_path}}iTrust2/src/main/java/email.properties"  
+      mode: 0755
   
   - name: Copy credentials upload script to jenkins server 
     copy:
       src: templates/copy_creds_to_jenkins.sh
       dest: /jenkins-server/copy_creds_to_jenkins.sh
+      mode: 0755
     
   - name: Upolad db.properties to Jenkins credentials
-    command: "/jenkins-server/copy_creds_to_jenkins.sh {{jenkins_user}} {{jenkins_password}}"
-
+    command: /bin/sh /jenkins-server/copy_creds_to_jenkins.sh {{jenkins_user}} {{jenkins_password}}

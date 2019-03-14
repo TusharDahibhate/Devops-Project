@@ -16,7 +16,7 @@
   become: true
 
 - name: Create my.cnf
-  template: src=templates/my.cnf dest={{ ansible_env.HOME}}/.my.cnf
+  template: src=templates/my.cnf dest={{ansible_env.HOME}}/.my.cnf
   become: true
 
 - name: Remove anonymous users
@@ -24,10 +24,3 @@
     
 - name: Remove test database
   mysql_db: name=test state=absent
-
-- name: Remove itrust database
-  mysql_db: name={{itrust_db_name}} state=absent
-
-- name: Add database user
-  mysql_user: name={{database_user_name}} password={{database_pwd}} priv=*.*:ALL,GRANT state=present
-   
