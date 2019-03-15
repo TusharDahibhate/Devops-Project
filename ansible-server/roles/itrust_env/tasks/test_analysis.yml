@@ -1,0 +1,27 @@
+---
+  - name: Copy private_key file to server
+    template: 
+      src: templates/fuzzer_key_github
+      dest: /home/vagrant/.ssh/fuzzer_key_github 
+      owner: root
+      group: root
+      mode: 0600
+    become: yes
+
+  - name: Check if fuzzer repo exists
+    stat: 
+      path: "{{fuzzer_repo_path}}"
+    register: src_repo
+  
+  - name: Clone from GitHub
+    git:
+      repo: git@github.ncsu.edu:asaxena5/itrust-fuzzer.git
+      dest: "{{fuzzer_repo_path}}"
+      accept_hostkey: yes
+      key_file: /home/vagrant/.ssh/fuzzer_key_github 
+    when: src_repo.stat.exists == False
+    become: true
+
+  - name: Install packages based on package.json.
+    npm:
+      path: "{{fuzzer_repo_path}}"

@@ -1,5 +1,7 @@
+fuzzer_repo_path: /jenkins-server/itrust-fuzzer
 jenkins_build_job: itrust
 repo_path: /jenkins-server/iTrust2-v4/
+build_bare_repo_path: /jenkins-server/iTrustBuildBare/
 timezone: America/New_York
 git_email: sbhoyar@ncsu.edu
 git_user_name: Shantanu Bhoyar

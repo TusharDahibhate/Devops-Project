@@ -24,7 +24,7 @@
     become: true
     
   - name: Create bare repository for hook
-    command: git init --bare "{{repo_path}}build/jenkins.git/"
+    command: git init --bare "{{build_bare_repo_path}}jenkins.git/"
     become: true
     when: src_repo.stat.exists == False
 
@@ -33,13 +33,13 @@
       name: receive.advertisePushOptions
       value: true
       scope: local
-      repo: "{{repo_path}}build/jenkins.git/"
+      repo: "{{build_bare_repo_path}}jenkins.git/"
     become: true
 
   - name: Add jenkins remote url
     git_config:
       name: remote.jenkins.url
-      value: build/jenkins.git/
+      value: "{{build_bare_repo_path}}jenkins.git/"
       scope: local
       repo: "{{repo_path}}"
   
@@ -53,6 +53,6 @@
   - name: Copy post receive hook to jenkins
     copy:
       src: templates/post-receive
-      dest: "{{repo_path}}build/jenkins.git/hooks/"
+      dest: "{{build_bare_repo_path}}jenkins.git/hooks/"
       mode: 0755
 
