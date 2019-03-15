@@ -1,6 +1,7 @@
 var fs = require('fs');
 var Random = require('random-js');
 var randomizer = new Random(Random.engines.mt19937().autoSeed());
+var walk = require('walk');
 var path = require('path');
 
 //------------------------------------------------------------------------------------------------------------------
@@ -31,8 +32,7 @@ function fuzz(file) {
         }
         var st = y[i].match(/\=\s*\"[a-zA-Z0-9]*\"/i);
         
-        if (st != undefined) {
-            console.log(st);
+        if (st != undefined) {            
             if (randomizer.bool(0.15)) {
                 // Reverse the string
                 y[i] = y[i].replace(st[0], st[0].split('').reverse().join(''));
@@ -49,8 +49,7 @@ function fuzz(file) {
                 var a = randomizer.integer(0, st[0].length)
                 var b = randomizer.integer(0, st[0].length)
                 var new_string = st[0].split('').splice(1, st[0].length - 2);
-                new_string = new_string.splice(a, b).join("");
-                console.log(new_string)
+                new_string = new_string.splice(a, b).join("");                
                 y[i] = y[i].replace(st[0], "\"" + new_string + "\"");
 
             }
@@ -61,6 +60,21 @@ function fuzz(file) {
             }
 
         }
+
+        //var num = y[i].match(/\=\s*([0-9])*$/);
+        //var num = y[i].match(/\=\s*([0-9])*$/);
+        var num = y[i].match(/(<{1}=?|>{1}=?)\s*([0-9]+)/);
+        
+        if(num != undefined){
+            
+            var actual_number = num[2];
+            var new_number = randomizer.integer(0, 100);
+
+            if (randomizer.bool(0.80)) {                
+                y[i] = y[i].replace(actual_number, new_number);                
+            }            
+        }
+        
         if (randomizer.bool(0.20)) {
             if (isIteratorCondition(y[i])) {
                 y[i] = y[i].replace("<=", ">=");
@@ -88,6 +102,16 @@ function fuzz(file) {
         } else if (randomizer.bool(0.80)) {
             if (isIteratorCondition(y[i])) {
                 y[i] = y[i].replace("!=", "==");
+            }
+        }
+
+        if (randomizer.bool(0.20)) {
+            if (isIteratorCondition(y[i])) {
+                y[i] = y[i].replace("&&", "||");
+            }
+        } else if (randomizer.bool(0.80)) {
+            if (isIteratorCondition(y[i])) {
+                y[i] = y[i].replace("||", "&&");
             }
         }
 
