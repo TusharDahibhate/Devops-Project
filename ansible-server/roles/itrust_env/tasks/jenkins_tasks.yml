@@ -22,5 +22,5 @@
       dest: /jenkins-server/copy_creds_to_jenkins.sh
       mode: 0755
     
-  - name: Upolad db.properties to Jenkins credentials
+  - name: Upload Jenkins credentials
     command: /bin/sh /jenkins-server/copy_creds_to_jenkins.sh {{jenkins_user}} {{jenkins_password}}

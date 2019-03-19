@@ -54,6 +54,7 @@
       - maven-plugin
       - git
       - github
+      - jacoco
       - nodeJS
       - pipeline-npm-integration
       - workflow-job
@@ -64,6 +65,12 @@
     until: plugin_result is success
     retries: 3
     delay: 2
+  
+  - name: adding existing user jenkins to group sudo
+    user:
+      name: jenkins
+      groups: sudo, vagrant
+      append: yes
 
   - name : Restart Jenkins service
     service: 
