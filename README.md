@@ -28,7 +28,7 @@
 # Tasks
 1. Coverage/Jenkins Support
 
-![alt jacoco image](https://github.ncsu.edu/asaxena5/Devops-Project1/blob/master/imgs/jacoco.jpeg)
+![alt jacoco image](https://github.ncsu.edu/asaxena5/Devops-Project1/blob/ta_milestone/imgs/jacoco.jpeg)
 
 
 
