@@ -59,10 +59,6 @@
       dest: "{{test_bare_repo_path}}jenkins.git/hooks/"
       mode: 0755
 
-  - file:
-      path: "{{fuzzer_repo_path}}js/task_runner.js"
-      mode: 0655
-
   - name: Trigger the fuzzer
     command: npm start &
     args:

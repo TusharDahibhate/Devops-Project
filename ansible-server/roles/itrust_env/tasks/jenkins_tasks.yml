@@ -1,9 +1,4 @@
----
-  - name: Copy Jenkinsfile for Jenkins use
-    copy:
-      src: files/Jenkinsfile
-      dest: "{{repo_path}}iTrust2/Jenkinsfile"
-      
+---   
   - name: Copy db properties file for Jenkins use
     copy:
       src: files/db.properties
