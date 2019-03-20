@@ -55,6 +55,7 @@
       - git
       - github
       - jacoco
+      - checkstyle
       - nodeJS
       - pipeline-npm-integration
       - workflow-job
