@@ -1,0 +1,2620 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<result plugin="junit@1.27">
+  <suites>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest</name>
+      <duration>0.716</duration>
+      <time>0.716</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.233</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest</className>
+          <testName>testCreateBadAppointmentRequest</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.465</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest</className>
+          <testName>testAppointmentRequestAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.009</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest</className>
+          <testName>testDeleteNonExistentAppointment</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.004</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest</className>
+          <testName>testGetNonExistentAppointment</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIDiagnosisTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIDiagnosisTest</name>
+      <duration>1.472</duration>
+      <time>1.472</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>1.469</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIDiagnosisTest</className>
+          <testName>testDiagnoses</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIDrugTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIDrugTest</name>
+      <duration>0.036</duration>
+      <time>0.036</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.029</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIDrugTest</className>
+          <testName>testDrugAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;409&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIDrugTest.testDrugAPI(APIDrugTest.java:82)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;409&gt;</errorDetails>
+          <stdout>22:29:58.810 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+22:29:58.811 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3b7da2de, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5c6190fa, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@77ff4ed0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@26d938ea, org.springframework.test.context.transaction.TransactionalTestExecutionListener@70e405bd, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@20d2ad1b, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@2d56fe1f]
+22:29:58.815 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:29:58.815 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:29:58.816 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>7</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest</name>
+      <duration>40.801</duration>
+      <time>40.801</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>10.322</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest</className>
+          <testName>testGetNonExistentPatientRecord</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest.testGetNonExistentPatientRecord(APIEmergencyRecordFormTest.java:73)
+Caused by: java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest.testGetNonExistentPatientRecord(APIEmergencyRecordFormTest.java:73)
+</errorStackTrace>
+          <errorDetails>Request processing failed; nested exception is java.lang.NullPointerException</errorDetails>
+          <stdout>22:29:17.807 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+22:29:17.810 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7116de2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3a67a02c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@33f5732c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7c74f567, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7086f976, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7767418a, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@6f133059]
+22:29:17.851 [main] WARN  org.hibernate.orm.connections - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+22:29:17.861 [main] INFO  org.hibernate.orm.connections - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/iTrust2?createDatabaseIfNotExist=true&amp;useSSL=false&amp;serverTimezone=EST&amp;allowPublicKeyRetrieval=true]
+22:29:17.861 [main] INFO  org.hibernate.orm.connections - HHH10001001: Connection properties: {user=root, password=****}
+22:29:17.861 [main] INFO  org.hibernate.orm.connections - HHH10001003: Autocommit mode: false
+22:29:17.861 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 100 (min=1)
+22:29:17.866 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+22:29:17.922 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+drop table if exists AppointmentRequests
+drop table if exists BasicHealthMetrics
+drop table if exists Diagnoses
+drop table if exists Drugs
+drop table if exists FoodDiaryEntry
+drop table if exists GeneralCheckups
+drop table if exists GeneralOphthalmology
+drop table if exists hibernate_sequence
+drop table if exists Hospitals
+drop table if exists ICDCodes
+drop table if exists LabProcedures
+drop table if exists LogEntries
+drop table if exists LoginAttempts
+drop table if exists LoginBans
+drop table if exists LoginLockouts
+drop table if exists LOINCCodes
+drop table if exists OphthalmologySurgery
+drop table if exists PasswordResetTokens
+drop table if exists Patients
+drop table if exists PERSONAL_REPRESENTATIVES
+drop table if exists Personnel
+drop table if exists Prescriptions
+drop table if exists Users
+22:29:19.646 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+22:29:19.646 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+22:29:19.652 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+22:29:19.652 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.AppointmentRequests&apos; doesn&apos;t exist
+alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+22:29:19.653 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+22:29:19.655 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.AppointmentRequests&apos; doesn&apos;t exist
+alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+22:29:19.656 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+22:29:19.656 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.BasicHealthMetrics&apos; doesn&apos;t exist
+alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+22:29:19.657 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+22:29:19.657 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.BasicHealthMetrics&apos; doesn&apos;t exist
+alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+22:29:19.658 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+22:29:19.658 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Diagnoses&apos; doesn&apos;t exist
+alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+22:29:19.659 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+22:29:19.667 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Diagnoses&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+22:29:19.668 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+22:29:19.668 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+22:29:19.669 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+22:29:19.669 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+22:29:19.670 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+22:29:19.670 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+22:29:19.671 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+22:29:19.671 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+22:29:19.672 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+22:29:19.674 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+22:29:19.678 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+22:29:19.681 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+22:29:19.684 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+22:29:19.684 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+22:29:19.685 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+22:29:19.685 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+22:29:19.686 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+22:29:19.686 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+22:29:19.687 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+22:29:19.690 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+22:29:19.691 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+22:29:19.691 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LabProcedures&apos; doesn&apos;t exist
+alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+22:29:19.692 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+22:29:19.697 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LabProcedures&apos; doesn&apos;t exist
+alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+22:29:19.700 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+22:29:19.700 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LabProcedures&apos; doesn&apos;t exist
+alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+22:29:19.701 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+22:29:19.701 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LabProcedures&apos; doesn&apos;t exist
+alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+22:29:19.702 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+22:29:19.705 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LoginAttempts&apos; doesn&apos;t exist
+alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+22:29:19.711 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+22:29:19.711 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LoginBans&apos; doesn&apos;t exist
+alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+22:29:19.712 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+22:29:19.712 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LoginLockouts&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+22:29:19.713 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+22:29:19.713 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+22:29:19.714 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+22:29:19.714 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+22:29:19.715 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+22:29:19.715 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+22:29:19.716 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+22:29:19.716 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+22:29:19.717 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+22:29:19.717 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+22:29:19.718 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+22:29:19.718 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.PasswordResetTokens&apos; doesn&apos;t exist
+alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+22:29:19.719 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+22:29:19.719 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Patients&apos; doesn&apos;t exist
+alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+22:29:19.719 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+22:29:19.720 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Patients&apos; doesn&apos;t exist
+alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+22:29:19.720 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+22:29:19.721 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Patients&apos; doesn&apos;t exist
+alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+22:29:19.732 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+22:29:19.732 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.PERSONAL_REPRESENTATIVES&apos; doesn&apos;t exist
+alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+22:29:19.733 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+22:29:19.733 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.PERSONAL_REPRESENTATIVES&apos; doesn&apos;t exist
+alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+22:29:19.734 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+22:29:19.734 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Personnel&apos; doesn&apos;t exist
+alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+22:29:19.735 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+22:29:19.735 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Prescriptions&apos; doesn&apos;t exist
+alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+22:29:19.738 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+22:29:19.738 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Prescriptions&apos; doesn&apos;t exist
+alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+22:29:19.739 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+22:29:19.739 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Prescriptions&apos; doesn&apos;t exist
+drop table if exists AppointmentRequests
+drop table if exists BasicHealthMetrics
+drop table if exists Diagnoses
+drop table if exists Drugs
+drop table if exists FoodDiaryEntry
+drop table if exists GeneralCheckups
+drop table if exists GeneralOphthalmology
+drop table if exists hibernate_sequence
+drop table if exists Hospitals
+drop table if exists ICDCodes
+drop table if exists LabProcedures
+drop table if exists LogEntries
+drop table if exists LoginAttempts
+drop table if exists LoginBans
+drop table if exists LoginLockouts
+drop table if exists LOINCCodes
+drop table if exists OphthalmologySurgery
+drop table if exists PasswordResetTokens
+drop table if exists Patients
+drop table if exists PERSONAL_REPRESENTATIVES
+drop table if exists Personnel
+drop table if exists Prescriptions
+drop table if exists Users
+create table AppointmentRequests (id bigint not null, comments varchar(255), date datetime, status varchar(255), type varchar(255), hcp_id varchar(100), patient_id varchar(100), primary key (id))
+create table BasicHealthMetrics (id bigint not null, diastolic integer, hdl integer, headCircumference float, height float, houseSmokingStatus integer, ldl integer, patientSmokingStatus integer, systolic integer, tri integer, weight float, hcp_id varchar(100), patient_id varchar(100), primary key (id))
+create table Diagnoses (id bigint not null, note varchar(255), code_id bigint, visit_id bigint not null, primary key (id))
+create table Drugs (id bigint not null, code varchar(255), description varchar(255), name varchar(255), primary key (id))
+create table FoodDiaryEntry (id bigint not null, calories integer, carbs integer, date datetime, fat integer, fiber integer, food varchar(255), mealType varchar(255), patient varchar(255), protein integer, servings integer, sodium integer, sugars integer, primary key (id))
+create table GeneralCheckups (id bigint not null, date datetime, notes varchar(255), type varchar(255), appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table GeneralOphthalmology (id bigint not null, date datetime, notes varchar(255), type varchar(255), axisOD integer, axisOS integer, cylinderOD double precision, cylinderOS double precision, sphereOD double precision, sphereOS double precision, visualAcuityOD integer, visualAcuityOS integer, diagnosis varchar(255), appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table hibernate_sequence (next_val bigint)
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+create table Hospitals (name varchar(255) not null, address varchar(255), state varchar(255), zip varchar(255), primary key (name))
+create table ICDCodes (id bigint not null, code varchar(255), description varchar(255), primary key (id))
+create table LabProcedures (id bigint not null, comments varchar(255), priority varchar(255), status varchar(255), labtech varchar(100), LOINC_code bigint, patient varchar(100), visit bigint not null, primary key (id))
+create table LogEntries (id bigint not null, logCode integer, message varchar(255), primaryUser varchar(255), secondaryUser varchar(255), time datetime, primary key (id))
+create table LoginAttempts (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LoginBans (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LoginLockouts (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LOINCCodes (id bigint not null, code varchar(255), commonName varchar(255), component varchar(255), property varchar(255), primary key (id))
+create table OphthalmologySurgery (id bigint not null, date datetime, notes varchar(255), type varchar(255), axisOD integer, axisOS integer, cylinderOD double precision, cylinderOS double precision, sphereOD double precision, sphereOS double precision, visualAcuityOD integer, visualAcuityOS integer, surgeryType integer, appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table PasswordResetTokens (id bigint not null, creationTime bigint not null, tempPassword varchar(255), user_id varchar(100), primary key (id))
+create table Patients (address1 varchar(255), address2 varchar(255), bloodType varchar(255), causeOfDeath varchar(255), city varchar(255), dateOfBirth datetime, dateOfDeath datetime, email varchar(255), ethnicity varchar(255), firstName varchar(255), gender varchar(255), id bigint, lastName varchar(255), phone varchar(255), preferredName varchar(255), state varchar(255), zip varchar(255), self_id varchar(100) not null, father_id varchar(100), mother_id varchar(100), primary key (self_id))
+create table PERSONAL_REPRESENTATIVES (patient_id varchar(100) not null, representative_id varchar(100) not null, primary key (patient_id, representative_id))
+create table Personnel (id bigint not null, address1 varchar(255), address2 varchar(255), city varchar(255), email varchar(255), enabled bit not null, firstName varchar(255), lastName varchar(255), phone varchar(255), specialty varchar(255), state varchar(255), zip varchar(255), self_id varchar(100), primary key (id))
+create table Prescriptions (id bigint not null, dosage integer not null, endDate datetime, renewals integer not null, startDate datetime, drug_id bigint, patient_id varchar(100), prescriptions_id bigint, primary key (id))
+create table Users (username varchar(255) not null, enabled integer, password varchar(255), role varchar(255), primary key (username))
+alter table AppointmentRequests add constraint FKlpa5tri2ufo8t7bt7nusa1pss foreign key (hcp_id) references Users (username)
+alter table AppointmentRequests add constraint FKo65c0ooyqou8d1x56y37u1nau foreign key (patient_id) references Users (username)
+alter table BasicHealthMetrics add constraint FKd9uamofafbqloq2v2j2o4f0pg foreign key (hcp_id) references Users (username)
+alter table BasicHealthMetrics add constraint FKj6od5nqw6nvjgmpuilsfj3ad foreign key (patient_id) references Users (username)
+alter table Diagnoses add constraint FKthsk14tdxoeeadlpvkot8fdhb foreign key (code_id) references ICDCodes (id)
+alter table Diagnoses add constraint FKjm5cnpdmv6x9iajrypt72lguy foreign key (visit_id) references GeneralCheckups (id)
+alter table GeneralCheckups add constraint FKtgti6uflcm2q9uvfx4obmpwv4 foreign key (appointment_id) references AppointmentRequests (id)
+alter table GeneralCheckups add constraint FKqtpf2nfiuf47019rc8gnaeb6v foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table GeneralCheckups add constraint FKplofss0lwup9mbnu0abrtalxx foreign key (hcp_id) references Users (username)
+alter table GeneralCheckups add constraint FK9tghbxo0xq6bba8p1rp7rbecg foreign key (hospital_id) references Hospitals (name)
+alter table GeneralCheckups add constraint FK5fa5nrrfo22p8q5xiptgh83x5 foreign key (patient_id) references Users (username)
+alter table GeneralOphthalmology add constraint FKtcx79uvv1o4wrp9xqdk3hcap2 foreign key (appointment_id) references AppointmentRequests (id)
+alter table GeneralOphthalmology add constraint FK6svu0my7r662s5sn2d7cgf1jq foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table GeneralOphthalmology add constraint FKfeh4gtxe0s4kr52i7u5i8tkum foreign key (hcp_id) references Users (username)
+alter table GeneralOphthalmology add constraint FKc5kn71vr8tbt5ty5cc7pfrbgf foreign key (hospital_id) references Hospitals (name)
+alter table GeneralOphthalmology add constraint FKr2whnupl6f7k12gx78f5lhdx9 foreign key (patient_id) references Users (username)
+alter table LabProcedures add constraint FKn8ctd2oj7knwaxxfakrmwybj6 foreign key (labtech) references Users (username)
+alter table LabProcedures add constraint FKq97sa9kb1vkse9jbn0s38drei foreign key (LOINC_code) references LOINCCodes (id)
+alter table LabProcedures add constraint FKd9netwr78cspphyqtctsdy9cl foreign key (patient) references Users (username)
+alter table LabProcedures add constraint FKf1qdex4yna7yac0e29xylgqt7 foreign key (visit) references GeneralCheckups (id)
+alter table LoginAttempts add constraint FK6me6sh9op6gntvqnqqqiev95q foreign key (user_id) references Users (username)
+alter table LoginBans add constraint FKpmi5daj2jt8w5gq9maxjpro1f foreign key (user_id) references Users (username)
+alter table LoginLockouts add constraint FKhndsii960xs59bv7a7x5669ii foreign key (user_id) references Users (username)
+alter table OphthalmologySurgery add constraint FK2ab5y8krlqw4407jo9je2rodh foreign key (appointment_id) references AppointmentRequests (id)
+alter table OphthalmologySurgery add constraint FK64ijwgpf2cbt4t6vcwyj0vy77 foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table OphthalmologySurgery add constraint FK43k7w4nn8hxf36s3xonve9l5v foreign key (hcp_id) references Users (username)
+alter table OphthalmologySurgery add constraint FKg3nwmi2eh9lxpys9gom75nsvx foreign key (hospital_id) references Hospitals (name)
+alter table OphthalmologySurgery add constraint FK526jd5m6bguykj27g8jbl2idt foreign key (patient_id) references Users (username)
+alter table PasswordResetTokens add constraint FKdtqvlc6is6k5ibp1xc1nshrc8 foreign key (user_id) references Users (username)
+alter table Patients add constraint FKe0d1x2xac4nte49udxrwdiew5 foreign key (self_id) references Users (username)
+alter table Patients add constraint FK8s22h2pw102ce5ytcmqmhegp3 foreign key (father_id) references Users (username)
+alter table Patients add constraint FK3aemk5yjohgj9y6j4lq57g4o5 foreign key (mother_id) references Users (username)
+alter table PERSONAL_REPRESENTATIVES add constraint FK4xcw5y8obck13wkbeja8cxy6d foreign key (representative_id) references Patients (self_id)
+alter table PERSONAL_REPRESENTATIVES add constraint FKthu0xxghbfmojk34tnmg17qxd foreign key (patient_id) references Patients (self_id)
+alter table Personnel add constraint FKa9l63705rm5c4tf50y9h9x8rp foreign key (self_id) references Users (username)
+alter table Prescriptions add constraint FKrr7q2rw34mv2h8p24dwo2sw39 foreign key (drug_id) references Drugs (id)
+alter table Prescriptions add constraint FK11c0dywqeqm53244c088xriq0 foreign key (patient_id) references Users (username)
+alter table Prescriptions add constraint FKkhctha3d1ti34dbaplmn8tsyk foreign key (prescriptions_id) references GeneralCheckups (id)
+22:29:27.882 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+22:29:28.116 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:29:28.116 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:29:28.117 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 0 ms
+</stdout>
+          <failedSince>7</failedSince>
+        </case>
+        <case>
+          <duration>10.808</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest</className>
+          <testName>testEmergencyRecordFormHCPAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest.testEmergencyRecordFormHCPAPI(APIEmergencyRecordFormTest.java:84)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;404&gt;</errorDetails>
+          <stdout>22:29:28.184 [main] WARN  org.hibernate.orm.connections - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+22:29:28.191 [main] INFO  org.hibernate.orm.connections - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/iTrust2?createDatabaseIfNotExist=true&amp;useSSL=false&amp;serverTimezone=EST&amp;allowPublicKeyRetrieval=true]
+22:29:28.191 [main] INFO  org.hibernate.orm.connections - HHH10001001: Connection properties: {user=root, password=****}
+22:29:28.191 [main] INFO  org.hibernate.orm.connections - HHH10001003: Autocommit mode: false
+22:29:28.191 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 100 (min=1)
+22:29:28.193 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+22:29:28.243 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+drop table if exists AppointmentRequests
+drop table if exists BasicHealthMetrics
+drop table if exists Diagnoses
+drop table if exists Drugs
+drop table if exists FoodDiaryEntry
+drop table if exists GeneralCheckups
+drop table if exists GeneralOphthalmology
+drop table if exists hibernate_sequence
+drop table if exists Hospitals
+drop table if exists ICDCodes
+drop table if exists LabProcedures
+drop table if exists LogEntries
+drop table if exists LoginAttempts
+drop table if exists LoginBans
+drop table if exists LoginLockouts
+drop table if exists LOINCCodes
+drop table if exists OphthalmologySurgery
+drop table if exists PasswordResetTokens
+drop table if exists Patients
+drop table if exists PERSONAL_REPRESENTATIVES
+drop table if exists Personnel
+drop table if exists Prescriptions
+drop table if exists Users
+22:29:29.916 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+22:29:29.916 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+22:29:29.918 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+22:29:29.918 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.AppointmentRequests&apos; doesn&apos;t exist
+alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+22:29:29.919 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+22:29:29.919 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.AppointmentRequests&apos; doesn&apos;t exist
+alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+22:29:29.920 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+22:29:29.920 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.BasicHealthMetrics&apos; doesn&apos;t exist
+alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+22:29:29.934 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+22:29:29.934 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.BasicHealthMetrics&apos; doesn&apos;t exist
+alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+22:29:29.935 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+22:29:29.935 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Diagnoses&apos; doesn&apos;t exist
+alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+22:29:29.936 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+22:29:29.936 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Diagnoses&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+22:29:29.937 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+22:29:29.937 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+22:29:29.938 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+22:29:29.938 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+22:29:29.939 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+22:29:29.939 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+22:29:29.940 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+22:29:29.940 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+22:29:29.942 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+22:29:29.943 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+22:29:29.943 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+22:29:29.944 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+22:29:29.945 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+22:29:29.945 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+22:29:29.948 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+22:29:29.948 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+22:29:29.949 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+22:29:29.949 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+22:29:29.950 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+22:29:29.950 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+22:29:29.951 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+22:29:29.951 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LabProcedures&apos; doesn&apos;t exist
+alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+22:29:29.952 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+22:29:29.952 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LabProcedures&apos; doesn&apos;t exist
+alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+22:29:29.953 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+22:29:29.953 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LabProcedures&apos; doesn&apos;t exist
+alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+22:29:29.953 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+22:29:29.954 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LabProcedures&apos; doesn&apos;t exist
+alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+22:29:29.955 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+22:29:29.959 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LoginAttempts&apos; doesn&apos;t exist
+alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+22:29:29.961 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+22:29:29.961 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LoginBans&apos; doesn&apos;t exist
+alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+22:29:29.962 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+22:29:29.962 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LoginLockouts&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+22:29:29.963 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+22:29:29.963 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+22:29:29.964 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+22:29:29.964 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+22:29:29.965 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+22:29:29.983 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+22:29:29.984 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+22:29:29.984 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+22:29:29.985 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+22:29:29.985 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+22:29:29.986 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+22:29:29.986 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.PasswordResetTokens&apos; doesn&apos;t exist
+alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+22:29:29.987 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+22:29:29.987 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Patients&apos; doesn&apos;t exist
+alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+22:29:29.988 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+22:29:29.988 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Patients&apos; doesn&apos;t exist
+alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+22:29:29.989 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+22:29:29.989 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Patients&apos; doesn&apos;t exist
+alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+22:29:29.990 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+22:29:29.990 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.PERSONAL_REPRESENTATIVES&apos; doesn&apos;t exist
+alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+22:29:29.990 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+22:29:29.991 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.PERSONAL_REPRESENTATIVES&apos; doesn&apos;t exist
+alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+22:29:29.991 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+22:29:29.992 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Personnel&apos; doesn&apos;t exist
+alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+22:29:29.992 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+22:29:29.992 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Prescriptions&apos; doesn&apos;t exist
+alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+22:29:29.993 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+22:29:29.993 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Prescriptions&apos; doesn&apos;t exist
+alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+22:29:29.994 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+22:29:29.994 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Prescriptions&apos; doesn&apos;t exist
+drop table if exists AppointmentRequests
+drop table if exists BasicHealthMetrics
+drop table if exists Diagnoses
+drop table if exists Drugs
+drop table if exists FoodDiaryEntry
+drop table if exists GeneralCheckups
+drop table if exists GeneralOphthalmology
+drop table if exists hibernate_sequence
+drop table if exists Hospitals
+drop table if exists ICDCodes
+drop table if exists LabProcedures
+drop table if exists LogEntries
+drop table if exists LoginAttempts
+drop table if exists LoginBans
+drop table if exists LoginLockouts
+drop table if exists LOINCCodes
+drop table if exists OphthalmologySurgery
+drop table if exists PasswordResetTokens
+drop table if exists Patients
+drop table if exists PERSONAL_REPRESENTATIVES
+drop table if exists Personnel
+drop table if exists Prescriptions
+drop table if exists Users
+create table AppointmentRequests (id bigint not null, comments varchar(255), date datetime, status varchar(255), type varchar(255), hcp_id varchar(100), patient_id varchar(100), primary key (id))
+create table BasicHealthMetrics (id bigint not null, diastolic integer, hdl integer, headCircumference float, height float, houseSmokingStatus integer, ldl integer, patientSmokingStatus integer, systolic integer, tri integer, weight float, hcp_id varchar(100), patient_id varchar(100), primary key (id))
+create table Diagnoses (id bigint not null, note varchar(255), code_id bigint, visit_id bigint not null, primary key (id))
+create table Drugs (id bigint not null, code varchar(255), description varchar(255), name varchar(255), primary key (id))
+create table FoodDiaryEntry (id bigint not null, calories integer, carbs integer, date datetime, fat integer, fiber integer, food varchar(255), mealType varchar(255), patient varchar(255), protein integer, servings integer, sodium integer, sugars integer, primary key (id))
+create table GeneralCheckups (id bigint not null, date datetime, notes varchar(255), type varchar(255), appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table GeneralOphthalmology (id bigint not null, date datetime, notes varchar(255), type varchar(255), axisOD integer, axisOS integer, cylinderOD double precision, cylinderOS double precision, sphereOD double precision, sphereOS double precision, visualAcuityOD integer, visualAcuityOS integer, diagnosis varchar(255), appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table hibernate_sequence (next_val bigint)
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+create table Hospitals (name varchar(255) not null, address varchar(255), state varchar(255), zip varchar(255), primary key (name))
+create table ICDCodes (id bigint not null, code varchar(255), description varchar(255), primary key (id))
+create table LabProcedures (id bigint not null, comments varchar(255), priority varchar(255), status varchar(255), labtech varchar(100), LOINC_code bigint, patient varchar(100), visit bigint not null, primary key (id))
+create table LogEntries (id bigint not null, logCode integer, message varchar(255), primaryUser varchar(255), secondaryUser varchar(255), time datetime, primary key (id))
+create table LoginAttempts (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LoginBans (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LoginLockouts (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LOINCCodes (id bigint not null, code varchar(255), commonName varchar(255), component varchar(255), property varchar(255), primary key (id))
+create table OphthalmologySurgery (id bigint not null, date datetime, notes varchar(255), type varchar(255), axisOD integer, axisOS integer, cylinderOD double precision, cylinderOS double precision, sphereOD double precision, sphereOS double precision, visualAcuityOD integer, visualAcuityOS integer, surgeryType integer, appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table PasswordResetTokens (id bigint not null, creationTime bigint not null, tempPassword varchar(255), user_id varchar(100), primary key (id))
+create table Patients (address1 varchar(255), address2 varchar(255), bloodType varchar(255), causeOfDeath varchar(255), city varchar(255), dateOfBirth datetime, dateOfDeath datetime, email varchar(255), ethnicity varchar(255), firstName varchar(255), gender varchar(255), id bigint, lastName varchar(255), phone varchar(255), preferredName varchar(255), state varchar(255), zip varchar(255), self_id varchar(100) not null, father_id varchar(100), mother_id varchar(100), primary key (self_id))
+create table PERSONAL_REPRESENTATIVES (patient_id varchar(100) not null, representative_id varchar(100) not null, primary key (patient_id, representative_id))
+create table Personnel (id bigint not null, address1 varchar(255), address2 varchar(255), city varchar(255), email varchar(255), enabled bit not null, firstName varchar(255), lastName varchar(255), phone varchar(255), specialty varchar(255), state varchar(255), zip varchar(255), self_id varchar(100), primary key (id))
+create table Prescriptions (id bigint not null, dosage integer not null, endDate datetime, renewals integer not null, startDate datetime, drug_id bigint, patient_id varchar(100), prescriptions_id bigint, primary key (id))
+create table Users (username varchar(255) not null, enabled integer, password varchar(255), role varchar(255), primary key (username))
+alter table AppointmentRequests add constraint FKlpa5tri2ufo8t7bt7nusa1pss foreign key (hcp_id) references Users (username)
+alter table AppointmentRequests add constraint FKo65c0ooyqou8d1x56y37u1nau foreign key (patient_id) references Users (username)
+alter table BasicHealthMetrics add constraint FKd9uamofafbqloq2v2j2o4f0pg foreign key (hcp_id) references Users (username)
+alter table BasicHealthMetrics add constraint FKj6od5nqw6nvjgmpuilsfj3ad foreign key (patient_id) references Users (username)
+alter table Diagnoses add constraint FKthsk14tdxoeeadlpvkot8fdhb foreign key (code_id) references ICDCodes (id)
+alter table Diagnoses add constraint FKjm5cnpdmv6x9iajrypt72lguy foreign key (visit_id) references GeneralCheckups (id)
+alter table GeneralCheckups add constraint FKtgti6uflcm2q9uvfx4obmpwv4 foreign key (appointment_id) references AppointmentRequests (id)
+alter table GeneralCheckups add constraint FKqtpf2nfiuf47019rc8gnaeb6v foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table GeneralCheckups add constraint FKplofss0lwup9mbnu0abrtalxx foreign key (hcp_id) references Users (username)
+alter table GeneralCheckups add constraint FK9tghbxo0xq6bba8p1rp7rbecg foreign key (hospital_id) references Hospitals (name)
+alter table GeneralCheckups add constraint FK5fa5nrrfo22p8q5xiptgh83x5 foreign key (patient_id) references Users (username)
+alter table GeneralOphthalmology add constraint FKtcx79uvv1o4wrp9xqdk3hcap2 foreign key (appointment_id) references AppointmentRequests (id)
+alter table GeneralOphthalmology add constraint FK6svu0my7r662s5sn2d7cgf1jq foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table GeneralOphthalmology add constraint FKfeh4gtxe0s4kr52i7u5i8tkum foreign key (hcp_id) references Users (username)
+alter table GeneralOphthalmology add constraint FKc5kn71vr8tbt5ty5cc7pfrbgf foreign key (hospital_id) references Hospitals (name)
+alter table GeneralOphthalmology add constraint FKr2whnupl6f7k12gx78f5lhdx9 foreign key (patient_id) references Users (username)
+alter table LabProcedures add constraint FKn8ctd2oj7knwaxxfakrmwybj6 foreign key (labtech) references Users (username)
+alter table LabProcedures add constraint FKq97sa9kb1vkse9jbn0s38drei foreign key (LOINC_code) references LOINCCodes (id)
+alter table LabProcedures add constraint FKd9netwr78cspphyqtctsdy9cl foreign key (patient) references Users (username)
+alter table LabProcedures add constraint FKf1qdex4yna7yac0e29xylgqt7 foreign key (visit) references GeneralCheckups (id)
+alter table LoginAttempts add constraint FK6me6sh9op6gntvqnqqqiev95q foreign key (user_id) references Users (username)
+alter table LoginBans add constraint FKpmi5daj2jt8w5gq9maxjpro1f foreign key (user_id) references Users (username)
+alter table LoginLockouts add constraint FKhndsii960xs59bv7a7x5669ii foreign key (user_id) references Users (username)
+alter table OphthalmologySurgery add constraint FK2ab5y8krlqw4407jo9je2rodh foreign key (appointment_id) references AppointmentRequests (id)
+alter table OphthalmologySurgery add constraint FK64ijwgpf2cbt4t6vcwyj0vy77 foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table OphthalmologySurgery add constraint FK43k7w4nn8hxf36s3xonve9l5v foreign key (hcp_id) references Users (username)
+alter table OphthalmologySurgery add constraint FKg3nwmi2eh9lxpys9gom75nsvx foreign key (hospital_id) references Hospitals (name)
+alter table OphthalmologySurgery add constraint FK526jd5m6bguykj27g8jbl2idt foreign key (patient_id) references Users (username)
+alter table PasswordResetTokens add constraint FKdtqvlc6is6k5ibp1xc1nshrc8 foreign key (user_id) references Users (username)
+alter table Patients add constraint FKe0d1x2xac4nte49udxrwdiew5 foreign key (self_id) references Users (username)
+alter table Patients add constraint FK8s22h2pw102ce5ytcmqmhegp3 foreign key (father_id) references Users (username)
+alter table Patients add constraint FK3aemk5yjohgj9y6j4lq57g4o5 foreign key (mother_id) references Users (username)
+alter table PERSONAL_REPRESENTATIVES add constraint FK4xcw5y8obck13wkbeja8cxy6d foreign key (representative_id) references Patients (self_id)
+alter table PERSONAL_REPRESENTATIVES add constraint FKthu0xxghbfmojk34tnmg17qxd foreign key (patient_id) references Patients (self_id)
+alter table Personnel add constraint FKa9l63705rm5c4tf50y9h9x8rp foreign key (self_id) references Users (username)
+alter table Prescriptions add constraint FKrr7q2rw34mv2h8p24dwo2sw39 foreign key (drug_id) references Drugs (id)
+alter table Prescriptions add constraint FK11c0dywqeqm53244c088xriq0 foreign key (patient_id) references Users (username)
+alter table Prescriptions add constraint FKkhctha3d1ti34dbaplmn8tsyk foreign key (prescriptions_id) references GeneralCheckups (id)
+22:29:37.934 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+22:29:38.910 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:29:38.910 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:29:38.926 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 16 ms
+</stdout>
+          <failedSince>7</failedSince>
+        </case>
+        <case>
+          <duration>9.639</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest</className>
+          <testName>testEmergencyRecordFormERAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest.testEmergencyRecordFormERAPI(APIEmergencyRecordFormTest.java:99)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;404&gt;</errorDetails>
+          <stdout>22:29:39.047 [main] WARN  org.hibernate.orm.connections - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+22:29:39.047 [main] INFO  org.hibernate.orm.connections - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/iTrust2?createDatabaseIfNotExist=true&amp;useSSL=false&amp;serverTimezone=EST&amp;allowPublicKeyRetrieval=true]
+22:29:39.047 [main] INFO  org.hibernate.orm.connections - HHH10001001: Connection properties: {user=root, password=****}
+22:29:39.047 [main] INFO  org.hibernate.orm.connections - HHH10001003: Autocommit mode: false
+22:29:39.047 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 100 (min=1)
+22:29:39.055 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+22:29:39.097 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+drop table if exists AppointmentRequests
+drop table if exists BasicHealthMetrics
+drop table if exists Diagnoses
+drop table if exists Drugs
+drop table if exists FoodDiaryEntry
+drop table if exists GeneralCheckups
+drop table if exists GeneralOphthalmology
+drop table if exists hibernate_sequence
+drop table if exists Hospitals
+drop table if exists ICDCodes
+drop table if exists LabProcedures
+drop table if exists LogEntries
+drop table if exists LoginAttempts
+drop table if exists LoginBans
+drop table if exists LoginLockouts
+drop table if exists LOINCCodes
+drop table if exists OphthalmologySurgery
+drop table if exists PasswordResetTokens
+drop table if exists Patients
+drop table if exists PERSONAL_REPRESENTATIVES
+drop table if exists Personnel
+drop table if exists Prescriptions
+drop table if exists Users
+22:29:40.599 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+22:29:40.599 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+22:29:40.601 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+22:29:40.601 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.AppointmentRequests&apos; doesn&apos;t exist
+alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+22:29:40.602 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+22:29:40.602 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.AppointmentRequests&apos; doesn&apos;t exist
+alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+22:29:40.619 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+22:29:40.619 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.BasicHealthMetrics&apos; doesn&apos;t exist
+alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+22:29:40.619 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+22:29:40.619 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.BasicHealthMetrics&apos; doesn&apos;t exist
+alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+22:29:40.620 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+22:29:40.620 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Diagnoses&apos; doesn&apos;t exist
+alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+22:29:40.620 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+22:29:40.621 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Diagnoses&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+22:29:40.622 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+22:29:40.622 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+22:29:40.623 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+22:29:40.623 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+22:29:40.623 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+22:29:40.623 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+22:29:40.624 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+22:29:40.624 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+22:29:40.625 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+22:29:40.625 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+22:29:40.626 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+22:29:40.627 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+22:29:40.628 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+22:29:40.628 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+22:29:40.628 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+22:29:40.629 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+22:29:40.629 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+22:29:40.629 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+22:29:40.629 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+22:29:40.632 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+22:29:40.632 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+22:29:40.632 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LabProcedures&apos; doesn&apos;t exist
+alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+22:29:40.633 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+22:29:40.633 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LabProcedures&apos; doesn&apos;t exist
+alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+22:29:40.633 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+22:29:40.633 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LabProcedures&apos; doesn&apos;t exist
+alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+22:29:40.634 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+22:29:40.634 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LabProcedures&apos; doesn&apos;t exist
+alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+22:29:40.634 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+22:29:40.638 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LoginAttempts&apos; doesn&apos;t exist
+alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+22:29:40.638 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+22:29:40.639 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LoginBans&apos; doesn&apos;t exist
+alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+22:29:40.640 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+22:29:40.640 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LoginLockouts&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+22:29:40.640 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+22:29:40.640 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+22:29:40.641 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+22:29:40.641 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+22:29:40.641 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+22:29:40.641 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+22:29:40.641 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+22:29:40.641 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+22:29:40.642 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+22:29:40.642 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+22:29:40.642 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+22:29:40.642 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.PasswordResetTokens&apos; doesn&apos;t exist
+alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+22:29:40.643 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+22:29:40.648 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Patients&apos; doesn&apos;t exist
+alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+22:29:40.648 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+22:29:40.648 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Patients&apos; doesn&apos;t exist
+alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+22:29:40.648 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+22:29:40.649 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Patients&apos; doesn&apos;t exist
+alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+22:29:40.649 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+22:29:40.649 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.PERSONAL_REPRESENTATIVES&apos; doesn&apos;t exist
+alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+22:29:40.649 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+22:29:40.649 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.PERSONAL_REPRESENTATIVES&apos; doesn&apos;t exist
+alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+22:29:40.649 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+22:29:40.649 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Personnel&apos; doesn&apos;t exist
+alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+22:29:40.650 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+22:29:40.650 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Prescriptions&apos; doesn&apos;t exist
+alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+22:29:40.656 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+22:29:40.656 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Prescriptions&apos; doesn&apos;t exist
+alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+22:29:40.656 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+22:29:40.656 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Prescriptions&apos; doesn&apos;t exist
+drop table if exists AppointmentRequests
+drop table if exists BasicHealthMetrics
+drop table if exists Diagnoses
+drop table if exists Drugs
+drop table if exists FoodDiaryEntry
+drop table if exists GeneralCheckups
+drop table if exists GeneralOphthalmology
+drop table if exists hibernate_sequence
+drop table if exists Hospitals
+drop table if exists ICDCodes
+drop table if exists LabProcedures
+drop table if exists LogEntries
+drop table if exists LoginAttempts
+drop table if exists LoginBans
+drop table if exists LoginLockouts
+drop table if exists LOINCCodes
+drop table if exists OphthalmologySurgery
+drop table if exists PasswordResetTokens
+drop table if exists Patients
+drop table if exists PERSONAL_REPRESENTATIVES
+drop table if exists Personnel
+drop table if exists Prescriptions
+drop table if exists Users
+create table AppointmentRequests (id bigint not null, comments varchar(255), date datetime, status varchar(255), type varchar(255), hcp_id varchar(100), patient_id varchar(100), primary key (id))
+create table BasicHealthMetrics (id bigint not null, diastolic integer, hdl integer, headCircumference float, height float, houseSmokingStatus integer, ldl integer, patientSmokingStatus integer, systolic integer, tri integer, weight float, hcp_id varchar(100), patient_id varchar(100), primary key (id))
+create table Diagnoses (id bigint not null, note varchar(255), code_id bigint, visit_id bigint not null, primary key (id))
+create table Drugs (id bigint not null, code varchar(255), description varchar(255), name varchar(255), primary key (id))
+create table FoodDiaryEntry (id bigint not null, calories integer, carbs integer, date datetime, fat integer, fiber integer, food varchar(255), mealType varchar(255), patient varchar(255), protein integer, servings integer, sodium integer, sugars integer, primary key (id))
+create table GeneralCheckups (id bigint not null, date datetime, notes varchar(255), type varchar(255), appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table GeneralOphthalmology (id bigint not null, date datetime, notes varchar(255), type varchar(255), axisOD integer, axisOS integer, cylinderOD double precision, cylinderOS double precision, sphereOD double precision, sphereOS double precision, visualAcuityOD integer, visualAcuityOS integer, diagnosis varchar(255), appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table hibernate_sequence (next_val bigint)
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+create table Hospitals (name varchar(255) not null, address varchar(255), state varchar(255), zip varchar(255), primary key (name))
+create table ICDCodes (id bigint not null, code varchar(255), description varchar(255), primary key (id))
+create table LabProcedures (id bigint not null, comments varchar(255), priority varchar(255), status varchar(255), labtech varchar(100), LOINC_code bigint, patient varchar(100), visit bigint not null, primary key (id))
+create table LogEntries (id bigint not null, logCode integer, message varchar(255), primaryUser varchar(255), secondaryUser varchar(255), time datetime, primary key (id))
+create table LoginAttempts (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LoginBans (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LoginLockouts (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LOINCCodes (id bigint not null, code varchar(255), commonName varchar(255), component varchar(255), property varchar(255), primary key (id))
+create table OphthalmologySurgery (id bigint not null, date datetime, notes varchar(255), type varchar(255), axisOD integer, axisOS integer, cylinderOD double precision, cylinderOS double precision, sphereOD double precision, sphereOS double precision, visualAcuityOD integer, visualAcuityOS integer, surgeryType integer, appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table PasswordResetTokens (id bigint not null, creationTime bigint not null, tempPassword varchar(255), user_id varchar(100), primary key (id))
+create table Patients (address1 varchar(255), address2 varchar(255), bloodType varchar(255), causeOfDeath varchar(255), city varchar(255), dateOfBirth datetime, dateOfDeath datetime, email varchar(255), ethnicity varchar(255), firstName varchar(255), gender varchar(255), id bigint, lastName varchar(255), phone varchar(255), preferredName varchar(255), state varchar(255), zip varchar(255), self_id varchar(100) not null, father_id varchar(100), mother_id varchar(100), primary key (self_id))
+create table PERSONAL_REPRESENTATIVES (patient_id varchar(100) not null, representative_id varchar(100) not null, primary key (patient_id, representative_id))
+create table Personnel (id bigint not null, address1 varchar(255), address2 varchar(255), city varchar(255), email varchar(255), enabled bit not null, firstName varchar(255), lastName varchar(255), phone varchar(255), specialty varchar(255), state varchar(255), zip varchar(255), self_id varchar(100), primary key (id))
+create table Prescriptions (id bigint not null, dosage integer not null, endDate datetime, renewals integer not null, startDate datetime, drug_id bigint, patient_id varchar(100), prescriptions_id bigint, primary key (id))
+create table Users (username varchar(255) not null, enabled integer, password varchar(255), role varchar(255), primary key (username))
+alter table AppointmentRequests add constraint FKlpa5tri2ufo8t7bt7nusa1pss foreign key (hcp_id) references Users (username)
+alter table AppointmentRequests add constraint FKo65c0ooyqou8d1x56y37u1nau foreign key (patient_id) references Users (username)
+alter table BasicHealthMetrics add constraint FKd9uamofafbqloq2v2j2o4f0pg foreign key (hcp_id) references Users (username)
+alter table BasicHealthMetrics add constraint FKj6od5nqw6nvjgmpuilsfj3ad foreign key (patient_id) references Users (username)
+alter table Diagnoses add constraint FKthsk14tdxoeeadlpvkot8fdhb foreign key (code_id) references ICDCodes (id)
+alter table Diagnoses add constraint FKjm5cnpdmv6x9iajrypt72lguy foreign key (visit_id) references GeneralCheckups (id)
+alter table GeneralCheckups add constraint FKtgti6uflcm2q9uvfx4obmpwv4 foreign key (appointment_id) references AppointmentRequests (id)
+alter table GeneralCheckups add constraint FKqtpf2nfiuf47019rc8gnaeb6v foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table GeneralCheckups add constraint FKplofss0lwup9mbnu0abrtalxx foreign key (hcp_id) references Users (username)
+alter table GeneralCheckups add constraint FK9tghbxo0xq6bba8p1rp7rbecg foreign key (hospital_id) references Hospitals (name)
+alter table GeneralCheckups add constraint FK5fa5nrrfo22p8q5xiptgh83x5 foreign key (patient_id) references Users (username)
+alter table GeneralOphthalmology add constraint FKtcx79uvv1o4wrp9xqdk3hcap2 foreign key (appointment_id) references AppointmentRequests (id)
+alter table GeneralOphthalmology add constraint FK6svu0my7r662s5sn2d7cgf1jq foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table GeneralOphthalmology add constraint FKfeh4gtxe0s4kr52i7u5i8tkum foreign key (hcp_id) references Users (username)
+alter table GeneralOphthalmology add constraint FKc5kn71vr8tbt5ty5cc7pfrbgf foreign key (hospital_id) references Hospitals (name)
+alter table GeneralOphthalmology add constraint FKr2whnupl6f7k12gx78f5lhdx9 foreign key (patient_id) references Users (username)
+alter table LabProcedures add constraint FKn8ctd2oj7knwaxxfakrmwybj6 foreign key (labtech) references Users (username)
+alter table LabProcedures add constraint FKq97sa9kb1vkse9jbn0s38drei foreign key (LOINC_code) references LOINCCodes (id)
+alter table LabProcedures add constraint FKd9netwr78cspphyqtctsdy9cl foreign key (patient) references Users (username)
+alter table LabProcedures add constraint FKf1qdex4yna7yac0e29xylgqt7 foreign key (visit) references GeneralCheckups (id)
+alter table LoginAttempts add constraint FK6me6sh9op6gntvqnqqqiev95q foreign key (user_id) references Users (username)
+alter table LoginBans add constraint FKpmi5daj2jt8w5gq9maxjpro1f foreign key (user_id) references Users (username)
+alter table LoginLockouts add constraint FKhndsii960xs59bv7a7x5669ii foreign key (user_id) references Users (username)
+alter table OphthalmologySurgery add constraint FK2ab5y8krlqw4407jo9je2rodh foreign key (appointment_id) references AppointmentRequests (id)
+alter table OphthalmologySurgery add constraint FK64ijwgpf2cbt4t6vcwyj0vy77 foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table OphthalmologySurgery add constraint FK43k7w4nn8hxf36s3xonve9l5v foreign key (hcp_id) references Users (username)
+alter table OphthalmologySurgery add constraint FKg3nwmi2eh9lxpys9gom75nsvx foreign key (hospital_id) references Hospitals (name)
+alter table OphthalmologySurgery add constraint FK526jd5m6bguykj27g8jbl2idt foreign key (patient_id) references Users (username)
+alter table PasswordResetTokens add constraint FKdtqvlc6is6k5ibp1xc1nshrc8 foreign key (user_id) references Users (username)
+alter table Patients add constraint FKe0d1x2xac4nte49udxrwdiew5 foreign key (self_id) references Users (username)
+alter table Patients add constraint FK8s22h2pw102ce5ytcmqmhegp3 foreign key (father_id) references Users (username)
+alter table Patients add constraint FK3aemk5yjohgj9y6j4lq57g4o5 foreign key (mother_id) references Users (username)
+alter table PERSONAL_REPRESENTATIVES add constraint FK4xcw5y8obck13wkbeja8cxy6d foreign key (representative_id) references Patients (self_id)
+alter table PERSONAL_REPRESENTATIVES add constraint FKthu0xxghbfmojk34tnmg17qxd foreign key (patient_id) references Patients (self_id)
+alter table Personnel add constraint FKa9l63705rm5c4tf50y9h9x8rp foreign key (self_id) references Users (username)
+alter table Prescriptions add constraint FKrr7q2rw34mv2h8p24dwo2sw39 foreign key (drug_id) references Drugs (id)
+alter table Prescriptions add constraint FK11c0dywqeqm53244c088xriq0 foreign key (patient_id) references Users (username)
+alter table Prescriptions add constraint FKkhctha3d1ti34dbaplmn8tsyk foreign key (prescriptions_id) references GeneralCheckups (id)
+22:29:48.206 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+22:29:48.576 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:29:48.576 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:29:48.577 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>7</failedSince>
+        </case>
+        <case>
+          <duration>10.014</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest</className>
+          <testName>testEmergencyRecordForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIEnumTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIEnumTest</name>
+      <duration>0.024</duration>
+      <time>0.024</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.018</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIEnumTest</className>
+          <testName>testEnumAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest</name>
+      <duration>0.563</duration>
+      <time>0.563</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.187</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest</className>
+          <testName>testFoodDiaryAPIAsHCP</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest.testFoodDiaryAPIAsHCP(APIFoodDiaryTest.java:217)
+Caused by: java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest.testFoodDiaryAPIAsHCP(APIFoodDiaryTest.java:217)
+</errorStackTrace>
+          <errorDetails>Request processing failed; nested exception is java.lang.NullPointerException</errorDetails>
+          <stdout>22:29:14.749 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+22:29:14.750 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2cd59815, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@71953583, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@10a2fa3f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@241d3f6f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@24080ec9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7ce90ee6, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@7b9d7046]
+22:29:14.752 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:29:14.756 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:29:14.757 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>8</failedSince>
+        </case>
+        <case>
+          <duration>0.163</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest</className>
+          <testName>testFoodDiaryAPIInvalidEntry</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.207</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest</className>
+          <testName>testFoodDiaryAPIAsPatient</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest</name>
+      <duration>1.285</duration>
+      <time>1.285</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.411</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest</className>
+          <testName>testPreScheduledGeneralCheckup</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.022</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest</className>
+          <testName>testDeleteNonExistentOfficeVisit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.025</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest</className>
+          <testName>testGetNonExistentOfficeVisit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.811</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest</className>
+          <testName>testGeneralCheckupAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest</name>
+      <duration>0.621</duration>
+      <time>0.621</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.298</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest</className>
+          <testName>testPreScheduledGeneralOphthalmology</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.019</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest</className>
+          <testName>testDeleteNonExistentOfficeVisit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.008</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest</className>
+          <testName>testGetNonExistentOfficeVisit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.284</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest</className>
+          <testName>testGeneralOphthalmologyAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;409&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest.testGeneralOphthalmologyAPI(APIGeneralOphthalmologyTest.java:198)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;409&gt;</errorDetails>
+          <stdout>22:29:14.461 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:29:14.461 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:29:14.463 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 2 ms
+</stdout>
+          <failedSince>8</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIHospitalTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIHospitalTest</name>
+      <duration>0.246</duration>
+      <time>0.246</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.032</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIHospitalTest</className>
+          <testName>testGetNonExistentHospital</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.207</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIHospitalTest</className>
+          <testName>testHospitalAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIICDCodeTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIICDCodeTest</name>
+      <duration>0.312</duration>
+      <time>0.312</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.299</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIICDCodeTest</className>
+          <testName>testCodeAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APILOINCTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APILOINCTest</name>
+      <duration>9.803</duration>
+      <time>9.803</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>4.833</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILOINCTest</className>
+          <testName>testCodeAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APILabProcedureTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APILabProcedureTest</name>
+      <duration>42.931</duration>
+      <time>42.931</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>11.084</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILabProcedureTest</className>
+          <testName>testGetMyProcedures</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>10.665</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILabProcedureTest</className>
+          <testName>testLabProcedureLabTechAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>10.234</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILabProcedureTest</className>
+          <testName>testGetLabProcedures</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>10.923</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILabProcedureTest</className>
+          <testName>testLabProcedureHCPAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;
+	at edu.ncsu.csc.itrust2.apitest.APILabProcedureTest.testLabProcedureHCPAPI(APILabProcedureTest.java:348)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;404&gt;</errorDetails>
+          <stdout>22:28:58.453 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:28:58.454 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:28:58.467 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 13 ms
+22:28:58.573 [main] WARN  org.hibernate.orm.connections - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+22:28:58.573 [main] INFO  org.hibernate.orm.connections - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/iTrust2?createDatabaseIfNotExist=true&amp;useSSL=false&amp;serverTimezone=EST&amp;allowPublicKeyRetrieval=true]
+22:28:58.573 [main] INFO  org.hibernate.orm.connections - HHH10001001: Connection properties: {user=root, password=****}
+22:28:58.573 [main] INFO  org.hibernate.orm.connections - HHH10001003: Autocommit mode: false
+22:28:58.573 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 100 (min=1)
+22:28:58.576 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+22:28:58.637 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+drop table if exists AppointmentRequests
+drop table if exists BasicHealthMetrics
+drop table if exists Diagnoses
+drop table if exists Drugs
+drop table if exists FoodDiaryEntry
+drop table if exists GeneralCheckups
+drop table if exists GeneralOphthalmology
+drop table if exists hibernate_sequence
+drop table if exists Hospitals
+drop table if exists ICDCodes
+drop table if exists LabProcedures
+drop table if exists LogEntries
+drop table if exists LoginAttempts
+drop table if exists LoginBans
+drop table if exists LoginLockouts
+drop table if exists LOINCCodes
+drop table if exists OphthalmologySurgery
+drop table if exists PasswordResetTokens
+drop table if exists Patients
+drop table if exists PERSONAL_REPRESENTATIVES
+drop table if exists Personnel
+drop table if exists Prescriptions
+drop table if exists Users
+22:29:00.096 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+22:29:00.101 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+22:29:00.103 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+22:29:00.104 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.AppointmentRequests&apos; doesn&apos;t exist
+alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+22:29:00.112 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+22:29:00.112 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.AppointmentRequests&apos; doesn&apos;t exist
+alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+22:29:00.113 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+22:29:00.113 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.BasicHealthMetrics&apos; doesn&apos;t exist
+alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+22:29:00.114 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+22:29:00.115 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.BasicHealthMetrics&apos; doesn&apos;t exist
+alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+22:29:00.115 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+22:29:00.116 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Diagnoses&apos; doesn&apos;t exist
+alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+22:29:00.117 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+22:29:00.117 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Diagnoses&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+22:29:00.118 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+22:29:00.118 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+22:29:00.119 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+22:29:00.119 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+22:29:00.120 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+22:29:00.120 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+22:29:00.121 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+22:29:00.121 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+22:29:00.122 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+22:29:00.123 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+22:29:00.123 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+22:29:00.131 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+22:29:00.132 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+22:29:00.133 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+22:29:00.134 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+22:29:00.134 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+22:29:00.142 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+22:29:00.142 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+22:29:00.143 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+22:29:00.143 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+22:29:00.144 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+22:29:00.145 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LabProcedures&apos; doesn&apos;t exist
+alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+22:29:00.145 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+22:29:00.146 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LabProcedures&apos; doesn&apos;t exist
+alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+22:29:00.146 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+22:29:00.147 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LabProcedures&apos; doesn&apos;t exist
+alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+22:29:00.148 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+22:29:00.152 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LabProcedures&apos; doesn&apos;t exist
+alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+22:29:00.153 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+22:29:00.153 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LoginAttempts&apos; doesn&apos;t exist
+alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+22:29:00.154 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+22:29:00.154 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LoginBans&apos; doesn&apos;t exist
+alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+22:29:00.155 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+22:29:00.162 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LoginLockouts&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+22:29:00.163 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+22:29:00.163 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+22:29:00.164 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+22:29:00.172 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+22:29:00.173 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+22:29:00.174 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+22:29:00.174 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+22:29:00.175 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+22:29:00.176 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+22:29:00.176 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+22:29:00.177 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+22:29:00.177 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.PasswordResetTokens&apos; doesn&apos;t exist
+alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+22:29:00.178 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+22:29:00.178 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Patients&apos; doesn&apos;t exist
+alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+22:29:00.179 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+22:29:00.179 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Patients&apos; doesn&apos;t exist
+alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+22:29:00.180 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+22:29:00.180 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Patients&apos; doesn&apos;t exist
+alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+22:29:00.181 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+22:29:00.182 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.PERSONAL_REPRESENTATIVES&apos; doesn&apos;t exist
+alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+22:29:00.183 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+22:29:00.184 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.PERSONAL_REPRESENTATIVES&apos; doesn&apos;t exist
+alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+22:29:00.193 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+22:29:00.194 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Personnel&apos; doesn&apos;t exist
+alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+22:29:00.195 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+22:29:00.195 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Prescriptions&apos; doesn&apos;t exist
+alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+22:29:00.196 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+22:29:00.200 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Prescriptions&apos; doesn&apos;t exist
+alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+22:29:00.200 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+22:29:00.201 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Prescriptions&apos; doesn&apos;t exist
+drop table if exists AppointmentRequests
+drop table if exists BasicHealthMetrics
+drop table if exists Diagnoses
+drop table if exists Drugs
+drop table if exists FoodDiaryEntry
+drop table if exists GeneralCheckups
+drop table if exists GeneralOphthalmology
+drop table if exists hibernate_sequence
+drop table if exists Hospitals
+drop table if exists ICDCodes
+drop table if exists LabProcedures
+drop table if exists LogEntries
+drop table if exists LoginAttempts
+drop table if exists LoginBans
+drop table if exists LoginLockouts
+drop table if exists LOINCCodes
+drop table if exists OphthalmologySurgery
+drop table if exists PasswordResetTokens
+drop table if exists Patients
+drop table if exists PERSONAL_REPRESENTATIVES
+drop table if exists Personnel
+drop table if exists Prescriptions
+drop table if exists Users
+create table AppointmentRequests (id bigint not null, comments varchar(255), date datetime, status varchar(255), type varchar(255), hcp_id varchar(100), patient_id varchar(100), primary key (id))
+create table BasicHealthMetrics (id bigint not null, diastolic integer, hdl integer, headCircumference float, height float, houseSmokingStatus integer, ldl integer, patientSmokingStatus integer, systolic integer, tri integer, weight float, hcp_id varchar(100), patient_id varchar(100), primary key (id))
+create table Diagnoses (id bigint not null, note varchar(255), code_id bigint, visit_id bigint not null, primary key (id))
+create table Drugs (id bigint not null, code varchar(255), description varchar(255), name varchar(255), primary key (id))
+create table FoodDiaryEntry (id bigint not null, calories integer, carbs integer, date datetime, fat integer, fiber integer, food varchar(255), mealType varchar(255), patient varchar(255), protein integer, servings integer, sodium integer, sugars integer, primary key (id))
+create table GeneralCheckups (id bigint not null, date datetime, notes varchar(255), type varchar(255), appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table GeneralOphthalmology (id bigint not null, date datetime, notes varchar(255), type varchar(255), axisOD integer, axisOS integer, cylinderOD double precision, cylinderOS double precision, sphereOD double precision, sphereOS double precision, visualAcuityOD integer, visualAcuityOS integer, diagnosis varchar(255), appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table hibernate_sequence (next_val bigint)
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+create table Hospitals (name varchar(255) not null, address varchar(255), state varchar(255), zip varchar(255), primary key (name))
+create table ICDCodes (id bigint not null, code varchar(255), description varchar(255), primary key (id))
+create table LabProcedures (id bigint not null, comments varchar(255), priority varchar(255), status varchar(255), labtech varchar(100), LOINC_code bigint, patient varchar(100), visit bigint not null, primary key (id))
+create table LogEntries (id bigint not null, logCode integer, message varchar(255), primaryUser varchar(255), secondaryUser varchar(255), time datetime, primary key (id))
+create table LoginAttempts (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LoginBans (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LoginLockouts (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LOINCCodes (id bigint not null, code varchar(255), commonName varchar(255), component varchar(255), property varchar(255), primary key (id))
+create table OphthalmologySurgery (id bigint not null, date datetime, notes varchar(255), type varchar(255), axisOD integer, axisOS integer, cylinderOD double precision, cylinderOS double precision, sphereOD double precision, sphereOS double precision, visualAcuityOD integer, visualAcuityOS integer, surgeryType integer, appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table PasswordResetTokens (id bigint not null, creationTime bigint not null, tempPassword varchar(255), user_id varchar(100), primary key (id))
+create table Patients (address1 varchar(255), address2 varchar(255), bloodType varchar(255), causeOfDeath varchar(255), city varchar(255), dateOfBirth datetime, dateOfDeath datetime, email varchar(255), ethnicity varchar(255), firstName varchar(255), gender varchar(255), id bigint, lastName varchar(255), phone varchar(255), preferredName varchar(255), state varchar(255), zip varchar(255), self_id varchar(100) not null, father_id varchar(100), mother_id varchar(100), primary key (self_id))
+create table PERSONAL_REPRESENTATIVES (patient_id varchar(100) not null, representative_id varchar(100) not null, primary key (patient_id, representative_id))
+create table Personnel (id bigint not null, address1 varchar(255), address2 varchar(255), city varchar(255), email varchar(255), enabled bit not null, firstName varchar(255), lastName varchar(255), phone varchar(255), specialty varchar(255), state varchar(255), zip varchar(255), self_id varchar(100), primary key (id))
+create table Prescriptions (id bigint not null, dosage integer not null, endDate datetime, renewals integer not null, startDate datetime, drug_id bigint, patient_id varchar(100), prescriptions_id bigint, primary key (id))
+create table Users (username varchar(255) not null, enabled integer, password varchar(255), role varchar(255), primary key (username))
+alter table AppointmentRequests add constraint FKlpa5tri2ufo8t7bt7nusa1pss foreign key (hcp_id) references Users (username)
+alter table AppointmentRequests add constraint FKo65c0ooyqou8d1x56y37u1nau foreign key (patient_id) references Users (username)
+alter table BasicHealthMetrics add constraint FKd9uamofafbqloq2v2j2o4f0pg foreign key (hcp_id) references Users (username)
+alter table BasicHealthMetrics add constraint FKj6od5nqw6nvjgmpuilsfj3ad foreign key (patient_id) references Users (username)
+alter table Diagnoses add constraint FKthsk14tdxoeeadlpvkot8fdhb foreign key (code_id) references ICDCodes (id)
+alter table Diagnoses add constraint FKjm5cnpdmv6x9iajrypt72lguy foreign key (visit_id) references GeneralCheckups (id)
+alter table GeneralCheckups add constraint FKtgti6uflcm2q9uvfx4obmpwv4 foreign key (appointment_id) references AppointmentRequests (id)
+alter table GeneralCheckups add constraint FKqtpf2nfiuf47019rc8gnaeb6v foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table GeneralCheckups add constraint FKplofss0lwup9mbnu0abrtalxx foreign key (hcp_id) references Users (username)
+alter table GeneralCheckups add constraint FK9tghbxo0xq6bba8p1rp7rbecg foreign key (hospital_id) references Hospitals (name)
+alter table GeneralCheckups add constraint FK5fa5nrrfo22p8q5xiptgh83x5 foreign key (patient_id) references Users (username)
+alter table GeneralOphthalmology add constraint FKtcx79uvv1o4wrp9xqdk3hcap2 foreign key (appointment_id) references AppointmentRequests (id)
+alter table GeneralOphthalmology add constraint FK6svu0my7r662s5sn2d7cgf1jq foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table GeneralOphthalmology add constraint FKfeh4gtxe0s4kr52i7u5i8tkum foreign key (hcp_id) references Users (username)
+alter table GeneralOphthalmology add constraint FKc5kn71vr8tbt5ty5cc7pfrbgf foreign key (hospital_id) references Hospitals (name)
+alter table GeneralOphthalmology add constraint FKr2whnupl6f7k12gx78f5lhdx9 foreign key (patient_id) references Users (username)
+alter table LabProcedures add constraint FKn8ctd2oj7knwaxxfakrmwybj6 foreign key (labtech) references Users (username)
+alter table LabProcedures add constraint FKq97sa9kb1vkse9jbn0s38drei foreign key (LOINC_code) references LOINCCodes (id)
+alter table LabProcedures add constraint FKd9netwr78cspphyqtctsdy9cl foreign key (patient) references Users (username)
+alter table LabProcedures add constraint FKf1qdex4yna7yac0e29xylgqt7 foreign key (visit) references GeneralCheckups (id)
+alter table LoginAttempts add constraint FK6me6sh9op6gntvqnqqqiev95q foreign key (user_id) references Users (username)
+alter table LoginBans add constraint FKpmi5daj2jt8w5gq9maxjpro1f foreign key (user_id) references Users (username)
+alter table LoginLockouts add constraint FKhndsii960xs59bv7a7x5669ii foreign key (user_id) references Users (username)
+alter table OphthalmologySurgery add constraint FK2ab5y8krlqw4407jo9je2rodh foreign key (appointment_id) references AppointmentRequests (id)
+alter table OphthalmologySurgery add constraint FK64ijwgpf2cbt4t6vcwyj0vy77 foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table OphthalmologySurgery add constraint FK43k7w4nn8hxf36s3xonve9l5v foreign key (hcp_id) references Users (username)
+alter table OphthalmologySurgery add constraint FKg3nwmi2eh9lxpys9gom75nsvx foreign key (hospital_id) references Hospitals (name)
+alter table OphthalmologySurgery add constraint FK526jd5m6bguykj27g8jbl2idt foreign key (patient_id) references Users (username)
+alter table PasswordResetTokens add constraint FKdtqvlc6is6k5ibp1xc1nshrc8 foreign key (user_id) references Users (username)
+alter table Patients add constraint FKe0d1x2xac4nte49udxrwdiew5 foreign key (self_id) references Users (username)
+alter table Patients add constraint FK8s22h2pw102ce5ytcmqmhegp3 foreign key (father_id) references Users (username)
+alter table Patients add constraint FK3aemk5yjohgj9y6j4lq57g4o5 foreign key (mother_id) references Users (username)
+alter table PERSONAL_REPRESENTATIVES add constraint FK4xcw5y8obck13wkbeja8cxy6d foreign key (representative_id) references Patients (self_id)
+alter table PERSONAL_REPRESENTATIVES add constraint FKthu0xxghbfmojk34tnmg17qxd foreign key (patient_id) references Patients (self_id)
+alter table Personnel add constraint FKa9l63705rm5c4tf50y9h9x8rp foreign key (self_id) references Users (username)
+alter table Prescriptions add constraint FKrr7q2rw34mv2h8p24dwo2sw39 foreign key (drug_id) references Drugs (id)
+alter table Prescriptions add constraint FK11c0dywqeqm53244c088xriq0 foreign key (patient_id) references Users (username)
+alter table Prescriptions add constraint FKkhctha3d1ti34dbaplmn8tsyk foreign key (prescriptions_id) references GeneralCheckups (id)
+22:29:07.770 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+22:29:09.324 [main] ERROR org.hibernate.internal.SessionImpl - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+</stdout>
+          <stderr>org.hibernate.StaleStateException: Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1
+	at org.hibernate.jdbc.Expectations$BasicExpectation.checkBatched(Expectations.java:67)
+	at org.hibernate.jdbc.Expectations$BasicExpectation.verifyOutcome(Expectations.java:54)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:46)
+	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:3082)
+	at org.hibernate.persister.entity.AbstractEntityPersister.updateOrInsert(AbstractEntityPersister.java:2961)
+	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:3341)
+	at org.hibernate.action.internal.EntityUpdateAction.execute(EntityUpdateAction.java:145)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:582)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:456)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:337)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1282)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:465)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2963)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2339)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:147)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:231)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:65)
+	at edu.ncsu.csc.itrust2.models.persistent.DomainObject.save(DomainObject.java:196)
+	at edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController.createLabProcedure(APILabProcedureController.java:201)
+	at edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController$$FastClassBySpringCGLIB$$f5dc14ec.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:721)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor.invoke(MethodSecurityInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:656)
+	at edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController$$EnhancerBySpringCGLIB$$5f03a983.createLabProcedure(&lt;generated&gt;)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:688)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:65)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155)
+	at edu.ncsu.csc.itrust2.apitest.APILabProcedureTest.testLabProcedureHCPAPI(APILabProcedureTest.java:340)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</stderr>
+          <failedSince>1</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APILogEntryTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APILogEntryTest</name>
+      <duration>1.367</duration>
+      <time>1.367</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>1.342</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILogEntryTest</className>
+          <testName>testLogByDateLarge</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.013</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILogEntryTest</className>
+          <testName>testLogByDate</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest</name>
+      <duration>0.663</duration>
+      <time>0.663</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.34</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest</className>
+          <testName>testOphthalmologySurgeryAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;409&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest.testOphthalmologySurgeryAPI(APIOphthalmologySurgeryTest.java:193)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;409&gt;</errorDetails>
+          <stdout>22:29:12.123 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+22:29:12.123 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@50cb783d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@17ba3a09, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@37aa9ce, org.springframework.test.context.support.DirtiesContextTestExecutionListener@47d0cb8e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4c5149d9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@a7d5828, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@5c1fb470]
+22:29:12.133 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:29:12.133 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:29:12.138 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 5 ms
+</stdout>
+          <failedSince>1</failedSince>
+        </case>
+        <case>
+          <duration>0.266</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest</className>
+          <testName>testPreScheduledOphthalmologySurgery</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.031</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest</className>
+          <testName>testDeleteNonExistentOfficeVisit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.012</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest</className>
+          <testName>testGetNonExistentOfficeVisit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIPasswordTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIPasswordTest</name>
+      <duration>1.443</duration>
+      <time>1.443</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.476</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPasswordTest</className>
+          <testName>testRequestReset</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.015</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPasswordTest</className>
+          <testName>testInvalidPasswordChanges</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.939</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPasswordTest</className>
+          <testName>testValidPasswordChanges</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIPatientTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIPatientTest</name>
+      <duration>1.119</duration>
+      <time>1.119</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.005</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPatientTest</className>
+          <testName>testGetNonExistentPatient</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.192</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPatientTest</className>
+          <testName>testPatientAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIPatientTest.testPatientAPI(APIPatientTest.java:119)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;404&gt;</errorDetails>
+          <stdout>22:29:16.692 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:29:16.692 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:29:16.694 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 2 ms
+</stdout>
+          <failedSince>8</failedSince>
+        </case>
+        <case>
+          <duration>0.037</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPatientTest</className>
+          <testName>testPatientAsPatient</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.014</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPatientTest</className>
+          <testName>testPatientUnauthenticated</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.612</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPatientTest</className>
+          <testName>testRepresentativeAPIHCP</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;403&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIPatientTest.testRepresentativeAPIHCP(APIPatientTest.java:218)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;403&gt;</errorDetails>
+          <stdout>22:29:16.936 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:29:16.937 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:29:16.940 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 3 ms
+</stdout>
+          <failedSince>5</failedSince>
+        </case>
+        <case>
+          <duration>0.251</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPatientTest</className>
+          <testName>testRepresentativeAPIPatient</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIPatientTest.testRepresentativeAPIPatient(APIPatientTest.java:372)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;404&gt;</errorDetails>
+          <stdout>22:29:17.549 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:29:17.549 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:29:17.554 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 5 ms
+</stdout>
+          <failedSince>5</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIPersonnelTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIPersonnelTest</name>
+      <duration>0.173</duration>
+      <time>0.173</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.007</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPersonnelTest</className>
+          <testName>testGetNonExistentPersonnel</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.043</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPersonnelTest</className>
+          <testName>testGetByRole</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.116</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPersonnelTest</className>
+          <testName>testPersonnelAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIPersonnelTest.testPersonnelAPI(APIPersonnelTest.java:108)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;404&gt;</errorDetails>
+          <stdout>22:29:58.689 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:29:58.689 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:29:58.690 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+22:29:58.691 [main] WARN  o.s.web.servlet.PageNotFound - Request method &apos;DELETE&apos; not supported
+</stdout>
+          <failedSince>8</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIPrescriptionTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIPrescriptionTest</name>
+      <duration>0.335</duration>
+      <time>0.335</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.335</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPrescriptionTest</className>
+          <testName>testPrescriptionAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;400&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIPrescriptionTest.testPrescriptionAPI(APIPrescriptionTest.java:109)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;400&gt;</errorDetails>
+          <stdout>22:28:24.288 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+22:28:24.289 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@21adcdaa, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@26c8d8d8, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@366c5e7f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6a49121a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@25c65264, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4528501c, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@11e36160]
+22:28:24.291 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:28:24.291 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:28:24.292 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+22:28:24.624 [main] ERROR org.hibernate.internal.SessionImpl - HHH000346: Error during managed flush [Validation failed for classes [edu.ncsu.csc.itrust2.models.persistent.Prescription] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage=&apos;may not be null&apos;, propertyPath=drug, rootBeanClass=class edu.ncsu.csc.itrust2.models.persistent.Prescription, messageTemplate=&apos;{javax.validation.constraints.NotNull.message}&apos;}
+]]
+</stdout>
+          <failedSince>8</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIUserTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIUserTest</name>
+      <duration>0.288</duration>
+      <time>0.288</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.228</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIUserTest</className>
+          <testName>testUserAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIUserTest.testUserAPI(APIUserTest.java:96)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;404&gt;</errorDetails>
+          <stdout>22:29:13.114 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+22:29:13.118 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@a0994aa, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@81947d7, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@47ac7945, org.springframework.test.context.support.DirtiesContextTestExecutionListener@60ef736c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2605171f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6460cbf7, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@4022f06f]
+22:29:13.130 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:29:13.131 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:29:13.139 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 8 ms
+</stdout>
+          <failedSince>8</failedSince>
+        </case>
+        <case>
+          <duration>0.018</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIUserTest</className>
+          <testName>testGetNonExistentUser</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.007</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIUserTest</className>
+          <testName>testAdminRole</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError
+	at edu.ncsu.csc.itrust2.apitest.APIUserTest.testAdminRole(APIUserTest.java:115)
+</errorStackTrace>
+          <stdout>22:29:13.376 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:29:13.376 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:29:13.377 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>8</failedSince>
+        </case>
+        <case>
+          <duration>0.01</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIUserTest</className>
+          <testName>testNoRole</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.AppointmentRequestTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.AppointmentRequestTest</name>
+      <duration>0.021</duration>
+      <time>0.021</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.01</duration>
+          <className>edu.ncsu.csc.itrust2.unit.AppointmentRequestTest</className>
+          <testName>testOpthalmologyAppointmentRequest</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>edu.ncsu.csc.itrust2.unit.AppointmentRequestTest</className>
+          <testName>testGeneralCheckupAppointmentRequest</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.008</duration>
+          <className>edu.ncsu.csc.itrust2.unit.AppointmentRequestTest</className>
+          <testName>testGeneralOpthalmologyAppointmentRequest</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.DomainObjectTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.DomainObjectTest</name>
+      <duration>0.071</duration>
+      <time>0.071</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.009</duration>
+          <className>edu.ncsu.csc.itrust2.unit.DomainObjectTest</className>
+          <testName>testCreateDomainObject</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.013</duration>
+          <className>edu.ncsu.csc.itrust2.unit.DomainObjectTest</className>
+          <testName>testGetBy</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.037</duration>
+          <className>edu.ncsu.csc.itrust2.unit.DomainObjectTest</className>
+          <testName>testCopy</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>edu.ncsu.csc.itrust2.unit.DomainObjectTest</className>
+          <testName>testRetrieveDomainObject</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.008</duration>
+          <className>edu.ncsu.csc.itrust2.unit.DomainObjectTest</className>
+          <testName>testDelete</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.DrugTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.DrugTest</name>
+      <duration>0.001</duration>
+      <time>0.001</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.001</duration>
+          <className>edu.ncsu.csc.itrust2.unit.DrugTest</className>
+          <testName>testDrugLookup</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.DrugTest</className>
+          <testName>testDrugForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.EmailUtilTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.EmailUtilTest</name>
+      <duration>0.004</duration>
+      <time>0.004</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.001</duration>
+          <className>edu.ncsu.csc.itrust2.unit.EmailUtilTest</className>
+          <testName>testEmail</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.unit.EmailUtilTest.testEmail(EmailUtilTest.java:25)
+</errorStackTrace>
+          <failedSince>8</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>edu.ncsu.csc.itrust2.unit.EmailUtilTest</className>
+          <testName>testSendEmail</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.NullPointerException: Cannot read input file
+	at edu.ncsu.csc.itrust2.unit.EmailUtilTest.testSendEmail(EmailUtilTest.java:31)
+</errorStackTrace>
+          <errorDetails>Cannot read input file</errorDetails>
+          <failedSince>8</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest</name>
+      <duration>0.085</duration>
+      <time>0.085</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.001</duration>
+          <className>edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest</className>
+          <testName>testDiaryEntryInvalid</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.019</duration>
+          <className>edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest</className>
+          <testName>testDiaryEntry</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.064</duration>
+          <className>edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest</className>
+          <testName>testGetByPatient</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.GeneralCheckupTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.GeneralCheckupTest</name>
+      <duration>0.593</duration>
+      <time>0.593</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.574</duration>
+          <className>edu.ncsu.csc.itrust2.unit.GeneralCheckupTest</className>
+          <testName>testGeneralCheckups</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.018</duration>
+          <className>edu.ncsu.csc.itrust2.unit.GeneralCheckupTest</className>
+          <testName>testGeneralCheckupForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest</name>
+      <duration>0.217</duration>
+      <time>0.217</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.12</duration>
+          <className>edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest</className>
+          <testName>testMissingBHM</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.087</duration>
+          <className>edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest</className>
+          <testName>testGeneralOphthalmology</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.007</duration>
+          <className>edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest</className>
+          <testName>testGeneralOphthalmologyForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.HospitalFormTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.HospitalFormTest</name>
+      <duration>0.001</duration>
+      <time>0.001</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.001</duration>
+          <className>edu.ncsu.csc.itrust2.unit.HospitalFormTest</className>
+          <testName>testHospitalForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.ICDCodeTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.ICDCodeTest</name>
+      <duration>0.001</duration>
+      <time>0.001</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.ICDCodeTest</className>
+          <testName>testCodes</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.ICDCodeTest</className>
+          <testName>testInvalidCodes</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.LOINCTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.LOINCTest</name>
+      <duration>0.017</duration>
+      <time>0.017</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LOINCTest</className>
+          <testName>testCodes</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.011</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LOINCTest</className>
+          <testName>testGetBy</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LOINCTest</className>
+          <testName>testInvalidCodes</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.LabProcedureTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.LabProcedureTest</name>
+      <duration>0.339</duration>
+      <time>0.339</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.136</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LabProcedureTest</className>
+          <testName>testLabProcedure</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.13</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LabProcedureTest</className>
+          <testName>testGetBy</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.073</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LabProcedureTest</className>
+          <testName>testLabProcedureForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.LockoutTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.LockoutTest</name>
+      <duration>0.134</duration>
+      <time>0.134</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.092</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LockoutTest</className>
+          <testName>testUserLockouts</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.041</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LockoutTest</className>
+          <testName>testIPLockouts</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.LogEntryTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.LogEntryTest</name>
+      <duration>0.003</duration>
+      <time>0.003</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LogEntryTest</className>
+          <testName>testLogEntryTableRow</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.LogTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.LogTest</name>
+      <duration>0.038</duration>
+      <time>0.038</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.037</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LogTest</className>
+          <testName>testLogging</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest</name>
+      <duration>0.241</duration>
+      <time>0.241</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.22</duration>
+          <className>edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest</className>
+          <testName>testOphthalmologySurgery</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.02</duration>
+          <className>edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest</className>
+          <testName>testOphthalmologySurgeryForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.PasswordChangeTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.PasswordChangeTest</name>
+      <duration>1.813</duration>
+      <time>1.813</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>1.34</duration>
+          <className>edu.ncsu.csc.itrust2.unit.PasswordChangeTest</className>
+          <testName>testPasswordReset</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.472</duration>
+          <className>edu.ncsu.csc.itrust2.unit.PasswordChangeTest</className>
+          <testName>testPasswordChangeForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.PatientTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.PatientTest</name>
+      <duration>0.127</duration>
+      <time>0.127</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.038</duration>
+          <className>edu.ncsu.csc.itrust2.unit.PatientTest</className>
+          <testName>testPatientDateOfDeath</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.021</duration>
+          <className>edu.ncsu.csc.itrust2.unit.PatientTest</className>
+          <testName>testFieldValidation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.067</duration>
+          <className>edu.ncsu.csc.itrust2.unit.PatientTest</className>
+          <testName>personalRepresentatives</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.PersonnelFormTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.PersonnelFormTest</name>
+      <duration>0.0</duration>
+      <time>0</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.PersonnelFormTest</className>
+          <testName>testPersonnelForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.UserTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.UserTest</name>
+      <duration>0.0</duration>
+      <time>0</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.UserTest</className>
+          <testName>testEqualsAndProperties</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>107.904</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>

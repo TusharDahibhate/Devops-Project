@@ -1,0 +1,1574 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<result plugin="junit@1.27">
+  <suites>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest</name>
+      <duration>0.742</duration>
+      <time>0.742</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.33</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest</className>
+          <testName>testCreateBadAppointmentRequest</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.383</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest</className>
+          <testName>testAppointmentRequestAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest.testAppointmentRequestAPI(APIAppointmentRequestTest.java:171)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;404&gt;</errorDetails>
+          <stdout>23:04:14.759 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:04:14.765 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:04:14.766 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>14</failedSince>
+        </case>
+        <case>
+          <duration>0.007</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest</className>
+          <testName>testDeleteNonExistentAppointment</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest.testDeleteNonExistentAppointment(APIAppointmentRequestTest.java:75)
+Caused by: java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest.testDeleteNonExistentAppointment(APIAppointmentRequestTest.java:75)
+</errorStackTrace>
+          <errorDetails>Request processing failed; nested exception is java.lang.NullPointerException</errorDetails>
+          <stdout>23:04:15.142 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:04:15.142 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:04:15.144 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>16</failedSince>
+        </case>
+        <case>
+          <duration>0.011</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest</className>
+          <testName>testGetNonExistentAppointment</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIDiagnosisTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIDiagnosisTest</name>
+      <duration>0.74</duration>
+      <time>0.74</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.732</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIDiagnosisTest</className>
+          <testName>testDiagnoses</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APIDiagnosisTest.testDiagnoses(APIDiagnosisTest.java:159)
+</errorStackTrace>
+          <stdout>23:03:26.796 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+23:03:26.797 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6c4b1f35, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@52a50c1a, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@f2f703a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@76a8b72e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@422ebc79, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3891adfa, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@4ccba472]
+23:03:26.799 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:03:26.800 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:03:26.801 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+23:03:27.103 [main] WARN  o.s.web.servlet.PageNotFound - Request method &apos;POST&apos; not supported
+</stdout>
+          <failedSince>15</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIDrugTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIDrugTest</name>
+      <duration>0.231</duration>
+      <time>0.231</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.222</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIDrugTest</className>
+          <testName>testDrugAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;409&gt; but was:&lt;200&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIDrugTest.testDrugAPI(APIDrugTest.java:125)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;409&gt; but was:&lt;200&gt;</errorDetails>
+          <stdout>23:05:07.753 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+23:05:07.759 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2fcf895d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@294c93d5, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@350172ad, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2d655c5d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7e33bdcd, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@332c4be5, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@d86c337]
+23:05:07.761 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:05:07.761 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:05:07.762 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>16</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest</name>
+      <duration>41.924</duration>
+      <time>41.924</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>9.723</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest</className>
+          <testName>testGetNonExistentPatientRecord</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>9.877</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest</className>
+          <testName>testEmergencyRecordFormHCPAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>11.282</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest</className>
+          <testName>testEmergencyRecordFormERAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>11.005</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest</className>
+          <testName>testEmergencyRecordForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIEnumTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIEnumTest</name>
+      <duration>0.023</duration>
+      <time>0.023</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.012</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIEnumTest</className>
+          <testName>testEnumAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest</name>
+      <duration>0.394</duration>
+      <time>0.394</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.116</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest</className>
+          <testName>testFoodDiaryAPIAsHCP</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest.testFoodDiaryAPIAsHCP(APIFoodDiaryTest.java:217)
+Caused by: java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest.testFoodDiaryAPIAsHCP(APIFoodDiaryTest.java:217)
+</errorStackTrace>
+          <errorDetails>Request processing failed; nested exception is java.lang.NullPointerException</errorDetails>
+          <stdout>23:04:16.330 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+23:04:16.331 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6b4e09a0, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2c2f2191, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3b5365b8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1bc8afe1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@d0b631, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@55a62c13, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@75f8edba]
+23:04:16.333 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:04:16.333 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:04:16.335 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 2 ms
+</stdout>
+          <failedSince>16</failedSince>
+        </case>
+        <case>
+          <duration>0.104</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest</className>
+          <testName>testFoodDiaryAPIInvalidEntry</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.169</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest</className>
+          <testName>testFoodDiaryAPIAsPatient</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest</name>
+      <duration>1.255</duration>
+      <time>1.255</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.325</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest</className>
+          <testName>testPreScheduledGeneralCheckup</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.023</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest</className>
+          <testName>testDeleteNonExistentOfficeVisit</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;404&gt; but was:&lt;400&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest.testDeleteNonExistentOfficeVisit(APIGeneralCheckupTest.java:103)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;404&gt; but was:&lt;400&gt;</errorDetails>
+          <stdout>23:04:11.106 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:04:11.106 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:04:11.109 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 3 ms
+</stdout>
+          <stderr>java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralCheckupController.deleteGeneralCheckup(APIGeneralCheckupController.java:76)
+	at edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralCheckupController$$FastClassBySpringCGLIB$$edb1baa2.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:721)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor.invoke(MethodSecurityInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:656)
+	at edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralCheckupController$$EnhancerBySpringCGLIB$$8346dc65.deleteGeneralCheckup(&lt;generated&gt;)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:894)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:694)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:65)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155)
+	at edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest.testDeleteNonExistentOfficeVisit(APIGeneralCheckupTest.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</stderr>
+          <failedSince>17</failedSince>
+        </case>
+        <case>
+          <duration>0.013</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest</className>
+          <testName>testGetNonExistentOfficeVisit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.871</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest</className>
+          <testName>testGeneralCheckupAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest.testGeneralCheckupAPI(APIGeneralCheckupTest.java:439)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;404&gt;</errorDetails>
+          <stdout>23:04:11.152 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:04:11.152 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:04:11.154 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 2 ms
+</stdout>
+          <failedSince>15</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest</name>
+      <duration>1.156</duration>
+      <time>1.156</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.452</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest</className>
+          <testName>testPreScheduledGeneralOphthalmology</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.018</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest</className>
+          <testName>testDeleteNonExistentOfficeVisit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.007</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest</className>
+          <testName>testGetNonExistentOfficeVisit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.66</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest</className>
+          <testName>testGeneralOphthalmologyAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;409&gt; but was:&lt;404&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest.testGeneralOphthalmologyAPI(APIGeneralOphthalmologyTest.java:435)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;409&gt; but was:&lt;404&gt;</errorDetails>
+          <stdout>23:04:15.666 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:04:15.666 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:04:15.667 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>12</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIHospitalTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIHospitalTest</name>
+      <duration>0.232</duration>
+      <time>0.232</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.032</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIHospitalTest</className>
+          <testName>testGetNonExistentHospital</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.174</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIHospitalTest</className>
+          <testName>testHospitalAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIICDCodeTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIICDCodeTest</name>
+      <duration>0.227</duration>
+      <time>0.227</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.217</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIICDCodeTest</className>
+          <testName>testCodeAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APILOINCTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APILOINCTest</name>
+      <duration>9.873</duration>
+      <time>9.873</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>4.746</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILOINCTest</className>
+          <testName>testCodeAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APILabProcedureTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APILabProcedureTest</name>
+      <duration>41.896</duration>
+      <time>41.896</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>9.624</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILabProcedureTest</className>
+          <testName>testGetMyProcedures</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>10.907</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILabProcedureTest</className>
+          <testName>testLabProcedureLabTechAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>10.401</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILabProcedureTest</className>
+          <testName>testGetLabProcedures</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>10.934</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILabProcedureTest</className>
+          <testName>testLabProcedureHCPAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APILogEntryTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APILogEntryTest</name>
+      <duration>8.187</duration>
+      <time>8.187</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>8.157</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILogEntryTest</className>
+          <testName>testLogByDateLarge</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.022</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILogEntryTest</className>
+          <testName>testLogByDate</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest</name>
+      <duration>1.464</duration>
+      <time>1.464</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.893</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest</className>
+          <testName>testOphthalmologySurgeryAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.517</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest</className>
+          <testName>testPreScheduledOphthalmologySurgery</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.008</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest</className>
+          <testName>testDeleteNonExistentOfficeVisit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.022</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest</className>
+          <testName>testGetNonExistentOfficeVisit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIPasswordTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIPasswordTest</name>
+      <duration>1.318</duration>
+      <time>1.318</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.416</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPasswordTest</className>
+          <testName>testRequestReset</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APIPasswordTest.testRequestReset(APIPasswordTest.java:139)
+</errorStackTrace>
+          <stdout>23:04:09.447 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+23:04:09.448 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@47f61a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6e6be264, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@15897a85, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1ef92e82, org.springframework.test.context.transaction.TransactionalTestExecutionListener@21b1ec61, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@107852f1, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@4efb4f29]
+23:04:09.451 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:04:09.451 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:04:09.458 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 7 ms
+</stdout>
+          <stderr>java.lang.Exception: No Patient or Personnel on file for patientPW
+	at edu.ncsu.csc.itrust2.controllers.api.APIPasswordController.requestReset(APIPasswordController.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:688)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:65)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155)
+	at edu.ncsu.csc.itrust2.apitest.APIPasswordTest.testRequestReset(APIPasswordTest.java:134)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</stderr>
+          <failedSince>17</failedSince>
+        </case>
+        <case>
+          <duration>0.409</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPasswordTest</className>
+          <testName>testInvalidPasswordChanges</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Range for response status value 500 expected:&lt;CLIENT_ERROR&gt; but was:&lt;SERVER_ERROR&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIPasswordTest.testInvalidPasswordChanges(APIPasswordTest.java:165)
+</errorStackTrace>
+          <errorDetails>Range for response status value 500 expected:&lt;CLIENT_ERROR&gt; but was:&lt;SERVER_ERROR&gt;</errorDetails>
+          <stdout>23:04:09.869 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:04:09.869 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:04:09.871 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 2 ms
+</stdout>
+          <stderr>java.lang.Exception: No Patient or Personnel on file for patientPW
+	at edu.ncsu.csc.itrust2.controllers.api.APIPasswordController.requestReset(APIPasswordController.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:688)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:65)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155)
+	at edu.ncsu.csc.itrust2.apitest.APIPasswordTest.testInvalidPasswordChanges(APIPasswordTest.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</stderr>
+          <failedSince>17</failedSince>
+        </case>
+        <case>
+          <duration>0.479</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPasswordTest</className>
+          <testName>testValidPasswordChanges</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APIPasswordTest.testValidPasswordChanges(APIPasswordTest.java:98)
+</errorStackTrace>
+          <stdout>23:04:10.284 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:04:10.284 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:04:10.287 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 3 ms
+</stdout>
+          <failedSince>17</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIPatientTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIPatientTest</name>
+      <duration>0.7</duration>
+      <time>0.7</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.012</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPatientTest</className>
+          <testName>testGetNonExistentPatient</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.103</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPatientTest</className>
+          <testName>testPatientAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;404&gt; but was:&lt;200&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIPatientTest.testPatientAPI(APIPatientTest.java:107)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;404&gt; but was:&lt;200&gt;</errorDetails>
+          <stdout>23:04:24.925 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:04:24.925 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:04:24.926 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>8</failedSince>
+        </case>
+        <case>
+          <duration>0.025</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPatientTest</className>
+          <testName>testPatientAsPatient</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIPatientTest.testPatientAsPatient(APIPatientTest.java:436)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;404&gt;</errorDetails>
+          <stdout>23:04:25.029 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:04:25.029 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:04:25.030 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>15</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPatientTest</className>
+          <testName>testPatientUnauthenticated</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.327</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPatientTest</className>
+          <testName>testRepresentativeAPIHCP</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIPatientTest.testRepresentativeAPIHCP(APIPatientTest.java:218)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;404&gt;</errorDetails>
+          <stdout>23:04:25.062 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:04:25.062 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:04:25.064 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 2 ms
+</stdout>
+          <failedSince>5</failedSince>
+        </case>
+        <case>
+          <duration>0.22</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPatientTest</className>
+          <testName>testRepresentativeAPIPatient</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIPatientTest.testRepresentativeAPIPatient(APIPatientTest.java:370)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;404&gt;</errorDetails>
+          <stdout>23:04:25.389 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:04:25.389 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:04:25.394 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 5 ms
+</stdout>
+          <failedSince>5</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIPersonnelTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIPersonnelTest</name>
+      <duration>0.177</duration>
+      <time>0.177</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.006</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPersonnelTest</className>
+          <testName>testGetNonExistentPersonnel</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.035</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPersonnelTest</className>
+          <testName>testGetByRole</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.13</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPersonnelTest</className>
+          <testName>testPersonnelAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;409&gt; but was:&lt;200&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIPersonnelTest.testPersonnelAPI(APIPersonnelTest.java:97)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;409&gt; but was:&lt;200&gt;</errorDetails>
+          <stdout>23:05:07.611 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:05:07.611 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:05:07.611 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 0 ms
+23:05:07.612 [main] WARN  o.s.web.servlet.PageNotFound - Request method &apos;DELETE&apos; not supported
+</stdout>
+          <failedSince>17</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIPrescriptionTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIPrescriptionTest</name>
+      <duration>0.5</duration>
+      <time>0.5</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.496</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPrescriptionTest</className>
+          <testName>testPrescriptionAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: expected:&lt;17&gt; but was:&lt;null&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIPrescriptionTest.testPrescriptionAPI(APIPrescriptionTest.java:150)
+</errorStackTrace>
+          <errorDetails>expected:&lt;17&gt; but was:&lt;null&gt;</errorDetails>
+          <stdout>23:03:25.980 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+23:03:25.981 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@21adcdaa, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@26c8d8d8, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@366c5e7f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6a49121a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@25c65264, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4528501c, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@11e36160]
+23:03:25.996 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:03:25.996 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:03:25.997 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>15</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIUserTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIUserTest</name>
+      <duration>0.697</duration>
+      <time>0.697</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.616</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIUserTest</className>
+          <testName>testUserAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.053</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIUserTest</className>
+          <testName>testGetNonExistentUser</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIUserTest</className>
+          <testName>testAdminRole</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.011</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIUserTest</className>
+          <testName>testNoRole</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.AppointmentRequestTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.AppointmentRequestTest</name>
+      <duration>0.044</duration>
+      <time>0.044</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.007</duration>
+          <className>edu.ncsu.csc.itrust2.unit.AppointmentRequestTest</className>
+          <testName>testOpthalmologyAppointmentRequest</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.007</duration>
+          <className>edu.ncsu.csc.itrust2.unit.AppointmentRequestTest</className>
+          <testName>testGeneralCheckupAppointmentRequest</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.011</duration>
+          <className>edu.ncsu.csc.itrust2.unit.AppointmentRequestTest</className>
+          <testName>testGeneralOpthalmologyAppointmentRequest</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.DomainObjectTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.DomainObjectTest</name>
+      <duration>0.024</duration>
+      <time>0.024</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.004</duration>
+          <className>edu.ncsu.csc.itrust2.unit.DomainObjectTest</className>
+          <testName>testCreateDomainObject</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>edu.ncsu.csc.itrust2.unit.DomainObjectTest</className>
+          <testName>testGetBy</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.006</duration>
+          <className>edu.ncsu.csc.itrust2.unit.DomainObjectTest</className>
+          <testName>testCopy</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.005</duration>
+          <className>edu.ncsu.csc.itrust2.unit.DomainObjectTest</className>
+          <testName>testRetrieveDomainObject</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.004</duration>
+          <className>edu.ncsu.csc.itrust2.unit.DomainObjectTest</className>
+          <testName>testDelete</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.DrugTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.DrugTest</name>
+      <duration>0.002</duration>
+      <time>0.002</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.DrugTest</className>
+          <testName>testDrugLookup</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.DrugTest</className>
+          <testName>testDrugForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.EmailUtilTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.EmailUtilTest</name>
+      <duration>0.005</duration>
+      <time>0.005</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.003</duration>
+          <className>edu.ncsu.csc.itrust2.unit.EmailUtilTest</className>
+          <testName>testEmail</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>edu.ncsu.csc.itrust2.unit.EmailUtilTest</className>
+          <testName>testSendEmail</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.NullPointerException: Cannot read input file
+	at edu.ncsu.csc.itrust2.unit.EmailUtilTest.testSendEmail(EmailUtilTest.java:31)
+</errorStackTrace>
+          <errorDetails>Cannot read input file</errorDetails>
+          <failedSince>17</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest</name>
+      <duration>0.024</duration>
+      <time>0.024</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.001</duration>
+          <className>edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest</className>
+          <testName>testDiaryEntryInvalid</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.008</duration>
+          <className>edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest</className>
+          <testName>testDiaryEntry</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.013</duration>
+          <className>edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest</className>
+          <testName>testGetByPatient</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.GeneralCheckupTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.GeneralCheckupTest</name>
+      <duration>0.866</duration>
+      <time>0.866</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.859</duration>
+          <className>edu.ncsu.csc.itrust2.unit.GeneralCheckupTest</className>
+          <testName>testGeneralCheckups</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.006</duration>
+          <className>edu.ncsu.csc.itrust2.unit.GeneralCheckupTest</className>
+          <testName>testGeneralCheckupForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest</name>
+      <duration>0.17</duration>
+      <time>0.17</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.084</duration>
+          <className>edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest</className>
+          <testName>testMissingBHM</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.076</duration>
+          <className>edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest</className>
+          <testName>testGeneralOphthalmology</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.009</duration>
+          <className>edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest</className>
+          <testName>testGeneralOphthalmologyForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.HospitalFormTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.HospitalFormTest</name>
+      <duration>0.001</duration>
+      <time>0.001</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.HospitalFormTest</className>
+          <testName>testHospitalForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.ICDCodeTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.ICDCodeTest</name>
+      <duration>0.0</duration>
+      <time>0</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.ICDCodeTest</className>
+          <testName>testCodes</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.ICDCodeTest</className>
+          <testName>testInvalidCodes</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.LOINCTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.LOINCTest</name>
+      <duration>0.038</duration>
+      <time>0.038</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LOINCTest</className>
+          <testName>testCodes</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.038</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LOINCTest</className>
+          <testName>testGetBy</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LOINCTest</className>
+          <testName>testInvalidCodes</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.LabProcedureTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.LabProcedureTest</name>
+      <duration>0.935</duration>
+      <time>0.935</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.597</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LabProcedureTest</className>
+          <testName>testLabProcedure</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.227</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LabProcedureTest</className>
+          <testName>testGetBy</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.111</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LabProcedureTest</className>
+          <testName>testLabProcedureForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.LockoutTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.LockoutTest</name>
+      <duration>0.142</duration>
+      <time>0.142</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.063</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LockoutTest</className>
+          <testName>testUserLockouts</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.079</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LockoutTest</className>
+          <testName>testIPLockouts</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.LogEntryTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.LogEntryTest</name>
+      <duration>0.001</duration>
+      <time>0.001</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LogEntryTest</className>
+          <testName>testLogEntryTableRow</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.LogTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.LogTest</name>
+      <duration>0.039</duration>
+      <time>0.039</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.038</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LogTest</className>
+          <testName>testLogging</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest</name>
+      <duration>0.368</duration>
+      <time>0.368</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.35</duration>
+          <className>edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest</className>
+          <testName>testOphthalmologySurgery</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.018</duration>
+          <className>edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest</className>
+          <testName>testOphthalmologySurgeryForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.PasswordChangeTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.PasswordChangeTest</name>
+      <duration>1.807</duration>
+      <time>1.807</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>1.341</duration>
+          <className>edu.ncsu.csc.itrust2.unit.PasswordChangeTest</className>
+          <testName>testPasswordReset</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.465</duration>
+          <className>edu.ncsu.csc.itrust2.unit.PasswordChangeTest</className>
+          <testName>testPasswordChangeForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.PatientTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.PatientTest</name>
+      <duration>0.149</duration>
+      <time>0.149</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.085</duration>
+          <className>edu.ncsu.csc.itrust2.unit.PatientTest</className>
+          <testName>testPatientDateOfDeath</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.03</duration>
+          <className>edu.ncsu.csc.itrust2.unit.PatientTest</className>
+          <testName>testFieldValidation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.033</duration>
+          <className>edu.ncsu.csc.itrust2.unit.PatientTest</className>
+          <testName>personalRepresentatives</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.PersonnelFormTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.PersonnelFormTest</name>
+      <duration>0.0</duration>
+      <time>0</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.PersonnelFormTest</className>
+          <testName>testPersonnelForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.UserTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.UserTest</name>
+      <duration>0.001</duration>
+      <time>0.001</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.001</duration>
+          <className>edu.ncsu.csc.itrust2.unit.UserTest</className>
+          <testName>testEqualsAndProperties</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>116.35199</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>

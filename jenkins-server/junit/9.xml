@@ -1,0 +1,1693 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<result plugin="junit@1.27">
+  <suites>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest</name>
+      <duration>0.743</duration>
+      <time>0.743</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.347</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest</className>
+          <testName>testCreateBadAppointmentRequest</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.369</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest</className>
+          <testName>testAppointmentRequestAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest.testAppointmentRequestAPI(APIAppointmentRequestTest.java:164)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;404&gt;</errorDetails>
+          <stdout>22:31:43.559 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:31:43.559 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:31:43.560 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>9</failedSince>
+        </case>
+        <case>
+          <duration>0.005</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest</className>
+          <testName>testDeleteNonExistentAppointment</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.005</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest</className>
+          <testName>testGetNonExistentAppointment</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIDiagnosisTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIDiagnosisTest</name>
+      <duration>0.601</duration>
+      <time>0.601</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.59</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIDiagnosisTest</className>
+          <testName>testDiagnoses</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APIDiagnosisTest.testDiagnoses(APIDiagnosisTest.java:159)
+</errorStackTrace>
+          <stdout>22:30:54.910 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+22:30:54.911 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2b012c2d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@30df139e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6d90be91, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1dd001a4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3f923677, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@771981f8, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@1f95ddbc]
+22:30:54.919 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:30:54.920 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:30:54.921 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+22:30:55.213 [main] WARN  o.s.web.servlet.PageNotFound - Request method &apos;POST&apos; not supported
+22:30:55.496 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type &apos;java.lang.String&apos; to required type &apos;java.lang.Long&apos;; nested exception is java.lang.NumberFormatException: For input string: &quot;null&quot;
+</stdout>
+          <failedSince>9</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIDrugTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIDrugTest</name>
+      <duration>0.117</duration>
+      <time>0.117</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.112</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIDrugTest</className>
+          <testName>testDrugAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;409&gt; but was:&lt;200&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIDrugTest.testDrugAPI(APIDrugTest.java:125)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;409&gt; but was:&lt;200&gt;</errorDetails>
+          <stdout>22:32:32.993 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+22:32:32.993 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@75114f22, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6647b795, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@691927cc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@28f14ca3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@57e66ec0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@c4690b6, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@2cc1e1b5]
+22:32:32.996 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:32:32.996 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:32:32.997 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>7</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest</name>
+      <duration>41.504</duration>
+      <time>41.504</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>9.903</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest</className>
+          <testName>testGetNonExistentPatientRecord</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>11.035</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest</className>
+          <testName>testEmergencyRecordFormHCPAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>10.137</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest</className>
+          <testName>testEmergencyRecordFormERAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>10.409</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest</className>
+          <testName>testEmergencyRecordForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIEnumTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIEnumTest</name>
+      <duration>0.029</duration>
+      <time>0.029</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.017</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIEnumTest</className>
+          <testName>testEnumAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest</name>
+      <duration>0.46</duration>
+      <time>0.46</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.143</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest</className>
+          <testName>testFoodDiaryAPIAsHCP</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest.testFoodDiaryAPIAsHCP(APIFoodDiaryTest.java:219)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;404&gt;</errorDetails>
+          <stdout>22:31:44.999 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+22:31:45.000 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@649160dd, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@29f8c27e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3e22fcd9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@78c63d82, org.springframework.test.context.transaction.TransactionalTestExecutionListener@173e3dcf, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@783af664, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@5157098e]
+22:31:45.003 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:31:45.005 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:31:45.006 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>8</failedSince>
+        </case>
+        <case>
+          <duration>0.108</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest</className>
+          <testName>testFoodDiaryAPIInvalidEntry</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.194</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest</className>
+          <testName>testFoodDiaryAPIAsPatient</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest</name>
+      <duration>0.825</duration>
+      <time>0.825</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.51</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest</className>
+          <testName>testPreScheduledGeneralCheckup</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.019</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest</className>
+          <testName>testDeleteNonExistentOfficeVisit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.02</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest</className>
+          <testName>testGetNonExistentOfficeVisit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.269</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest</className>
+          <testName>testGeneralCheckupAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;409&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest.testGeneralCheckupAPI(APIGeneralCheckupTest.java:191)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;409&gt;</errorDetails>
+          <stdout>22:31:41.397 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:31:41.398 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:31:41.399 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>9</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest</name>
+      <duration>1.048</duration>
+      <time>1.048</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.314</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest</className>
+          <testName>testPreScheduledGeneralOphthalmology</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.023</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest</className>
+          <testName>testDeleteNonExistentOfficeVisit</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;404&gt; but was:&lt;400&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest.testDeleteNonExistentOfficeVisit(APIGeneralOphthalmologyTest.java:105)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;404&gt; but was:&lt;400&gt;</errorDetails>
+          <stdout>22:31:44.270 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:31:44.270 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:31:44.282 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 12 ms
+</stdout>
+          <stderr>java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralOphthalmologyController.deleteGeneralOphthalmology(APIGeneralOphthalmologyController.java:77)
+	at edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralOphthalmologyController$$FastClassBySpringCGLIB$$9d37c0dc.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:721)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor.invoke(MethodSecurityInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:656)
+	at edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralOphthalmologyController$$EnhancerBySpringCGLIB$$8c09a353.deleteGeneralOphthalmology(&lt;generated&gt;)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:894)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:694)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:65)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155)
+	at edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest.testDeleteNonExistentOfficeVisit(APIGeneralOphthalmologyTest.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</stderr>
+          <failedSince>9</failedSince>
+        </case>
+        <case>
+          <duration>0.015</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest</className>
+          <testName>testGetNonExistentOfficeVisit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.681</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest</className>
+          <testName>testGeneralOphthalmologyAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest.testGeneralOphthalmologyAPI(APIGeneralOphthalmologyTest.java:446)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;404&gt;</errorDetails>
+          <stdout>22:31:44.309 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:31:44.309 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:31:44.310 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>8</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIHospitalTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIHospitalTest</name>
+      <duration>0.283</duration>
+      <time>0.283</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.047</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIHospitalTest</className>
+          <testName>testGetNonExistentHospital</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.228</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIHospitalTest</className>
+          <testName>testHospitalAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIICDCodeTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIICDCodeTest</name>
+      <duration>0.079</duration>
+      <time>0.079</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.073</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIICDCodeTest</className>
+          <testName>testCodeAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at edu.ncsu.csc.itrust2.apitest.APIICDCodeTest.testCodeAPI(APIICDCodeTest.java:74)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at edu.ncsu.csc.itrust2.apitest.APIICDCodeTest.testCodeAPI(APIICDCodeTest.java:74)
+</errorStackTrace>
+          <errorDetails>java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $</errorDetails>
+          <stdout>22:31:42.338 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+22:31:42.338 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6d82ee74, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2501ba8d, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@11bdaae1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@40752b0a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3a7e8c3e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@12838c2e, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@6e15c63d]
+22:31:42.341 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:31:42.341 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:31:42.345 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 4 ms
+</stdout>
+          <failedSince>9</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APILOINCTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APILOINCTest</name>
+      <duration>9.801</duration>
+      <time>9.801</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>4.613</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILOINCTest</className>
+          <testName>testCodeAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: expected:&lt;edu.ncsu.csc.itrust2.forms.admin.LOINCForm@7cbc3737&gt; but was:&lt;edu.ncsu.csc.itrust2.forms.admin.LOINCForm@73a378c&gt;
+	at edu.ncsu.csc.itrust2.apitest.APILOINCTest.testCodeAPI(APILOINCTest.java:85)
+</errorStackTrace>
+          <errorDetails>expected:&lt;edu.ncsu.csc.itrust2.forms.admin.LOINCForm@7cbc3737&gt; but was:&lt;edu.ncsu.csc.itrust2.forms.admin.LOINCForm@73a378c&gt;</errorDetails>
+          <stdout>22:30:44.675 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+22:30:44.712 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7cb29ea8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@b5c902, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7e747037, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4d0e1a9a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@25218a4d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@bf2aa32, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@56da96b3]
+22:30:44.941 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3ef2b8e5: startup date [Tue Mar 19 22:30:44 EDT 2019]; root of context hierarchy
+22:30:46.577 [main] INFO  o.s.j.d.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+22:30:47.808 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern=&apos;/api/v1/requestPasswordReset&apos;], []
+22:30:47.811 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern=&apos;/api/v1/resetPassword/*&apos;], []
+22:30:47.811 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern=&apos;/requestPasswordReset&apos;], []
+22:30:47.812 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern=&apos;/resetPassword&apos;], []
+22:30:47.943 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [edu.ncsu.csc.itrust2.config.IPFilter@4df0eb55, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a72d5fb, org.springframework.security.web.context.SecurityContextPersistenceFilter@4fe6f2be, org.springframework.security.web.header.HeaderWriterFilter@38f4c6af, org.springframework.security.web.csrf.CsrfFilter@b50cfa7, org.springframework.security.web.authentication.logout.LogoutFilter@6022a4c4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@54236211, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a95fd1c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58649b7e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59d8de36, org.springframework.security.web.session.SessionManagementFilter@64356fe1, org.springframework.security.web.access.ExceptionTranslationFilter@68d93913, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f7168e7]
+22:30:48.008 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+22:30:48.054 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:30:48.255 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.4.1.Final
+22:30:48.456 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3ef2b8e5: startup date [Tue Mar 19 22:30:44 EDT 2019]; root of context hierarchy
+22:30:48.643 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/]}&quot; onto public org.springframework.web.servlet.view.RedirectView edu.ncsu.csc.itrust2.controllers.DefaultController.index(org.springframework.ui.Model)
+22:30:48.647 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/admin/manageLOINCCodes]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.admin.AdminController.loincCodes()
+22:30:48.647 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/admin/users]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.admin.AdminController.manageUser(org.springframework.ui.Model)
+22:30:48.649 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/admin/hospitals]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.admin.AdminController.manageHospital(org.springframework.ui.Model)
+22:30:48.650 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/admin/manageICDCodes]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.admin.AdminController.addCode(org.springframework.ui.Model)
+22:30:48.650 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/admin/drugs]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.admin.AdminController.drugs(org.springframework.ui.Model)
+22:30:48.651 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/admin/index]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.admin.AdminController.index(org.springframework.ui.Model)
+22:30:48.662 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//appointmentrequest],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.AppointmentRequest&gt; edu.ncsu.csc.itrust2.controllers.api.APIAppointmentRequestController.getAppointmentRequestsForPatient()
+22:30:48.662 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//appointmentrequests],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIAppointmentRequestController.createAppointmentRequest(edu.ncsu.csc.itrust2.forms.patient.AppointmentRequestForm)
+22:30:48.663 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//appointmentrequests/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIAppointmentRequestController.deleteAppointmentRequest(java.lang.Long)
+22:30:48.666 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//appointmentrequests/{id}],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIAppointmentRequestController.updateAppointmentRequest(java.lang.Long,edu.ncsu.csc.itrust2.forms.patient.AppointmentRequestForm)
+22:30:48.666 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//appointmentrequests],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIAppointmentRequestController.deleteAppointmentRequests()
+22:30:48.667 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//viewAppointments],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.AppointmentRequest&gt; edu.ncsu.csc.itrust2.controllers.api.APIAppointmentRequestController.upcomingAppointments()
+22:30:48.667 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//appointmentrequests],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.AppointmentRequest&gt; edu.ncsu.csc.itrust2.controllers.api.APIAppointmentRequestController.getAppointmentRequests()
+22:30:48.668 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//appointmentrequestForHCP],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.AppointmentRequest&gt; edu.ncsu.csc.itrust2.controllers.api.APIAppointmentRequestController.getAppointmentRequestsForHCP()
+22:30:48.668 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//appointmentrequests/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIAppointmentRequestController.getAppointmentRequest(java.lang.Long)
+22:30:48.675 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//diagnosis/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIDiagnosisController.getDiagnosis(java.lang.Long)
+22:30:48.676 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//diagnoses],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.Diagnosis&gt; edu.ncsu.csc.itrust2.controllers.api.APIDiagnosisController.getDiagnosis()
+22:30:48.676 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//diagnosesforvisit/{id}],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.Diagnosis&gt; edu.ncsu.csc.itrust2.controllers.api.APIDiagnosisController.getDiagnosesForVisit(java.lang.Long)
+22:30:48.681 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//drugs],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIDrugController.addDrug(edu.ncsu.csc.itrust2.forms.admin.DrugForm)
+22:30:48.682 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//drugs],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIDrugController.editDrug(edu.ncsu.csc.itrust2.forms.admin.DrugForm)
+22:30:48.682 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//drugs/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIDrugController.deleteDrug(java.lang.String)
+22:30:48.682 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//drugs],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.Drug&gt; edu.ncsu.csc.itrust2.controllers.api.APIDrugController.getDrugs()
+22:30:48.683 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//emergencyrecord/{patientName}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIEmergencyRecordController.getEmergencyRecord(java.lang.String)
+22:30:48.684 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//emergencyrecord/hcp/{patientName}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIEmergencyRecordController.getEmergencyRecordHCP(java.lang.String)
+22:30:48.705 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//ethnicity],methods=[GET]}&quot; onto public java.util.List&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; edu.ncsu.csc.itrust2.controllers.api.APIEnumController.getEthnicity()
+22:30:48.707 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//state],methods=[GET]}&quot; onto public java.util.List&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; edu.ncsu.csc.itrust2.controllers.api.APIEnumController.getStates()
+22:30:48.707 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//ophthalmologysurgerytype],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.enums.EyeSurgeryType&gt; edu.ncsu.csc.itrust2.controllers.api.APIEnumController.getOphthalmologySurgeryTypes()
+22:30:48.707 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//appointmentstatus],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.enums.Status&gt; edu.ncsu.csc.itrust2.controllers.api.APIEnumController.getAppointmentStatuses()
+22:30:48.708 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//housesmoking],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.enums.HouseholdSmokingStatus&gt; edu.ncsu.csc.itrust2.controllers.api.APIEnumController.getHouseSmokingStatuses()
+22:30:48.708 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//patientsmoking],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.enums.PatientSmokingStatus&gt; edu.ncsu.csc.itrust2.controllers.api.APIEnumController.getPatientSmokingStatuses()
+22:30:48.709 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//bloodtype],methods=[GET]}&quot; onto public java.util.List&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; edu.ncsu.csc.itrust2.controllers.api.APIEnumController.getBloodTypes()
+22:30:48.709 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//gender],methods=[GET]}&quot; onto public java.util.List&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; edu.ncsu.csc.itrust2.controllers.api.APIEnumController.getGenders()
+22:30:48.709 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//appointmenttype],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.enums.AppointmentType&gt; edu.ncsu.csc.itrust2.controllers.api.APIEnumController.getAppointmentTypes()
+22:30:48.710 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1/diary/{patient}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIFoodDiaryController.getEntriesHCP(java.lang.String)
+22:30:48.711 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1/diary],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIFoodDiaryController.getEntriesPatient()
+22:30:48.711 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//diary],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIFoodDiaryController.addEntry(edu.ncsu.csc.itrust2.forms.patient.FoodDiaryEntryForm)
+22:30:48.712 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//hospitals/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIHospitalController.getHospital(java.lang.String)
+22:30:48.713 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//hospitals],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.Hospital&gt; edu.ncsu.csc.itrust2.controllers.api.APIHospitalController.getHospitals()
+22:30:48.714 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//hospitals/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIHospitalController.deleteHospital(java.lang.String)
+22:30:48.715 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//hospitals/{id}],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIHospitalController.updateHospital(java.lang.String,edu.ncsu.csc.itrust2.forms.admin.HospitalForm)
+22:30:48.715 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//hospitals],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIHospitalController.createHospital(edu.ncsu.csc.itrust2.forms.admin.HospitalForm)
+22:30:48.717 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//icdcode/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController.getCode(java.lang.Long)
+22:30:48.717 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//icdcodes],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController.addCode(edu.ncsu.csc.itrust2.forms.admin.ICDCodeForm)
+22:30:48.717 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//icdcode/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController.deleteCode(java.lang.Long)
+22:30:48.718 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//icdcode/{id}],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController.updateCode(java.lang.Long,edu.ncsu.csc.itrust2.forms.admin.ICDCodeForm)
+22:30:48.718 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//icdcodes],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.ICDCode&gt; edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController.getCodes()
+22:30:48.721 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//loinccode/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APILOINCController.getCode(java.lang.Long)
+22:30:48.721 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//loinccodes],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APILOINCController.addCode(edu.ncsu.csc.itrust2.forms.admin.LOINCForm)
+22:30:48.721 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//loinccode/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APILOINCController.deleteCode(java.lang.Long)
+22:30:48.722 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//loinccodes],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.LOINC&gt; edu.ncsu.csc.itrust2.controllers.api.APILOINCController.getCodes()
+22:30:48.723 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//loinccode/{id}],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APILOINCController.updateLOINC(java.lang.Long,edu.ncsu.csc.itrust2.forms.admin.LOINCForm)
+22:30:48.724 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//labprocedures],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController.createLabProcedure(edu.ncsu.csc.itrust2.forms.personnel.LabProcedureForm)
+22:30:48.729 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//labprocedures],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController.getLabProcedures()
+22:30:48.729 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//labprocedures/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController.getProcedureById(java.lang.Long)
+22:30:48.730 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//labprocedures/byUser/{techId}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController.getProceduresForTech(java.lang.String)
+22:30:48.730 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//labprocedures/byVisit/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController.getProceduresForOfficeVisit(java.lang.Long)
+22:30:48.733 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//labprocedures],methods=[DELETE]}&quot; onto public void edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController.deleteLabProcedures()
+22:30:48.733 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//labprocedures/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController.deleteLabProcedure(java.lang.Long)
+22:30:48.733 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//labprocedures/{id}],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController.updateLabProcedure(java.lang.Long,edu.ncsu.csc.itrust2.forms.personnel.LabProcedureForm)
+22:30:48.734 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//logentries/range],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APILogEntryController.getEntryByDateRange(edu.ncsu.csc.itrust2.controllers.api.comm.LogEntryRequestBody)
+22:30:48.741 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//changePassword],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPasswordController.changePassword(edu.ncsu.csc.itrust2.forms.personnel.PasswordChangeForm)
+22:30:48.741 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//requestPasswordReset],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPasswordController.requestReset(java.lang.String)
+22:30:48.742 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//resetPassword/{tokenId}],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPasswordController.resetPassword(edu.ncsu.csc.itrust2.forms.personnel.PasswordChangeForm,long)
+22:30:48.745 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//patients/{username}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPatientController.getPatient(java.lang.String)
+22:30:48.745 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//patient],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPatientController.getPatient()
+22:30:48.745 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//patient/representatives/{username}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPatientController.getRepresentatives(java.lang.String)
+22:30:48.745 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//patient/representatives/{patient}/{representative}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPatientController.addRepresentative(java.lang.String,java.lang.String)
+22:30:48.746 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//patient/representatives/remove/{patient}/{representative}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPatientController.removeRepresentative(java.lang.String,java.lang.String)
+22:30:48.746 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//patients],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.Patient&gt; edu.ncsu.csc.itrust2.controllers.api.APIPatientController.getPatients()
+22:30:48.746 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//patients/{id}],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPatientController.updatePatient(java.lang.String,edu.ncsu.csc.itrust2.forms.hcp_patient.PatientForm)
+22:30:48.747 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//patient/representing/{username}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPatientController.getRepresenting(java.lang.String)
+22:30:48.747 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//patients],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPatientController.createPatient(edu.ncsu.csc.itrust2.forms.hcp_patient.PatientForm)
+22:30:48.748 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//personnel/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPersonnelController.getPersonnel(java.lang.String)
+22:30:48.749 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//personnel],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.Personnel&gt; edu.ncsu.csc.itrust2.controllers.api.APIPersonnelController.getPersonnel()
+22:30:48.749 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//personnel],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPersonnelController.createPersonnel(edu.ncsu.csc.itrust2.forms.personnel.PersonnelForm)
+22:30:48.749 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//personnel/{id}],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPersonnelController.updatePersonnel(java.lang.String,edu.ncsu.csc.itrust2.forms.personnel.PersonnelForm)
+22:30:48.749 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//curPersonnel],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPersonnelController.getCurrentPersonnel()
+22:30:48.749 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//personnel/getbyroles/{role}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPersonnelController.getPersonnelByRole(java.lang.String)
+22:30:48.750 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//prescriptions],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.Prescription&gt; edu.ncsu.csc.itrust2.controllers.api.APIPrescriptionController.getPrescriptions()
+22:30:48.750 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//prescriptions/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPrescriptionController.deletePrescription(java.lang.Long)
+22:30:48.751 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//prescriptions],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPrescriptionController.addPrescription(edu.ncsu.csc.itrust2.forms.hcp.PrescriptionForm)
+22:30:48.751 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//prescriptions],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPrescriptionController.editPrescription(edu.ncsu.csc.itrust2.forms.hcp.PrescriptionForm)
+22:30:48.761 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//prescriptions/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPrescriptionController.getPrescription(java.lang.Long)
+22:30:48.762 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//users/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIUserController.getUser(java.lang.String)
+22:30:48.763 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//role],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIUserController.getRole()
+22:30:48.763 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//users],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.User&gt; edu.ncsu.csc.itrust2.controllers.api.APIUserController.getUsers()
+22:30:48.764 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//users/{id}],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIUserController.updateUser(java.lang.String,edu.ncsu.csc.itrust2.forms.admin.UserForm)
+22:30:48.765 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//users/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIUserController.deleteUser(java.lang.String)
+22:30:48.766 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//users],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIUserController.createUser(edu.ncsu.csc.itrust2.forms.admin.UserForm)
+22:30:48.769 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//generalcheckups/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralCheckupController.getGeneralCheckup(java.lang.Long)
+22:30:48.772 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//generalcheckups/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralCheckupController.deleteGeneralCheckup(java.lang.Long)
+22:30:48.772 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//generalcheckups],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralCheckupController.createGeneralCheckup(edu.ncsu.csc.itrust2.forms.hcp.GeneralCheckupForm)
+22:30:48.772 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//generalcheckups/{id}],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralCheckupController.updateGeneralCheckup(java.lang.Long,edu.ncsu.csc.itrust2.forms.hcp.GeneralCheckupForm)
+22:30:48.773 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//generalcheckups/hcp/view/{id}],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralCheckupController.viewGeneralCheckup(java.lang.Long,edu.ncsu.csc.itrust2.forms.hcp.GeneralCheckupForm)
+22:30:48.773 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//generalcheckups/patient/view/{id}],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralCheckupController.viewGeneralCheckupPatient(java.lang.Long,edu.ncsu.csc.itrust2.forms.hcp.GeneralCheckupForm)
+22:30:48.774 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//generalophthalmologies/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralOphthalmologyController.getGeneralOphthalmology(java.lang.Long)
+22:30:48.774 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//generalophthalmologies/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralOphthalmologyController.deleteGeneralOphthalmology(java.lang.Long)
+22:30:48.774 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//generalophthalmologies],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralOphthalmologyController.createGeneralOphthalmology(edu.ncsu.csc.itrust2.forms.hcp.GeneralOphthalmologyForm)
+22:30:48.775 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//generalophthalmologies/{id}],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralOphthalmologyController.updateGeneralOphthalmology(java.lang.Long,edu.ncsu.csc.itrust2.forms.hcp.GeneralOphthalmologyForm)
+22:30:48.775 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//generalophthalmologies/hcp/view/{id}],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralOphthalmologyController.viewGeneralOphthalmology(java.lang.Long,edu.ncsu.csc.itrust2.forms.hcp.GeneralOphthalmologyForm)
+22:30:48.776 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//generalophthalmologies/patient/view/{id}],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralOphthalmologyController.viewGeneralOphthalmologyPatient(java.lang.Long,edu.ncsu.csc.itrust2.forms.hcp.GeneralOphthalmologyForm)
+22:30:48.777 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//officevisits],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.OfficeVisit&gt; edu.ncsu.csc.itrust2.controllers.api.officevisit.APIOfficeVisitController.getOfficeVisits()
+22:30:48.777 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//officevisits/HCP],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.OfficeVisit&gt; edu.ncsu.csc.itrust2.controllers.api.officevisit.APIOfficeVisitController.getOfficeVisitsForHCP()
+22:30:48.777 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//officevisits/myofficevisits],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.OfficeVisit&gt; edu.ncsu.csc.itrust2.controllers.api.officevisit.APIOfficeVisitController.getMyOfficeVisits()
+22:30:48.778 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//officevisits],methods=[DELETE]}&quot; onto public void edu.ncsu.csc.itrust2.controllers.api.officevisit.APIOfficeVisitController.deleteOfficeVisits()
+22:30:48.779 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//ophthalmologysurgeries/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIOphthalmologySurgeryController.deleteOphthalmologySurgery(java.lang.Long)
+22:30:48.780 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//ophthalmologysurgeries],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIOphthalmologySurgeryController.createOphthalmologySurgery(edu.ncsu.csc.itrust2.forms.hcp.OphthalmologySurgeryForm)
+22:30:48.780 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//ophthalmologysurgeries/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIOphthalmologySurgeryController.getOphthalmologySurgery(java.lang.Long)
+22:30:48.780 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//ophthalmologysurgeries/{id}],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIOphthalmologySurgeryController.updateOphthalmologySurgery(java.lang.Long,edu.ncsu.csc.itrust2.forms.hcp.OphthalmologySurgeryForm)
+22:30:48.780 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//ophthalmologysurgeries/hcp/view/{id}],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIOphthalmologySurgeryController.viewOphthalmologySurgery(java.lang.Long,edu.ncsu.csc.itrust2.forms.hcp.OphthalmologySurgeryForm)
+22:30:48.781 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//ophthalmologysurgeries/patient/view/{id}],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIOphthalmologySurgeryController.viewOphthalmologySurgeryPatient(java.lang.Long,edu.ncsu.csc.itrust2.forms.hcp.OphthalmologySurgeryForm)
+22:30:48.792 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/er/records]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.er.ERController.emergencyRecords(org.springframework.ui.Model)
+22:30:48.792 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/er/index]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.er.ERController.index(org.springframework.ui.Model)
+22:30:48.803 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/hcp/personalRepresentatives],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.hcp.HCPController.personalReps()
+22:30:48.805 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/hcp/records]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.hcp.HCPController.emergencyRecords(org.springframework.ui.Model)
+22:30:48.805 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/hcp/editPatientDemographics],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.hcp.HCPController.editPatientDemographics()
+22:30:48.805 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/hcp/editPrescriptions],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.hcp.HCPController.editPrescriptions()
+22:30:48.806 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/hcp/appointmentRequests],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.hcp.HCPController.requestAppointmentForm(org.springframework.ui.Model)
+22:30:48.806 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/hcp/viewPatientFoodDiary],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.hcp.HCPController.foodDiary()
+22:30:48.806 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/hcp/index]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.hcp.HCPController.index(org.springframework.ui.Model)
+22:30:48.807 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/hcp/documentOfficeVisit],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.hcp.OfficeVisitController.documentOfficeVisit(org.springframework.ui.Model)
+22:30:48.808 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/hcp/editOfficeVisit],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.hcp.OfficeVisitController.getAllOfficeVisits(org.springframework.ui.Model)
+22:30:48.809 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/hcp/viewPatientOfficeVisits],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.hcp.OfficeVisitController.getPatientsOfficeVisits(org.springframework.ui.Model)
+22:30:48.809 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/labtech/procedures]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.labtech.LabTechController.labProcedures()
+22:30:48.809 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/labtech/index]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.labtech.LabTechController.index(org.springframework.ui.Model)
+22:30:48.811 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/patient/officeVisit/viewPrescriptions],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.patient.PatientController.viewPrescriptions(org.springframework.ui.Model)
+22:30:48.813 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/patient/demographics/editDemographics],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.patient.PatientController.viewDemographics(org.springframework.ui.Model)
+22:30:48.814 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/patient/personalRepresentative/personalRepresentatives],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.patient.PatientController.viewPersonalReps()
+22:30:48.817 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/patient/officeVisit/viewDiagnoses],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.patient.PatientController.viewDiagnoses(org.springframework.ui.Model)
+22:30:48.817 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/patient/foodDiary/addFoodDiaryEntry],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.patient.PatientController.addFoodDiaryEntryForm(org.springframework.ui.Model)
+22:30:48.817 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/patient/foodDiary/viewFoodDiaryEntries],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.patient.PatientController.viewFoodDiaryEntriesForm(org.springframework.ui.Model)
+22:30:48.818 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/patient/officeVisit/viewOfficeVisits],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.patient.PatientController.viewOfficeVisits(org.springframework.ui.Model)
+22:30:48.818 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/patient/appointmentRequest/manageAppointmentRequest],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.patient.PatientController.requestAppointmentForm(org.springframework.ui.Model)
+22:30:48.818 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/patient/index]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.patient.PatientController.index(org.springframework.ui.Model)
+22:30:48.819 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/changePassword],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.personnel.PasswordController.changePassword(org.springframework.ui.Model)
+22:30:48.819 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/requestPasswordReset],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.personnel.PasswordController.requestReset(org.springframework.ui.Model)
+22:30:48.819 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/resetPassword],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.personnel.PasswordController.resetPassword(org.springframework.ui.Model,long)
+22:30:48.819 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/personnel/editDemographics],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.personnel.UserController.viewDemographics(org.springframework.ui.Model)
+22:30:48.819 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/resources/img/DrJenkins.jpg],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.personnel.UserController.viewDrJenkins()
+22:30:49.104 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:30:49.105 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:30:49.124 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 19 ms
+22:30:49.336 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+22:30:49.338 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+22:30:49.339 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+22:30:50.087 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+22:30:50.232 [main] WARN  org.hibernate.orm.connections - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+22:30:50.233 [main] INFO  org.hibernate.orm.connections - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/iTrust2?createDatabaseIfNotExist=true&amp;useSSL=false&amp;serverTimezone=EST&amp;allowPublicKeyRetrieval=true]
+22:30:50.236 [main] INFO  org.hibernate.orm.connections - HHH10001001: Connection properties: {user=root, password=****}
+22:30:50.236 [main] INFO  org.hibernate.orm.connections - HHH10001003: Autocommit mode: false
+22:30:50.238 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 100 (min=1)
+22:30:50.611 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+22:30:51.377 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): edu.ncsu.csc.itrust2.models.persistent.Patient
+22:30:51.377 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): edu.ncsu.csc.itrust2.models.persistent.Patient
+22:30:52.484 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+</stdout>
+          <stderr>Loading class `com.mysql.jdbc.Driver&apos;. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver&apos;. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+</stderr>
+          <failedSince>9</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APILabProcedureTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APILabProcedureTest</name>
+      <duration>43.838</duration>
+      <time>43.838</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>10.866</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILabProcedureTest</className>
+          <testName>testGetMyProcedures</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>11.668</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILabProcedureTest</className>
+          <testName>testLabProcedureLabTechAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>10.192</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILabProcedureTest</className>
+          <testName>testGetLabProcedures</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>11.09</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILabProcedureTest</className>
+          <testName>testLabProcedureHCPAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APILogEntryTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APILogEntryTest</name>
+      <duration>5.047</duration>
+      <time>5.047</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>5.025</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILogEntryTest</className>
+          <testName>testLogByDateLarge</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.01</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILogEntryTest</className>
+          <testName>testLogByDate</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest</name>
+      <duration>0.663</duration>
+      <time>0.663</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.225</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest</className>
+          <testName>testOphthalmologySurgeryAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;409&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest.testOphthalmologySurgeryAPI(APIOphthalmologySurgeryTest.java:193)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;409&gt;</errorDetails>
+          <stdout>22:31:41.687 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+22:31:41.687 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6f30eef6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@18050a50, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3c2db405, org.springframework.test.context.support.DirtiesContextTestExecutionListener@572eabf0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3f81a8bd, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@fe67297, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@5eba62f2]
+22:31:41.693 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:31:41.694 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:31:41.695 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>1</failedSince>
+        </case>
+        <case>
+          <duration>0.371</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest</className>
+          <testName>testPreScheduledOphthalmologySurgery</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.021</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest</className>
+          <testName>testDeleteNonExistentOfficeVisit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.012</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest</className>
+          <testName>testGetNonExistentOfficeVisit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIPasswordTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIPasswordTest</name>
+      <duration>1.47</duration>
+      <time>1.47</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.511</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPasswordTest</className>
+          <testName>testRequestReset</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APIPasswordTest.testRequestReset(APIPasswordTest.java:139)
+</errorStackTrace>
+          <stdout>22:31:39.361 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+22:31:39.363 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7adf8932, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@9235da0, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2092720f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@9320fa4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@f2291a9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1c7f03b0, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@2f4e183a]
+22:31:39.380 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:31:39.380 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:31:39.383 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 2 ms
+</stdout>
+          <stderr>java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.controllers.api.APIPasswordController.requestReset(APIPasswordController.java:126)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:688)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:65)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155)
+	at edu.ncsu.csc.itrust2.apitest.APIPasswordTest.testRequestReset(APIPasswordTest.java:134)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</stderr>
+          <failedSince>9</failedSince>
+        </case>
+        <case>
+          <duration>0.325</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPasswordTest</className>
+          <testName>testInvalidPasswordChanges</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;400&gt; but was:&lt;200&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIPasswordTest.testInvalidPasswordChanges(APIPasswordTest.java:162)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;400&gt; but was:&lt;200&gt;</errorDetails>
+          <stdout>22:31:39.900 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:31:39.900 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:31:39.902 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 2 ms
+</stdout>
+          <failedSince>9</failedSince>
+        </case>
+        <case>
+          <duration>0.602</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPasswordTest</className>
+          <testName>testValidPasswordChanges</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APIPasswordTest.testValidPasswordChanges(APIPasswordTest.java:98)
+</errorStackTrace>
+          <stdout>22:31:40.214 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:31:40.214 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:31:40.215 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>9</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIPatientTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIPatientTest</name>
+      <duration>0.793</duration>
+      <time>0.793</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.005</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPatientTest</className>
+          <testName>testGetNonExistentPatient</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.127</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPatientTest</className>
+          <testName>testPatientAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIPatientTest.testPatientAPI(APIPatientTest.java:119)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;404&gt;</errorDetails>
+          <stdout>22:31:50.521 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:31:50.521 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:31:50.528 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 6 ms
+</stdout>
+          <failedSince>8</failedSince>
+        </case>
+        <case>
+          <duration>0.054</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPatientTest</className>
+          <testName>testPatientAsPatient</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.016</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPatientTest</className>
+          <testName>testPatientUnauthenticated</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.369</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPatientTest</className>
+          <testName>testRepresentativeAPIHCP</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIPatientTest.testRepresentativeAPIHCP(APIPatientTest.java:218)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;404&gt;</errorDetails>
+          <stdout>22:31:50.729 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:31:50.729 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:31:50.731 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 2 ms
+</stdout>
+          <failedSince>5</failedSince>
+        </case>
+        <case>
+          <duration>0.204</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPatientTest</className>
+          <testName>testRepresentativeAPIPatient</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIPatientTest.testRepresentativeAPIPatient(APIPatientTest.java:370)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;404&gt;</errorDetails>
+          <stdout>22:31:51.097 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:31:51.097 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:31:51.098 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>5</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIPersonnelTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIPersonnelTest</name>
+      <duration>0.139</duration>
+      <time>0.139</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.006</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPersonnelTest</className>
+          <testName>testGetNonExistentPersonnel</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.031</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPersonnelTest</className>
+          <testName>testGetByRole</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.095</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPersonnelTest</className>
+          <testName>testPersonnelAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;409&gt; but was:&lt;200&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIPersonnelTest.testPersonnelAPI(APIPersonnelTest.java:97)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;409&gt; but was:&lt;200&gt;</errorDetails>
+          <stdout>22:32:32.885 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:32:32.885 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:32:32.886 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+22:32:32.889 [main] WARN  o.s.web.servlet.PageNotFound - Request method &apos;DELETE&apos; not supported
+</stdout>
+          <failedSince>8</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIPrescriptionTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIPrescriptionTest</name>
+      <duration>0.79</duration>
+      <time>0.79</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.788</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPrescriptionTest</className>
+          <testName>testPrescriptionAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIUserTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIUserTest</name>
+      <duration>0.77</duration>
+      <time>0.77</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.649</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIUserTest</className>
+          <testName>testUserAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.113</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIUserTest</className>
+          <testName>testGetNonExistentUser</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIUserTest</className>
+          <testName>testAdminRole</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError
+	at edu.ncsu.csc.itrust2.apitest.APIUserTest.testAdminRole(APIUserTest.java:115)
+</errorStackTrace>
+          <stdout>22:31:43.182 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+22:31:43.182 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+22:31:43.182 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 0 ms
+</stdout>
+          <failedSince>8</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIUserTest</className>
+          <testName>testNoRole</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.AppointmentRequestTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.AppointmentRequestTest</name>
+      <duration>0.016</duration>
+      <time>0.016</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.006</duration>
+          <className>edu.ncsu.csc.itrust2.unit.AppointmentRequestTest</className>
+          <testName>testOpthalmologyAppointmentRequest</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>edu.ncsu.csc.itrust2.unit.AppointmentRequestTest</className>
+          <testName>testGeneralCheckupAppointmentRequest</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>edu.ncsu.csc.itrust2.unit.AppointmentRequestTest</className>
+          <testName>testGeneralOpthalmologyAppointmentRequest</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.DomainObjectTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.DomainObjectTest</name>
+      <duration>0.117</duration>
+      <time>0.117</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.081</duration>
+          <className>edu.ncsu.csc.itrust2.unit.DomainObjectTest</className>
+          <testName>testCreateDomainObject</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>edu.ncsu.csc.itrust2.unit.DomainObjectTest</className>
+          <testName>testGetBy</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.01</duration>
+          <className>edu.ncsu.csc.itrust2.unit.DomainObjectTest</className>
+          <testName>testCopy</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.008</duration>
+          <className>edu.ncsu.csc.itrust2.unit.DomainObjectTest</className>
+          <testName>testRetrieveDomainObject</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.014</duration>
+          <className>edu.ncsu.csc.itrust2.unit.DomainObjectTest</className>
+          <testName>testDelete</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.DrugTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.DrugTest</name>
+      <duration>0.002</duration>
+      <time>0.002</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.001</duration>
+          <className>edu.ncsu.csc.itrust2.unit.DrugTest</className>
+          <testName>testDrugLookup</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.DrugTest</className>
+          <testName>testDrugForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.EmailUtilTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.EmailUtilTest</name>
+      <duration>0.007</duration>
+      <time>0.007</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.003</duration>
+          <className>edu.ncsu.csc.itrust2.unit.EmailUtilTest</className>
+          <testName>testEmail</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>edu.ncsu.csc.itrust2.unit.EmailUtilTest</className>
+          <testName>testSendEmail</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.NullPointerException: Cannot read input file
+	at edu.ncsu.csc.itrust2.unit.EmailUtilTest.testSendEmail(EmailUtilTest.java:31)
+</errorStackTrace>
+          <errorDetails>Cannot read input file</errorDetails>
+          <failedSince>8</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest</name>
+      <duration>0.038</duration>
+      <time>0.038</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.001</duration>
+          <className>edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest</className>
+          <testName>testDiaryEntryInvalid</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.016</duration>
+          <className>edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest</className>
+          <testName>testDiaryEntry</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.011</duration>
+          <className>edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest</className>
+          <testName>testGetByPatient</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.GeneralCheckupTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.GeneralCheckupTest</name>
+      <duration>0.599</duration>
+      <time>0.599</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.577</duration>
+          <className>edu.ncsu.csc.itrust2.unit.GeneralCheckupTest</className>
+          <testName>testGeneralCheckups</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.017</duration>
+          <className>edu.ncsu.csc.itrust2.unit.GeneralCheckupTest</className>
+          <testName>testGeneralCheckupForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest</name>
+      <duration>0.093</duration>
+      <time>0.093</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.041</duration>
+          <className>edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest</className>
+          <testName>testMissingBHM</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.041</duration>
+          <className>edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest</className>
+          <testName>testGeneralOphthalmology</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.011</duration>
+          <className>edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest</className>
+          <testName>testGeneralOphthalmologyForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.HospitalFormTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.HospitalFormTest</name>
+      <duration>0.0</duration>
+      <time>0</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.HospitalFormTest</className>
+          <testName>testHospitalForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.ICDCodeTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.ICDCodeTest</name>
+      <duration>0.0</duration>
+      <time>0</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.ICDCodeTest</className>
+          <testName>testCodes</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.ICDCodeTest</className>
+          <testName>testInvalidCodes</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.LOINCTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.LOINCTest</name>
+      <duration>0.019</duration>
+      <time>0.019</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LOINCTest</className>
+          <testName>testCodes</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.015</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LOINCTest</className>
+          <testName>testGetBy</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LOINCTest</className>
+          <testName>testInvalidCodes</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.LabProcedureTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.LabProcedureTest</name>
+      <duration>2.18</duration>
+      <time>2.18</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>1.416</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LabProcedureTest</className>
+          <testName>testLabProcedure</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.662</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LabProcedureTest</className>
+          <testName>testGetBy</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.102</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LabProcedureTest</className>
+          <testName>testLabProcedureForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.LockoutTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.LockoutTest</name>
+      <duration>0.193</duration>
+      <time>0.193</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.09</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LockoutTest</className>
+          <testName>testUserLockouts</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.102</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LockoutTest</className>
+          <testName>testIPLockouts</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.LogEntryTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.LogEntryTest</name>
+      <duration>0.002</duration>
+      <time>0.002</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.001</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LogEntryTest</className>
+          <testName>testLogEntryTableRow</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.LogTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.LogTest</name>
+      <duration>0.049</duration>
+      <time>0.049</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.049</duration>
+          <className>edu.ncsu.csc.itrust2.unit.LogTest</className>
+          <testName>testLogging</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest</name>
+      <duration>0.117</duration>
+      <time>0.117</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.1</duration>
+          <className>edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest</className>
+          <testName>testOphthalmologySurgery</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.015</duration>
+          <className>edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest</className>
+          <testName>testOphthalmologySurgeryForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.PasswordChangeTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.PasswordChangeTest</name>
+      <duration>2.699</duration>
+      <time>2.699</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>2.194</duration>
+          <className>edu.ncsu.csc.itrust2.unit.PasswordChangeTest</className>
+          <testName>testPasswordReset</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.504</duration>
+          <className>edu.ncsu.csc.itrust2.unit.PasswordChangeTest</className>
+          <testName>testPasswordChangeForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.PatientTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.PatientTest</name>
+      <duration>0.153</duration>
+      <time>0.153</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.039</duration>
+          <className>edu.ncsu.csc.itrust2.unit.PatientTest</className>
+          <testName>testPatientDateOfDeath</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.04</duration>
+          <className>edu.ncsu.csc.itrust2.unit.PatientTest</className>
+          <testName>testFieldValidation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.071</duration>
+          <className>edu.ncsu.csc.itrust2.unit.PatientTest</className>
+          <testName>personalRepresentatives</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.PersonnelFormTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.PersonnelFormTest</name>
+      <duration>0.001</duration>
+      <time>0.001</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.PersonnelFormTest</className>
+          <testName>testPersonnelForm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.unit.UserTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.unit.UserTest</name>
+      <duration>0.0</duration>
+      <time>0</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.0</duration>
+          <className>edu.ncsu.csc.itrust2.unit.UserTest</className>
+          <testName>testEqualsAndProperties</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>115.284996</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>

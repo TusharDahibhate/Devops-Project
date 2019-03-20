@@ -1,0 +1,1326 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<result plugin="junit@1.27">
+  <suites>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest</name>
+      <duration>0.667</duration>
+      <time>0.667</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.326</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest</className>
+          <testName>testCreateBadAppointmentRequest</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.306</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest</className>
+          <testName>testAppointmentRequestAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest.testAppointmentRequestAPI(APIAppointmentRequestTest.java:156)
+</errorStackTrace>
+          <errorDetails>Index: 0, Size: 0</errorDetails>
+          <stdout>23:54:07.451 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:54:07.451 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:54:07.452 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>23</failedSince>
+        </case>
+        <case>
+          <duration>0.006</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest</className>
+          <testName>testDeleteNonExistentAppointment</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.016</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest</className>
+          <testName>testGetNonExistentAppointment</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIDiagnosisTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIDiagnosisTest</name>
+      <duration>1.452</duration>
+      <time>1.452</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>1.446</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIDiagnosisTest</className>
+          <testName>testDiagnoses</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest</name>
+      <duration>0.672</duration>
+      <time>0.672</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.246</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest</className>
+          <testName>testFoodDiaryAPIAsHCP</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.182</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest</className>
+          <testName>testFoodDiaryAPIInvalidEntry</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.228</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest</className>
+          <testName>testFoodDiaryAPIAsPatient</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest</name>
+      <duration>0.776</duration>
+      <time>0.776</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.333</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest</className>
+          <testName>testPreScheduledGeneralCheckup</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;409&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest.testPreScheduledGeneralCheckup(APIGeneralCheckupTest.java:133)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;409&gt;</errorDetails>
+          <stdout>23:54:04.735 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+23:54:04.735 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@310d7600, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3bdf7aff, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7afcb504, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5fbc138e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5dbd30f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@451349c9, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@5ad880fa]
+23:54:04.737 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:54:04.737 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:54:04.738 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>28</failedSince>
+        </case>
+        <case>
+          <duration>0.015</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest</className>
+          <testName>testDeleteNonExistentOfficeVisit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.028</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest</className>
+          <testName>testGetNonExistentOfficeVisit</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest.testGetNonExistentOfficeVisit(APIGeneralCheckupTest.java:91)
+Caused by: java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest.testGetNonExistentOfficeVisit(APIGeneralCheckupTest.java:91)
+</errorStackTrace>
+          <errorDetails>Request processing failed; nested exception is java.lang.NullPointerException</errorDetails>
+          <stdout>23:54:05.101 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:54:05.101 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:54:05.103 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 2 ms
+</stdout>
+          <failedSince>28</failedSince>
+        </case>
+        <case>
+          <duration>0.394</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest</className>
+          <testName>testGeneralCheckupAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest.testGeneralCheckupAPI(APIGeneralCheckupTest.java:199)
+</errorStackTrace>
+          <errorDetails>Index: 0, Size: 0</errorDetails>
+          <stdout>23:54:05.132 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:54:05.132 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:54:05.140 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 8 ms
+23:54:05.490 [main] ERROR org.hibernate.internal.SessionImpl - HHH000346: Error during managed flush [Validation failed for classes [edu.ncsu.csc.itrust2.models.persistent.GeneralCheckup] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage=&apos;may not be null&apos;, propertyPath=hospital, rootBeanClass=class edu.ncsu.csc.itrust2.models.persistent.GeneralCheckup, messageTemplate=&apos;{javax.validation.constraints.NotNull.message}&apos;}
+]]
+</stdout>
+          <failedSince>24</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest</name>
+      <duration>0.708</duration>
+      <time>0.708</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.289</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest</className>
+          <testName>testPreScheduledGeneralOphthalmology</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;409&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest.testPreScheduledGeneralOphthalmology(APIGeneralOphthalmologyTest.java:137)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;409&gt;</errorDetails>
+          <stdout>23:54:07.786 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+23:54:07.786 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@19b8766c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1fc253d7, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@39d407b4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2941d0ea, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7390d8b8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7ec161f6, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@6731203d]
+23:54:07.788 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:54:07.788 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:54:07.789 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>28</failedSince>
+        </case>
+        <case>
+          <duration>0.023</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest</className>
+          <testName>testDeleteNonExistentOfficeVisit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.01</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest</className>
+          <testName>testGetNonExistentOfficeVisit</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest.testGetNonExistentOfficeVisit(APIGeneralOphthalmologyTest.java:93)
+Caused by: java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest.testGetNonExistentOfficeVisit(APIGeneralOphthalmologyTest.java:93)
+</errorStackTrace>
+          <errorDetails>Request processing failed; nested exception is java.lang.NullPointerException</errorDetails>
+          <stdout>23:54:08.111 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:54:08.111 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:54:08.113 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 2 ms
+</stdout>
+          <failedSince>28</failedSince>
+        </case>
+        <case>
+          <duration>0.358</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest</className>
+          <testName>testGeneralOphthalmologyAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;400&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest.testGeneralOphthalmologyAPI(APIGeneralOphthalmologyTest.java:198)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;400&gt;</errorDetails>
+          <stdout>23:54:08.122 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:54:08.122 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:54:08.123 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+23:54:08.472 [main] ERROR org.hibernate.internal.SessionImpl - HHH000346: Error during managed flush [Validation failed for classes [edu.ncsu.csc.itrust2.models.persistent.GeneralOphthalmology] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage=&apos;may not be null&apos;, propertyPath=hospital, rootBeanClass=class edu.ncsu.csc.itrust2.models.persistent.GeneralOphthalmology, messageTemplate=&apos;{javax.validation.constraints.NotNull.message}&apos;}
+]]
+</stdout>
+          <stderr>javax.validation.ConstraintViolationException: Validation failed for classes [edu.ncsu.csc.itrust2.models.persistent.GeneralOphthalmology] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage=&apos;may not be null&apos;, propertyPath=hospital, rootBeanClass=class edu.ncsu.csc.itrust2.models.persistent.GeneralOphthalmology, messageTemplate=&apos;{javax.validation.constraints.NotNull.message}&apos;}
+]
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:138)
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:78)
+	at org.hibernate.action.internal.EntityInsertAction.preInsert(EntityInsertAction.java:205)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:82)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:582)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:456)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:337)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1282)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:465)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2963)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2339)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:147)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:231)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:65)
+	at edu.ncsu.csc.itrust2.models.persistent.DomainObject.save(DomainObject.java:196)
+	at edu.ncsu.csc.itrust2.models.persistent.OfficeVisit.save(OfficeVisit.java:520)
+	at edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralOphthalmologyController.createGeneralOphthalmology(APIGeneralOphthalmologyController.java:107)
+	at edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralOphthalmologyController$$FastClassBySpringCGLIB$$9d37c0dc.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:721)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor.invoke(MethodSecurityInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:656)
+	at edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralOphthalmologyController$$EnhancerBySpringCGLIB$$8c09a353.createGeneralOphthalmology(&lt;generated&gt;)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:688)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:65)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155)
+	at edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest.testGeneralOphthalmologyAPI(APIGeneralOphthalmologyTest.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</stderr>
+          <failedSince>24</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIHospitalTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIHospitalTest</name>
+      <duration>0.096</duration>
+      <time>0.096</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.052</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIHospitalTest</className>
+          <testName>testGetNonExistentHospital</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.036</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIHospitalTest</className>
+          <testName>testHospitalAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIHospitalTest.testHospitalAPI(APIHospitalTest.java:74)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;404&gt;</errorDetails>
+          <stdout>23:53:21.367 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:53:21.367 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:53:21.369 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 0 ms
+23:53:21.375 [main] WARN  o.s.web.servlet.PageNotFound - Request method &apos;DELETE&apos; not supported
+</stdout>
+          <failedSince>28</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIICDCodeTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIICDCodeTest</name>
+      <duration>0.066</duration>
+      <time>0.066</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.06</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIICDCodeTest</className>
+          <testName>testCodeAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at edu.ncsu.csc.itrust2.apitest.APIICDCodeTest.testCodeAPI(APIICDCodeTest.java:74)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at edu.ncsu.csc.itrust2.apitest.APIICDCodeTest.testCodeAPI(APIICDCodeTest.java:74)
+</errorStackTrace>
+          <errorDetails>java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $</errorDetails>
+          <stdout>23:54:06.231 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+23:54:06.232 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4ff942bb, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@9cd0886, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1eb0924f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@769d54ef, org.springframework.test.context.transaction.TransactionalTestExecutionListener@73743c1d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@129c93cd, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@8a4493b]
+23:54:06.234 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:54:06.234 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:54:06.238 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 4 ms
+</stdout>
+          <failedSince>28</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APILOINCTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APILOINCTest</name>
+      <duration>9.528</duration>
+      <time>9.528</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>4.557</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILOINCTest</className>
+          <testName>testCodeAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: expected:&lt;edu.ncsu.csc.itrust2.forms.admin.LOINCForm@3ef124e&gt; but was:&lt;edu.ncsu.csc.itrust2.forms.admin.LOINCForm@504a79dc&gt;
+	at edu.ncsu.csc.itrust2.apitest.APILOINCTest.testCodeAPI(APILOINCTest.java:85)
+</errorStackTrace>
+          <errorDetails>expected:&lt;edu.ncsu.csc.itrust2.forms.admin.LOINCForm@3ef124e&gt; but was:&lt;edu.ncsu.csc.itrust2.forms.admin.LOINCForm@504a79dc&gt;</errorDetails>
+          <stdout>23:53:11.704 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+23:53:11.729 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7cb29ea8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@b5c902, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7e747037, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4d0e1a9a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@25218a4d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@bf2aa32, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@56da96b3]
+23:53:11.978 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3ef2b8e5: startup date [Tue Mar 19 23:53:11 EDT 2019]; root of context hierarchy
+23:53:13.550 [main] INFO  o.s.j.d.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+23:53:14.761 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern=&apos;/api/v1/requestPasswordReset&apos;], []
+23:53:14.761 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern=&apos;/api/v1/resetPassword/*&apos;], []
+23:53:14.761 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern=&apos;/requestPasswordReset&apos;], []
+23:53:14.762 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern=&apos;/resetPassword&apos;], []
+23:53:14.911 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [edu.ncsu.csc.itrust2.config.IPFilter@4df0eb55, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a72d5fb, org.springframework.security.web.context.SecurityContextPersistenceFilter@4fe6f2be, org.springframework.security.web.header.HeaderWriterFilter@38f4c6af, org.springframework.security.web.csrf.CsrfFilter@b50cfa7, org.springframework.security.web.authentication.logout.LogoutFilter@6022a4c4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@54236211, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a95fd1c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58649b7e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59d8de36, org.springframework.security.web.session.SessionManagementFilter@64356fe1, org.springframework.security.web.access.ExceptionTranslationFilter@68d93913, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f7168e7]
+23:53:15.020 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.4.1.Final
+23:53:15.323 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3ef2b8e5: startup date [Tue Mar 19 23:53:11 EDT 2019]; root of context hierarchy
+23:53:15.511 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/]}&quot; onto public org.springframework.web.servlet.view.RedirectView edu.ncsu.csc.itrust2.controllers.DefaultController.index(org.springframework.ui.Model)
+23:53:15.515 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/admin/users]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.admin.AdminController.manageUser(org.springframework.ui.Model)
+23:53:15.515 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/admin/manageLOINCCodes]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.admin.AdminController.loincCodes()
+23:53:15.515 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/admin/hospitals]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.admin.AdminController.manageHospital(org.springframework.ui.Model)
+23:53:15.515 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/admin/manageICDCodes]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.admin.AdminController.addCode(org.springframework.ui.Model)
+23:53:15.517 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/admin/drugs]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.admin.AdminController.drugs(org.springframework.ui.Model)
+23:53:15.517 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/admin/index]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.admin.AdminController.index(org.springframework.ui.Model)
+23:53:15.525 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//appointmentrequest],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.AppointmentRequest&gt; edu.ncsu.csc.itrust2.controllers.api.APIAppointmentRequestController.getAppointmentRequestsForPatient()
+23:53:15.525 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//appointmentrequests/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIAppointmentRequestController.deleteAppointmentRequest(java.lang.Long)
+23:53:15.526 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//appointmentrequests/{id}],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIAppointmentRequestController.updateAppointmentRequest(java.lang.Long,edu.ncsu.csc.itrust2.forms.patient.AppointmentRequestForm)
+23:53:15.530 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//appointmentrequests],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIAppointmentRequestController.deleteAppointmentRequests()
+23:53:15.534 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//viewAppointments],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.AppointmentRequest&gt; edu.ncsu.csc.itrust2.controllers.api.APIAppointmentRequestController.upcomingAppointments()
+23:53:15.535 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//appointmentrequests],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.AppointmentRequest&gt; edu.ncsu.csc.itrust2.controllers.api.APIAppointmentRequestController.getAppointmentRequests()
+23:53:15.535 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//appointmentrequestForHCP],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.AppointmentRequest&gt; edu.ncsu.csc.itrust2.controllers.api.APIAppointmentRequestController.getAppointmentRequestsForHCP()
+23:53:15.535 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//appointmentrequests/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIAppointmentRequestController.getAppointmentRequest(java.lang.Long)
+23:53:15.536 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//appointmentrequests],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIAppointmentRequestController.createAppointmentRequest(edu.ncsu.csc.itrust2.forms.patient.AppointmentRequestForm)
+23:53:15.537 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//diagnosis/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIDiagnosisController.getDiagnosis(java.lang.Long)
+23:53:15.538 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//diagnoses],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.Diagnosis&gt; edu.ncsu.csc.itrust2.controllers.api.APIDiagnosisController.getDiagnosis()
+23:53:15.539 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//diagnosesforvisit/{id}],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.Diagnosis&gt; edu.ncsu.csc.itrust2.controllers.api.APIDiagnosisController.getDiagnosesForVisit(java.lang.Long)
+23:53:15.541 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//drugs],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIDrugController.addDrug(edu.ncsu.csc.itrust2.forms.admin.DrugForm)
+23:53:15.541 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//drugs],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIDrugController.editDrug(edu.ncsu.csc.itrust2.forms.admin.DrugForm)
+23:53:15.551 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//drugs/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIDrugController.deleteDrug(java.lang.String)
+23:53:15.553 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//drugs],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.Drug&gt; edu.ncsu.csc.itrust2.controllers.api.APIDrugController.getDrugs()
+23:53:15.553 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//emergencyrecord/{patientName}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIEmergencyRecordController.getEmergencyRecord(java.lang.String)
+23:53:15.554 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//emergencyrecord/hcp/{patientName}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIEmergencyRecordController.getEmergencyRecordHCP(java.lang.String)
+23:53:15.560 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//ethnicity],methods=[GET]}&quot; onto public java.util.List&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; edu.ncsu.csc.itrust2.controllers.api.APIEnumController.getEthnicity()
+23:53:15.562 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//gender],methods=[GET]}&quot; onto public java.util.List&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; edu.ncsu.csc.itrust2.controllers.api.APIEnumController.getGenders()
+23:53:15.563 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//bloodtype],methods=[GET]}&quot; onto public java.util.List&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; edu.ncsu.csc.itrust2.controllers.api.APIEnumController.getBloodTypes()
+23:53:15.563 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//state],methods=[GET]}&quot; onto public java.util.List&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; edu.ncsu.csc.itrust2.controllers.api.APIEnumController.getStates()
+23:53:15.564 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//ophthalmologysurgerytype],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.enums.EyeSurgeryType&gt; edu.ncsu.csc.itrust2.controllers.api.APIEnumController.getOphthalmologySurgeryTypes()
+23:53:15.564 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//appointmentstatus],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.enums.Status&gt; edu.ncsu.csc.itrust2.controllers.api.APIEnumController.getAppointmentStatuses()
+23:53:15.565 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//housesmoking],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.enums.HouseholdSmokingStatus&gt; edu.ncsu.csc.itrust2.controllers.api.APIEnumController.getHouseSmokingStatuses()
+23:53:15.565 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//patientsmoking],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.enums.PatientSmokingStatus&gt; edu.ncsu.csc.itrust2.controllers.api.APIEnumController.getPatientSmokingStatuses()
+23:53:15.570 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//appointmenttype],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.enums.AppointmentType&gt; edu.ncsu.csc.itrust2.controllers.api.APIEnumController.getAppointmentTypes()
+23:53:15.571 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1/diary/{patient}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIFoodDiaryController.getEntriesHCP(java.lang.String)
+23:53:15.572 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1/diary],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIFoodDiaryController.getEntriesPatient()
+23:53:15.572 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//diary],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIFoodDiaryController.addEntry(edu.ncsu.csc.itrust2.forms.patient.FoodDiaryEntryForm)
+23:53:15.573 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//hospitals/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIHospitalController.getHospital(java.lang.String)
+23:53:15.574 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//hospitals],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.Hospital&gt; edu.ncsu.csc.itrust2.controllers.api.APIHospitalController.getHospitals()
+23:53:15.574 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//hospitals],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIHospitalController.createHospital(edu.ncsu.csc.itrust2.forms.admin.HospitalForm)
+23:53:15.575 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//hospitals/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIHospitalController.deleteHospital(java.lang.String)
+23:53:15.576 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//hospitals/{id}],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIHospitalController.updateHospital(java.lang.String,edu.ncsu.csc.itrust2.forms.admin.HospitalForm)
+23:53:15.577 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//icdcode/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController.getCode(java.lang.Long)
+23:53:15.582 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//icdcodes],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController.addCode(edu.ncsu.csc.itrust2.forms.admin.ICDCodeForm)
+23:53:15.582 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//icdcode/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController.deleteCode(java.lang.Long)
+23:53:15.582 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//icdcode/{id}],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController.updateCode(java.lang.Long,edu.ncsu.csc.itrust2.forms.admin.ICDCodeForm)
+23:53:15.582 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//icdcodes],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.ICDCode&gt; edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController.getCodes()
+23:53:15.584 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//loinccode/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APILOINCController.getCode(java.lang.Long)
+23:53:15.584 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//loinccodes],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APILOINCController.addCode(edu.ncsu.csc.itrust2.forms.admin.LOINCForm)
+23:53:15.585 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//loinccode/{id}],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APILOINCController.updateLOINC(java.lang.Long,edu.ncsu.csc.itrust2.forms.admin.LOINCForm)
+23:53:15.585 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//loinccode/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APILOINCController.deleteCode(java.lang.Long)
+23:53:15.586 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//loinccodes],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.LOINC&gt; edu.ncsu.csc.itrust2.controllers.api.APILOINCController.getCodes()
+23:53:15.592 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//labprocedures],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController.createLabProcedure(edu.ncsu.csc.itrust2.forms.personnel.LabProcedureForm)
+23:53:15.593 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//labprocedures],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController.getLabProcedures()
+23:53:15.593 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//labprocedures/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController.getProcedureById(java.lang.Long)
+23:53:15.593 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//labprocedures/byUser/{techId}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController.getProceduresForTech(java.lang.String)
+23:53:15.593 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//labprocedures/byVisit/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController.getProceduresForOfficeVisit(java.lang.Long)
+23:53:15.594 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//labprocedures],methods=[DELETE]}&quot; onto public void edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController.deleteLabProcedures()
+23:53:15.594 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//labprocedures/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController.deleteLabProcedure(java.lang.Long)
+23:53:15.602 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//labprocedures/{id}],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController.updateLabProcedure(java.lang.Long,edu.ncsu.csc.itrust2.forms.personnel.LabProcedureForm)
+23:53:15.603 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//logentries/range],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APILogEntryController.getEntryByDateRange(edu.ncsu.csc.itrust2.controllers.api.comm.LogEntryRequestBody)
+23:53:15.604 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//changePassword],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPasswordController.changePassword(edu.ncsu.csc.itrust2.forms.personnel.PasswordChangeForm)
+23:53:15.605 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//requestPasswordReset],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPasswordController.requestReset(java.lang.String)
+23:53:15.605 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//resetPassword/{tokenId}],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPasswordController.resetPassword(edu.ncsu.csc.itrust2.forms.personnel.PasswordChangeForm,long)
+23:53:15.608 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//patients/{username}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPatientController.getPatient(java.lang.String)
+23:53:15.608 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//patient],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPatientController.getPatient()
+23:53:15.608 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//patient/representatives/{username}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPatientController.getRepresentatives(java.lang.String)
+23:53:15.608 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//patient/representatives/{patient}/{representative}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPatientController.addRepresentative(java.lang.String,java.lang.String)
+23:53:15.609 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//patient/representatives/remove/{patient}/{representative}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPatientController.removeRepresentative(java.lang.String,java.lang.String)
+23:53:15.609 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//patients],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.Patient&gt; edu.ncsu.csc.itrust2.controllers.api.APIPatientController.getPatients()
+23:53:15.609 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//patient/representing/{username}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPatientController.getRepresenting(java.lang.String)
+23:53:15.610 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//patients],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPatientController.createPatient(edu.ncsu.csc.itrust2.forms.hcp_patient.PatientForm)
+23:53:15.610 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//patients/{id}],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPatientController.updatePatient(java.lang.String,edu.ncsu.csc.itrust2.forms.hcp_patient.PatientForm)
+23:53:15.611 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//personnel],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPersonnelController.createPersonnel(edu.ncsu.csc.itrust2.forms.personnel.PersonnelForm)
+23:53:15.612 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//personnel/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPersonnelController.getPersonnel(java.lang.String)
+23:53:15.612 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//personnel],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.Personnel&gt; edu.ncsu.csc.itrust2.controllers.api.APIPersonnelController.getPersonnel()
+23:53:15.612 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//personnel/{id}],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPersonnelController.updatePersonnel(java.lang.String,edu.ncsu.csc.itrust2.forms.personnel.PersonnelForm)
+23:53:15.612 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//curPersonnel],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPersonnelController.getCurrentPersonnel()
+23:53:15.613 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//personnel/getbyroles/{role}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPersonnelController.getPersonnelByRole(java.lang.String)
+23:53:15.614 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//prescriptions],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.Prescription&gt; edu.ncsu.csc.itrust2.controllers.api.APIPrescriptionController.getPrescriptions()
+23:53:15.614 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//prescriptions],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPrescriptionController.addPrescription(edu.ncsu.csc.itrust2.forms.hcp.PrescriptionForm)
+23:53:15.614 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//prescriptions],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPrescriptionController.editPrescription(edu.ncsu.csc.itrust2.forms.hcp.PrescriptionForm)
+23:53:15.614 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//prescriptions/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPrescriptionController.getPrescription(java.lang.Long)
+23:53:15.614 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//prescriptions/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIPrescriptionController.deletePrescription(java.lang.Long)
+23:53:15.615 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//role],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIUserController.getRole()
+23:53:15.616 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//users/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIUserController.getUser(java.lang.String)
+23:53:15.622 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//users],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIUserController.createUser(edu.ncsu.csc.itrust2.forms.admin.UserForm)
+23:53:15.622 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//users],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.User&gt; edu.ncsu.csc.itrust2.controllers.api.APIUserController.getUsers()
+23:53:15.622 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//users/{id}],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIUserController.updateUser(java.lang.String,edu.ncsu.csc.itrust2.forms.admin.UserForm)
+23:53:15.624 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//users/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.APIUserController.deleteUser(java.lang.String)
+23:53:15.628 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//generalcheckups/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralCheckupController.getGeneralCheckup(java.lang.Long)
+23:53:15.628 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//generalcheckups/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralCheckupController.deleteGeneralCheckup(java.lang.Long)
+23:53:15.628 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//generalcheckups],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralCheckupController.createGeneralCheckup(edu.ncsu.csc.itrust2.forms.hcp.GeneralCheckupForm)
+23:53:15.628 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//generalcheckups/{id}],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralCheckupController.updateGeneralCheckup(java.lang.Long,edu.ncsu.csc.itrust2.forms.hcp.GeneralCheckupForm)
+23:53:15.628 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//generalcheckups/hcp/view/{id}],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralCheckupController.viewGeneralCheckup(java.lang.Long,edu.ncsu.csc.itrust2.forms.hcp.GeneralCheckupForm)
+23:53:15.628 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//generalcheckups/patient/view/{id}],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralCheckupController.viewGeneralCheckupPatient(java.lang.Long,edu.ncsu.csc.itrust2.forms.hcp.GeneralCheckupForm)
+23:53:15.630 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//generalophthalmologies/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralOphthalmologyController.getGeneralOphthalmology(java.lang.Long)
+23:53:15.631 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//generalophthalmologies/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralOphthalmologyController.deleteGeneralOphthalmology(java.lang.Long)
+23:53:15.634 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//generalophthalmologies],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralOphthalmologyController.createGeneralOphthalmology(edu.ncsu.csc.itrust2.forms.hcp.GeneralOphthalmologyForm)
+23:53:15.637 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//generalophthalmologies/{id}],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralOphthalmologyController.updateGeneralOphthalmology(java.lang.Long,edu.ncsu.csc.itrust2.forms.hcp.GeneralOphthalmologyForm)
+23:53:15.643 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//generalophthalmologies/hcp/view/{id}],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralOphthalmologyController.viewGeneralOphthalmology(java.lang.Long,edu.ncsu.csc.itrust2.forms.hcp.GeneralOphthalmologyForm)
+23:53:15.643 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//generalophthalmologies/patient/view/{id}],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralOphthalmologyController.viewGeneralOphthalmologyPatient(java.lang.Long,edu.ncsu.csc.itrust2.forms.hcp.GeneralOphthalmologyForm)
+23:53:15.645 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//officevisits],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.OfficeVisit&gt; edu.ncsu.csc.itrust2.controllers.api.officevisit.APIOfficeVisitController.getOfficeVisits()
+23:53:15.645 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//officevisits/HCP],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.OfficeVisit&gt; edu.ncsu.csc.itrust2.controllers.api.officevisit.APIOfficeVisitController.getOfficeVisitsForHCP()
+23:53:15.645 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//officevisits/myofficevisits],methods=[GET]}&quot; onto public java.util.List&lt;edu.ncsu.csc.itrust2.models.persistent.OfficeVisit&gt; edu.ncsu.csc.itrust2.controllers.api.officevisit.APIOfficeVisitController.getMyOfficeVisits()
+23:53:15.645 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//officevisits],methods=[DELETE]}&quot; onto public void edu.ncsu.csc.itrust2.controllers.api.officevisit.APIOfficeVisitController.deleteOfficeVisits()
+23:53:15.646 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//ophthalmologysurgeries/{id}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIOphthalmologySurgeryController.getOphthalmologySurgery(java.lang.Long)
+23:53:15.647 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//ophthalmologysurgeries/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIOphthalmologySurgeryController.deleteOphthalmologySurgery(java.lang.Long)
+23:53:15.647 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//ophthalmologysurgeries],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIOphthalmologySurgeryController.createOphthalmologySurgery(edu.ncsu.csc.itrust2.forms.hcp.OphthalmologySurgeryForm)
+23:53:15.647 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//ophthalmologysurgeries/{id}],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIOphthalmologySurgeryController.updateOphthalmologySurgery(java.lang.Long,edu.ncsu.csc.itrust2.forms.hcp.OphthalmologySurgeryForm)
+23:53:15.647 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//ophthalmologysurgeries/hcp/view/{id}],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIOphthalmologySurgeryController.viewOphthalmologySurgery(java.lang.Long,edu.ncsu.csc.itrust2.forms.hcp.OphthalmologySurgeryForm)
+23:53:15.647 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1//ophthalmologysurgeries/patient/view/{id}],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity edu.ncsu.csc.itrust2.controllers.api.officevisit.APIOphthalmologySurgeryController.viewOphthalmologySurgeryPatient(java.lang.Long,edu.ncsu.csc.itrust2.forms.hcp.OphthalmologySurgeryForm)
+23:53:15.648 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/er/records]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.er.ERController.emergencyRecords(org.springframework.ui.Model)
+23:53:15.648 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/er/index]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.er.ERController.index(org.springframework.ui.Model)
+23:53:15.649 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/hcp/appointmentRequests],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.hcp.HCPController.requestAppointmentForm(org.springframework.ui.Model)
+23:53:15.649 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/hcp/editPatientDemographics],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.hcp.HCPController.editPatientDemographics()
+23:53:15.651 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/hcp/viewPatientFoodDiary],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.hcp.HCPController.foodDiary()
+23:53:15.652 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/hcp/editPrescriptions],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.hcp.HCPController.editPrescriptions()
+23:53:15.652 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/hcp/records]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.hcp.HCPController.emergencyRecords(org.springframework.ui.Model)
+23:53:15.652 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/hcp/personalRepresentatives],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.hcp.HCPController.personalReps()
+23:53:15.652 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/hcp/index]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.hcp.HCPController.index(org.springframework.ui.Model)
+23:53:15.653 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/hcp/documentOfficeVisit],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.hcp.OfficeVisitController.documentOfficeVisit(org.springframework.ui.Model)
+23:53:15.653 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/hcp/editOfficeVisit],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.hcp.OfficeVisitController.getAllOfficeVisits(org.springframework.ui.Model)
+23:53:15.664 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/hcp/viewPatientOfficeVisits],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.hcp.OfficeVisitController.getPatientsOfficeVisits(org.springframework.ui.Model)
+23:53:15.664 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/labtech/procedures]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.labtech.LabTechController.labProcedures()
+23:53:15.664 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/labtech/index]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.labtech.LabTechController.index(org.springframework.ui.Model)
+23:53:15.665 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/patient/appointmentRequest/manageAppointmentRequest],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.patient.PatientController.requestAppointmentForm(org.springframework.ui.Model)
+23:53:15.667 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/patient/personalRepresentative/personalRepresentatives],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.patient.PatientController.viewPersonalReps()
+23:53:15.668 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/patient/officeVisit/viewDiagnoses],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.patient.PatientController.viewDiagnoses(org.springframework.ui.Model)
+23:53:15.675 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/patient/foodDiary/addFoodDiaryEntry],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.patient.PatientController.addFoodDiaryEntryForm(org.springframework.ui.Model)
+23:53:15.675 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/patient/foodDiary/viewFoodDiaryEntries],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.patient.PatientController.viewFoodDiaryEntriesForm(org.springframework.ui.Model)
+23:53:15.676 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/patient/officeVisit/viewPrescriptions],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.patient.PatientController.viewPrescriptions(org.springframework.ui.Model)
+23:53:15.676 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/patient/demographics/editDemographics],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.patient.PatientController.viewDemographics(org.springframework.ui.Model)
+23:53:15.676 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/patient/officeVisit/viewOfficeVisits],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.patient.PatientController.viewOfficeVisits(org.springframework.ui.Model)
+23:53:15.677 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/patient/index]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.patient.PatientController.index(org.springframework.ui.Model)
+23:53:15.677 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/changePassword],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.personnel.PasswordController.changePassword(org.springframework.ui.Model)
+23:53:15.678 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/requestPasswordReset],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.personnel.PasswordController.requestReset(org.springframework.ui.Model)
+23:53:15.678 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/resetPassword],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.personnel.PasswordController.resetPassword(org.springframework.ui.Model,long)
+23:53:15.678 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/personnel/editDemographics],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.personnel.UserController.viewDemographics(org.springframework.ui.Model)
+23:53:15.679 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/resources/img/DrJenkins.jpg],methods=[GET]}&quot; onto public java.lang.String edu.ncsu.csc.itrust2.controllers.personnel.UserController.viewDrJenkins()
+23:53:15.724 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+23:53:15.767 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:53:15.989 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:53:15.989 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:53:16.006 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 17 ms
+23:53:16.206 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+23:53:16.208 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+23:53:16.209 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+23:53:16.924 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+23:53:17.057 [main] WARN  org.hibernate.orm.connections - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+23:53:17.058 [main] INFO  org.hibernate.orm.connections - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/iTrust2?createDatabaseIfNotExist=true&amp;useSSL=false&amp;serverTimezone=EST&amp;allowPublicKeyRetrieval=true]
+23:53:17.058 [main] INFO  org.hibernate.orm.connections - HHH10001001: Connection properties: {user=root, password=****}
+23:53:17.062 [main] INFO  org.hibernate.orm.connections - HHH10001003: Autocommit mode: false
+23:53:17.065 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 100 (min=1)
+23:53:17.441 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+23:53:18.217 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): edu.ncsu.csc.itrust2.models.persistent.Patient
+23:53:18.217 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): edu.ncsu.csc.itrust2.models.persistent.Patient
+23:53:19.307 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+</stdout>
+          <stderr>Loading class `com.mysql.jdbc.Driver&apos;. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver&apos;. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+</stderr>
+          <failedSince>26</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APILabProcedureTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APILabProcedureTest</name>
+      <duration>40.67</duration>
+      <time>40.67</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>9.523</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILabProcedureTest</className>
+          <testName>testGetMyProcedures</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>10.538</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILabProcedureTest</className>
+          <testName>testLabProcedureLabTechAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>10.352</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILabProcedureTest</className>
+          <testName>testGetLabProcedures</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>10.233</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILabProcedureTest</className>
+          <testName>testLabProcedureHCPAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;400&gt;
+	at edu.ncsu.csc.itrust2.apitest.APILabProcedureTest.testLabProcedureHCPAPI(APILabProcedureTest.java:322)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;400&gt;</errorDetails>
+          <stdout>23:53:53.301 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:53:53.301 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:53:53.304 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 3 ms
+23:53:53.357 [main] WARN  org.hibernate.orm.connections - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+23:53:53.357 [main] INFO  org.hibernate.orm.connections - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/iTrust2?createDatabaseIfNotExist=true&amp;useSSL=false&amp;serverTimezone=EST&amp;allowPublicKeyRetrieval=true]
+23:53:53.357 [main] INFO  org.hibernate.orm.connections - HHH10001001: Connection properties: {user=root, password=****}
+23:53:53.357 [main] INFO  org.hibernate.orm.connections - HHH10001003: Autocommit mode: false
+23:53:53.357 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 100 (min=1)
+23:53:53.360 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+23:53:53.435 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+drop table if exists AppointmentRequests
+drop table if exists BasicHealthMetrics
+drop table if exists Diagnoses
+drop table if exists Drugs
+drop table if exists FoodDiaryEntry
+drop table if exists GeneralCheckups
+drop table if exists GeneralOphthalmology
+drop table if exists hibernate_sequence
+drop table if exists Hospitals
+drop table if exists ICDCodes
+drop table if exists LabProcedures
+drop table if exists LogEntries
+drop table if exists LoginAttempts
+drop table if exists LoginBans
+drop table if exists LoginLockouts
+drop table if exists LOINCCodes
+drop table if exists OphthalmologySurgery
+drop table if exists PasswordResetTokens
+drop table if exists Patients
+drop table if exists PERSONAL_REPRESENTATIVES
+drop table if exists Personnel
+drop table if exists Prescriptions
+drop table if exists Users
+23:53:54.919 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+23:53:54.919 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+23:53:54.921 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+23:53:54.921 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.AppointmentRequests&apos; doesn&apos;t exist
+alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+23:53:54.921 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+23:53:54.921 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.AppointmentRequests&apos; doesn&apos;t exist
+alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+23:53:54.921 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+23:53:54.921 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.BasicHealthMetrics&apos; doesn&apos;t exist
+alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+23:53:54.922 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+23:53:54.922 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.BasicHealthMetrics&apos; doesn&apos;t exist
+alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+23:53:54.922 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+23:53:54.922 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Diagnoses&apos; doesn&apos;t exist
+alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+23:53:54.922 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+23:53:54.922 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Diagnoses&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+23:53:54.922 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+23:53:54.922 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+23:53:54.922 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+23:53:54.922 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+23:53:54.923 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+23:53:54.923 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+23:53:54.923 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+23:53:54.923 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+23:53:54.923 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+23:53:54.923 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralCheckups&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+23:53:54.924 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+23:53:54.924 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+23:53:54.924 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+23:53:54.924 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+23:53:54.924 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+23:53:54.924 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+23:53:54.924 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+23:53:54.924 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+23:53:54.924 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+23:53:54.925 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.GeneralOphthalmology&apos; doesn&apos;t exist
+alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+23:53:54.925 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+23:53:54.925 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LabProcedures&apos; doesn&apos;t exist
+alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+23:53:54.925 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+23:53:54.925 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LabProcedures&apos; doesn&apos;t exist
+alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+23:53:54.925 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+23:53:54.925 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LabProcedures&apos; doesn&apos;t exist
+alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+23:53:54.926 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+23:53:54.928 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LabProcedures&apos; doesn&apos;t exist
+alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+23:53:54.929 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+23:53:54.929 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LoginAttempts&apos; doesn&apos;t exist
+alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+23:53:54.929 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+23:53:54.929 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LoginBans&apos; doesn&apos;t exist
+alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+23:53:54.930 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+23:53:54.930 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.LoginLockouts&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+23:53:54.930 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+23:53:54.930 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+23:53:54.930 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+23:53:54.930 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+23:53:54.930 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+23:53:54.930 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+23:53:54.931 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+23:53:54.931 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+23:53:54.931 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+23:53:54.931 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.OphthalmologySurgery&apos; doesn&apos;t exist
+alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+23:53:54.931 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+23:53:54.931 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.PasswordResetTokens&apos; doesn&apos;t exist
+alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+23:53:54.931 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+23:53:54.931 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Patients&apos; doesn&apos;t exist
+alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+23:53:54.932 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+23:53:54.932 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Patients&apos; doesn&apos;t exist
+alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+23:53:54.932 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+23:53:54.932 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Patients&apos; doesn&apos;t exist
+alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+23:53:54.932 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+23:53:54.932 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.PERSONAL_REPRESENTATIVES&apos; doesn&apos;t exist
+alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+23:53:54.932 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+23:53:54.932 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.PERSONAL_REPRESENTATIVES&apos; doesn&apos;t exist
+alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+23:53:54.932 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+23:53:54.932 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Personnel&apos; doesn&apos;t exist
+alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+23:53:54.933 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+23:53:54.933 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Prescriptions&apos; doesn&apos;t exist
+alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+23:53:54.933 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+23:53:54.933 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Prescriptions&apos; doesn&apos;t exist
+alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+23:53:54.933 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+23:53:54.933 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table &apos;iTrust2.Prescriptions&apos; doesn&apos;t exist
+drop table if exists AppointmentRequests
+drop table if exists BasicHealthMetrics
+drop table if exists Diagnoses
+drop table if exists Drugs
+drop table if exists FoodDiaryEntry
+drop table if exists GeneralCheckups
+drop table if exists GeneralOphthalmology
+drop table if exists hibernate_sequence
+drop table if exists Hospitals
+drop table if exists ICDCodes
+drop table if exists LabProcedures
+drop table if exists LogEntries
+drop table if exists LoginAttempts
+drop table if exists LoginBans
+drop table if exists LoginLockouts
+drop table if exists LOINCCodes
+drop table if exists OphthalmologySurgery
+drop table if exists PasswordResetTokens
+drop table if exists Patients
+drop table if exists PERSONAL_REPRESENTATIVES
+drop table if exists Personnel
+drop table if exists Prescriptions
+drop table if exists Users
+create table AppointmentRequests (id bigint not null, comments varchar(255), date datetime, status varchar(255), type varchar(255), hcp_id varchar(100), patient_id varchar(100), primary key (id))
+create table BasicHealthMetrics (id bigint not null, diastolic integer, hdl integer, headCircumference float, height float, houseSmokingStatus integer, ldl integer, patientSmokingStatus integer, systolic integer, tri integer, weight float, hcp_id varchar(100), patient_id varchar(100), primary key (id))
+create table Diagnoses (id bigint not null, note varchar(255), code_id bigint, visit_id bigint not null, primary key (id))
+create table Drugs (id bigint not null, code varchar(255), description varchar(255), name varchar(255), primary key (id))
+create table FoodDiaryEntry (id bigint not null, calories integer, carbs integer, date datetime, fat integer, fiber integer, food varchar(255), mealType varchar(255), patient varchar(255), protein integer, servings integer, sodium integer, sugars integer, primary key (id))
+create table GeneralCheckups (id bigint not null, date datetime, notes varchar(255), type varchar(255), appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table GeneralOphthalmology (id bigint not null, date datetime, notes varchar(255), type varchar(255), axisOD integer, axisOS integer, cylinderOD double precision, cylinderOS double precision, sphereOD double precision, sphereOS double precision, visualAcuityOD integer, visualAcuityOS integer, diagnosis varchar(255), appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table hibernate_sequence (next_val bigint)
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+create table Hospitals (name varchar(255) not null, address varchar(255), state varchar(255), zip varchar(255), primary key (name))
+create table ICDCodes (id bigint not null, code varchar(255), description varchar(255), primary key (id))
+create table LabProcedures (id bigint not null, comments varchar(255), priority varchar(255), status varchar(255), labtech varchar(100), LOINC_code bigint, patient varchar(100), visit bigint not null, primary key (id))
+create table LogEntries (id bigint not null, logCode integer, message varchar(255), primaryUser varchar(255), secondaryUser varchar(255), time datetime, primary key (id))
+create table LoginAttempts (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LoginBans (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LoginLockouts (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LOINCCodes (id bigint not null, code varchar(255), commonName varchar(255), component varchar(255), property varchar(255), primary key (id))
+create table OphthalmologySurgery (id bigint not null, date datetime, notes varchar(255), type varchar(255), axisOD integer, axisOS integer, cylinderOD double precision, cylinderOS double precision, sphereOD double precision, sphereOS double precision, visualAcuityOD integer, visualAcuityOS integer, surgeryType integer, appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table PasswordResetTokens (id bigint not null, creationTime bigint not null, tempPassword varchar(255), user_id varchar(100), primary key (id))
+create table Patients (address1 varchar(255), address2 varchar(255), bloodType varchar(255), causeOfDeath varchar(255), city varchar(255), dateOfBirth datetime, dateOfDeath datetime, email varchar(255), ethnicity varchar(255), firstName varchar(255), gender varchar(255), id bigint, lastName varchar(255), phone varchar(255), preferredName varchar(255), state varchar(255), zip varchar(255), self_id varchar(100) not null, father_id varchar(100), mother_id varchar(100), primary key (self_id))
+create table PERSONAL_REPRESENTATIVES (patient_id varchar(100) not null, representative_id varchar(100) not null, primary key (patient_id, representative_id))
+create table Personnel (id bigint not null, address1 varchar(255), address2 varchar(255), city varchar(255), email varchar(255), enabled bit not null, firstName varchar(255), lastName varchar(255), phone varchar(255), specialty varchar(255), state varchar(255), zip varchar(255), self_id varchar(100), primary key (id))
+create table Prescriptions (id bigint not null, dosage integer not null, endDate datetime, renewals integer not null, startDate datetime, drug_id bigint, patient_id varchar(100), prescriptions_id bigint, primary key (id))
+create table Users (username varchar(255) not null, enabled integer, password varchar(255), role varchar(255), primary key (username))
+alter table AppointmentRequests add constraint FKlpa5tri2ufo8t7bt7nusa1pss foreign key (hcp_id) references Users (username)
+alter table AppointmentRequests add constraint FKo65c0ooyqou8d1x56y37u1nau foreign key (patient_id) references Users (username)
+alter table BasicHealthMetrics add constraint FKd9uamofafbqloq2v2j2o4f0pg foreign key (hcp_id) references Users (username)
+alter table BasicHealthMetrics add constraint FKj6od5nqw6nvjgmpuilsfj3ad foreign key (patient_id) references Users (username)
+alter table Diagnoses add constraint FKthsk14tdxoeeadlpvkot8fdhb foreign key (code_id) references ICDCodes (id)
+alter table Diagnoses add constraint FKjm5cnpdmv6x9iajrypt72lguy foreign key (visit_id) references GeneralCheckups (id)
+alter table GeneralCheckups add constraint FKtgti6uflcm2q9uvfx4obmpwv4 foreign key (appointment_id) references AppointmentRequests (id)
+alter table GeneralCheckups add constraint FKqtpf2nfiuf47019rc8gnaeb6v foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table GeneralCheckups add constraint FKplofss0lwup9mbnu0abrtalxx foreign key (hcp_id) references Users (username)
+alter table GeneralCheckups add constraint FK9tghbxo0xq6bba8p1rp7rbecg foreign key (hospital_id) references Hospitals (name)
+alter table GeneralCheckups add constraint FK5fa5nrrfo22p8q5xiptgh83x5 foreign key (patient_id) references Users (username)
+alter table GeneralOphthalmology add constraint FKtcx79uvv1o4wrp9xqdk3hcap2 foreign key (appointment_id) references AppointmentRequests (id)
+alter table GeneralOphthalmology add constraint FK6svu0my7r662s5sn2d7cgf1jq foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table GeneralOphthalmology add constraint FKfeh4gtxe0s4kr52i7u5i8tkum foreign key (hcp_id) references Users (username)
+alter table GeneralOphthalmology add constraint FKc5kn71vr8tbt5ty5cc7pfrbgf foreign key (hospital_id) references Hospitals (name)
+alter table GeneralOphthalmology add constraint FKr2whnupl6f7k12gx78f5lhdx9 foreign key (patient_id) references Users (username)
+alter table LabProcedures add constraint FKn8ctd2oj7knwaxxfakrmwybj6 foreign key (labtech) references Users (username)
+alter table LabProcedures add constraint FKq97sa9kb1vkse9jbn0s38drei foreign key (LOINC_code) references LOINCCodes (id)
+alter table LabProcedures add constraint FKd9netwr78cspphyqtctsdy9cl foreign key (patient) references Users (username)
+alter table LabProcedures add constraint FKf1qdex4yna7yac0e29xylgqt7 foreign key (visit) references GeneralCheckups (id)
+alter table LoginAttempts add constraint FK6me6sh9op6gntvqnqqqiev95q foreign key (user_id) references Users (username)
+alter table LoginBans add constraint FKpmi5daj2jt8w5gq9maxjpro1f foreign key (user_id) references Users (username)
+alter table LoginLockouts add constraint FKhndsii960xs59bv7a7x5669ii foreign key (user_id) references Users (username)
+alter table OphthalmologySurgery add constraint FK2ab5y8krlqw4407jo9je2rodh foreign key (appointment_id) references AppointmentRequests (id)
+alter table OphthalmologySurgery add constraint FK64ijwgpf2cbt4t6vcwyj0vy77 foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table OphthalmologySurgery add constraint FK43k7w4nn8hxf36s3xonve9l5v foreign key (hcp_id) references Users (username)
+alter table OphthalmologySurgery add constraint FKg3nwmi2eh9lxpys9gom75nsvx foreign key (hospital_id) references Hospitals (name)
+alter table OphthalmologySurgery add constraint FK526jd5m6bguykj27g8jbl2idt foreign key (patient_id) references Users (username)
+alter table PasswordResetTokens add constraint FKdtqvlc6is6k5ibp1xc1nshrc8 foreign key (user_id) references Users (username)
+alter table Patients add constraint FKe0d1x2xac4nte49udxrwdiew5 foreign key (self_id) references Users (username)
+alter table Patients add constraint FK8s22h2pw102ce5ytcmqmhegp3 foreign key (father_id) references Users (username)
+alter table Patients add constraint FK3aemk5yjohgj9y6j4lq57g4o5 foreign key (mother_id) references Users (username)
+alter table PERSONAL_REPRESENTATIVES add constraint FK4xcw5y8obck13wkbeja8cxy6d foreign key (representative_id) references Patients (self_id)
+alter table PERSONAL_REPRESENTATIVES add constraint FKthu0xxghbfmojk34tnmg17qxd foreign key (patient_id) references Patients (self_id)
+alter table Personnel add constraint FKa9l63705rm5c4tf50y9h9x8rp foreign key (self_id) references Users (username)
+alter table Prescriptions add constraint FKrr7q2rw34mv2h8p24dwo2sw39 foreign key (drug_id) references Drugs (id)
+alter table Prescriptions add constraint FK11c0dywqeqm53244c088xriq0 foreign key (patient_id) references Users (username)
+alter table Prescriptions add constraint FKkhctha3d1ti34dbaplmn8tsyk foreign key (prescriptions_id) references GeneralCheckups (id)
+23:54:02.565 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+23:54:03.482 [main] WARN  o.h.a.i.UnresolvedEntityInsertActions - HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([edu.ncsu.csc.itrust2.models.persistent.Hospital#iTrust Test Hospital 2])
+	Dependent entities: ([[edu.ncsu.csc.itrust2.models.persistent.GeneralCheckup#13]])
+	Non-nullable association(s): ([edu.ncsu.csc.itrust2.models.persistent.GeneralCheckup.hospital])
+23:54:03.524 [main] ERROR org.hibernate.internal.SessionImpl - HHH000346: Error during managed flush [Validation failed for classes [edu.ncsu.csc.itrust2.models.persistent.LabProcedure] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage=&apos;may not be null&apos;, propertyPath=visit, rootBeanClass=class edu.ncsu.csc.itrust2.models.persistent.LabProcedure, messageTemplate=&apos;{javax.validation.constraints.NotNull.message}&apos;}
+]]
+</stdout>
+          <stderr>javax.validation.ConstraintViolationException: Validation failed for classes [edu.ncsu.csc.itrust2.models.persistent.LabProcedure] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage=&apos;may not be null&apos;, propertyPath=visit, rootBeanClass=class edu.ncsu.csc.itrust2.models.persistent.LabProcedure, messageTemplate=&apos;{javax.validation.constraints.NotNull.message}&apos;}
+]
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:138)
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:78)
+	at org.hibernate.action.internal.EntityInsertAction.preInsert(EntityInsertAction.java:205)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:82)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:582)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:456)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:337)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1282)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:465)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2963)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2339)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:147)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:231)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:65)
+	at edu.ncsu.csc.itrust2.models.persistent.DomainObject.save(DomainObject.java:196)
+	at edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController.createLabProcedure(APILabProcedureController.java:201)
+	at edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController$$FastClassBySpringCGLIB$$f5dc14ec.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:721)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor.invoke(MethodSecurityInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:656)
+	at edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController$$EnhancerBySpringCGLIB$$5f03a983.createLabProcedure(&lt;generated&gt;)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:688)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:65)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155)
+	at edu.ncsu.csc.itrust2.apitest.APILabProcedureTest.testLabProcedureHCPAPI(APILabProcedureTest.java:321)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</stderr>
+          <failedSince>25</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APILogEntryTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APILogEntryTest</name>
+      <duration>2.282</duration>
+      <time>2.282</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>2.249</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILogEntryTest</className>
+          <testName>testLogByDateLarge</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.025</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APILogEntryTest</className>
+          <testName>testLogByDate</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest</name>
+      <duration>0.694</duration>
+      <time>0.694</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.335</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest</className>
+          <testName>testOphthalmologySurgeryAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;409&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest.testOphthalmologySurgeryAPI(APIOphthalmologySurgeryTest.java:193)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;409&gt;</errorDetails>
+          <stdout>23:54:05.540 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+23:54:05.540 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6b2c2eef, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7aef07f7, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@57d69931, org.springframework.test.context.support.DirtiesContextTestExecutionListener@131ea503, org.springframework.test.context.transaction.TransactionalTestExecutionListener@194faad9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1b9dc6b8, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@7861cbeb]
+23:54:05.545 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:54:05.545 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:54:05.549 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 4 ms
+</stdout>
+          <failedSince>28</failedSince>
+        </case>
+        <case>
+          <duration>0.297</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest</className>
+          <testName>testPreScheduledOphthalmologySurgery</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;409&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest.testPreScheduledOphthalmologySurgery(APIOphthalmologySurgeryTest.java:136)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;409&gt;</errorDetails>
+          <stdout>23:54:05.884 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:54:05.884 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:54:05.885 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>28</failedSince>
+        </case>
+        <case>
+          <duration>0.026</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest</className>
+          <testName>testDeleteNonExistentOfficeVisit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.019</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIOphthalmologySurgeryTest</className>
+          <testName>testGetNonExistentOfficeVisit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIPasswordTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIPasswordTest</name>
+      <duration>1.193</duration>
+      <time>1.193</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.504</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPasswordTest</className>
+          <testName>testRequestReset</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.016</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPasswordTest</className>
+          <testName>testInvalidPasswordChanges</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.651</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPasswordTest</className>
+          <testName>testValidPasswordChanges</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIPatientTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIPatientTest</name>
+      <duration>1.233</duration>
+      <time>1.233</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.012</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPatientTest</className>
+          <testName>testGetNonExistentPatient</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.213</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPatientTest</className>
+          <testName>testPatientAPI</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;409&gt; but was:&lt;404&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIPatientTest.testPatientAPI(APIPatientTest.java:130)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;409&gt; but was:&lt;404&gt;</errorDetails>
+          <stdout>23:54:11.463 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:54:11.463 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:54:11.464 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>26</failedSince>
+        </case>
+        <case>
+          <duration>0.033</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPatientTest</className>
+          <testName>testPatientAsPatient</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.009</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPatientTest</className>
+          <testName>testPatientUnauthenticated</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.666</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPatientTest</className>
+          <testName>testRepresentativeAPIHCP</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIPatientTest.testRepresentativeAPIHCP(APIPatientTest.java:220)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;404&gt;</errorDetails>
+          <stdout>23:54:11.723 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:54:11.723 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:54:11.724 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 1 ms
+</stdout>
+          <failedSince>5</failedSince>
+        </case>
+        <case>
+          <duration>0.293</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPatientTest</className>
+          <testName>testRepresentativeAPIPatient</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;
+	at edu.ncsu.csc.itrust2.apitest.APIPatientTest.testRepresentativeAPIPatient(APIPatientTest.java:372)
+</errorStackTrace>
+          <errorDetails>Status expected:&lt;200&gt; but was:&lt;404&gt;</errorDetails>
+          <stdout>23:54:12.391 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet &apos;&apos;
+23:54:12.391 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization started
+23:54:12.396 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet &apos;&apos;: initialization completed in 5 ms
+</stdout>
+          <failedSince>5</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIPrescriptionTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIPrescriptionTest</name>
+      <duration>0.689</duration>
+      <time>0.689</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.688</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIPrescriptionTest</className>
+          <testName>testPrescriptionAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/lib/jenkins/workspace/itrust_test_analysis/iTrust2/target/surefire-reports/TEST-edu.ncsu.csc.itrust2.apitest.APIUserTest.xml</file>
+      <name>edu.ncsu.csc.itrust2.apitest.APIUserTest</name>
+      <duration>0.814</duration>
+      <time>0.814</time>
+      <nodeId>38</nodeId>
+      <enclosingBlocks>
+        <string>37</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Declarative: Post Actions</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.781</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIUserTest</className>
+          <testName>testUserAPI</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.008</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIUserTest</className>
+          <testName>testGetNonExistentUser</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.01</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIUserTest</className>
+          <testName>testAdminRole</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.006</duration>
+          <className>edu.ncsu.csc.itrust2.apitest.APIUserTest</className>
+          <testName>testNoRole</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>61.54</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>
