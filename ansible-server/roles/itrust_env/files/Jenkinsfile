@@ -11,11 +11,26 @@ pipeline {
                 }
             }
         }
-        stage('Build') { 
-            steps {
-                sh 'cd iTrust2 && mvn -f pom.xml clean test verify checkstyle:checkstyle -Dmaven.test.failure.ignore=false' 
+        stage('Build') {
+            steps{
+                timeout(time: 15, unit: 'MINUTES') {
+                    sh 'cd iTrust2 && mvn -f pom.xml clean test verify checkstyle:checkstyle -Dmaven.test.failure.ignore=false'
+                }
             }
         }
     }
+    post { 
+        always {
+            junit 'iTrust2/target/surefire-reports/**/*.xml'
+            jacoco(
+                    execPattern: 'iTrust2/target/coverage-reports/*.exec',
+                    classPattern: 'iTrust2/target/classes',
+                    sourcePattern: 'iTrust2/src/main/java',
+                    exclusionPattern: 'iTrust2/src/test*',
+                    changeBuildStatus: true,
+                    minimumInstructionCoverage: '50'
+                )
+            sh 'cd /jenkins-server/itrust-fuzzer && sudo npm start &'
+        }
+    }
 }
-

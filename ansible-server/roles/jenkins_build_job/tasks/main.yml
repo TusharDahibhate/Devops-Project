@@ -18,10 +18,20 @@
       state: present
     become: true
     
-  - name: Create a jenkins job for iTrust2 using basic authentication
+  - name: Create a jenkins job for iTrust2 build using basic authentication
     jenkins_job:
-      config: "{{ lookup('file', 'templates/iTrustJenkinsConfig.xml') }}"
+      config: "{{ lookup('file', 'templates/iTrustBuild.xml') }}"
       name: itrust
+      password: "{{jenkins_password}}"
+      url: http://localhost:8081
+      user: "{{jenkins_user}}"
+      state: present
+    become: true
+
+  - name: Create a jenkins job for iTrust2 test analysis using basic authentication
+    jenkins_job:
+      config: "{{ lookup('file', 'templates/iTrustTestAnalysis.xml') }}"
+      name: itrust_test_analysis
       password: "{{jenkins_password}}"
       url: http://localhost:8081
       user: "{{jenkins_user}}"

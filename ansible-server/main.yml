@@ -5,9 +5,9 @@
    - var/secrets.yml
 
   roles:
-#    - jenkins_install   
-#    - checkbox_env
-#    - jenkins_build_job
-#    - mysql   
+    - jenkins_install   
+    - checkbox_env
+    - jenkins_build_job
+    - mysql   
     - itrust_env
     
