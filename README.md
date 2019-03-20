@@ -1,4 +1,4 @@
-# Configuration Management and Build Milestone 1
+Test + Analysis Milestone
 
 ### Team Members:
 1. Shantanu Bhoyar - sbhoyar 
