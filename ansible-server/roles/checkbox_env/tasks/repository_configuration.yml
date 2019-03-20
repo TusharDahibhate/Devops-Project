@@ -19,6 +19,7 @@
       dest: '{{ checkbox.location }}'
       accept_hostkey: yes
       key_file: /home/vagrant/.ssh/id_rsa_github2 
+      version: Milestone2
     when: checkbox_available.stat.exists == false
     become: true
     
