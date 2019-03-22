@@ -21,7 +21,7 @@ Screencast: https://youtu.be/jJJOnZmi3TQ
 
 * The [itrust-fuzzer](https://github.ncsu.edu/asaxena5/itrust-fuzzer) repo contains the fuzzing logic and task runner for executing the build 100 times.
 
-* checkbox.io-private [MileStone2](https://github.ncsu.edu/asaxena5/itrust-fuzzer) branch contains testcases for threshold checks for custom metrics.
+* checkbox.io-private [MileStone2](https://github.ncsu.edu/asaxena5/checkbox.io-private/tree/Milestone2) branch contains testcases for threshold checks for custom metrics.
 
 # Tasks
 1. Coverage/Jenkins Support
