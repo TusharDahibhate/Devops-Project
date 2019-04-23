@@ -11,11 +11,12 @@ pipeline {
                 }
             }
         }
-        stage('Build') { 
-            steps {
-                sh 'cd iTrust2 && mvn -f pom.xml clean test verify checkstyle:checkstyle -Dmaven.test.failure.ignore=false' 
+        stage('Build') {
+            steps{
+                timeout(time: 15, unit: 'MINUTES') {
+                    sh 'cd iTrust2 && mvn -f pom.xml clean test verify checkstyle:checkstyle -Dmaven.test.failure.ignore=false'
+                }
             }
         }
     }
 }
-

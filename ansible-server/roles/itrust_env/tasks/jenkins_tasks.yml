@@ -19,6 +19,6 @@
       src: templates/copy_creds_to_jenkins.sh
       dest: /jenkins-server/copy_creds_to_jenkins.sh
     
-  - name: Upolad db.properties to Jenkins credentials
-    command: "/jenkins-server/copy_creds_to_jenkins.sh {{jenkins_user}} {{jenkins_password}}"
+  - name: Upolad credentials to Jenkins
+    command: /bin/sh /jenkins-server/copy_creds_to_jenkins.sh {{jenkins_user}} {{jenkins_password}}
 

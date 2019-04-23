@@ -4,6 +4,11 @@
       ansible_python_interpreter: '/usr/bin/python'
     become: true
 
+  - name: Install python-jenkins for jobs
+    pip:
+      name: python-jenkins
+    become: true
+
   - name: Create a jenkins job for checkbox using basic authentication
     jenkins_job:
       config: "{{ lookup('file', 'templates/pipelineJob.xml') }}"

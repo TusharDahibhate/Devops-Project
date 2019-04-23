@@ -1,6 +1,6 @@
 ---
 - hosts: jenkins-server
-  
+  become: true
   vars_files:
    - var/secrets.yml
 
