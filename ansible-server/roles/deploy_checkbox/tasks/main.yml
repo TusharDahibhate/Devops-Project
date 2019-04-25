@@ -1,0 +1,32 @@
+---
+- name: Add ansible repository
+  apt_repository:
+    repo: 'ppa:ansible/ansible'
+    state: present
+    update_cache: yes
+
+- name: Installing other required packages
+  apt:
+    pkg: ['git', 'git-core', 'python-software-properties', 'ansible', 'python-pip']
+    state: present
+  
+- name: Install pip packages
+  pip:
+    name: ['python-jenkins', 'lxml']
+    state: present
+  
+- name: Copying file with owner and permissions   #TEMPORARY
+  copy:
+    src: roles/deploy_checkbox/tasks/cloneCheckboxPlaybook.yml
+    dest: /home/vagrant/DevOps_Project1/ansible-server/roles/cloneCheckboxPlaybook.yml
+    owner: root
+    group: root
+    mode: 0644
+
+# - name: Setup checkbox.io on AWS      #TEMPORARY
+#   shell: ansible-playbook -i /home/vagrant/checkbox_inventory /home/vagrant/DevOps_Project1/ansible-server/roles/cloneCheckboxPlaybook.yml
+#   become: yes
+
+# - name: Setup checkbox.io on AWS
+#   shell: ansible-playbook -i /home/vagrant/checkbox_inventory /home/vagrant/DevOps_Project1/ansible-server/roles/deploy_checkbox/tasks/cloneCheckboxPlaybook.yml
+#   become: yes

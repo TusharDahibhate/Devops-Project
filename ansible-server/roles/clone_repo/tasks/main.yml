@@ -1,0 +1,30 @@
+---
+- name: Copy private_key file to server
+  template: 
+    src: roles/clone_repo/templates/proj_repo_keyPair 
+    dest: /home/vagrant/.ssh/id_rsa_github3 
+    owner: root
+    group: root
+    mode: 0600
+  become: yes
+
+- name: stat /home/vagrant/DevOps_Project1
+  stat:
+    path: /home/vagrant/DevOps_Project1
+  register: repoStat
+
+- name: Ensure that directory exists for cloning
+  file:
+    path: /home/vagrant/DevOps_Project1
+    state: directory
+  when: repoStat.stat.exists == False
+
+- name: Clone checkbox private repository
+  git:
+    repo: git@github.ncsu.edu:asaxena5/Devops-Project1.git
+    dest: /home/vagrant/DevOps_Project1
+    accept_hostkey: yes
+    version: Milestone3
+    key_file: /home/vagrant/.ssh/id_rsa_github3
+  when: repoStat.stat.exists == false
+  become: true
