@@ -1,30 +1,30 @@
 ---
 - name: Copy private_key file to server
   template: 
-    src: roles/clone_repo/templates/proj_repo_keyPair 
-    dest: /home/vagrant/.ssh/id_rsa_github3 
+    src: roles/clone_repo/templates/checkbox_key
+    dest: /home/vagrant/.ssh/rsa_gihub_checkbox
     owner: root
     group: root
     mode: 0600
   become: yes
 
-- name: stat /home/vagrant/DevOps_Project1
+- name: stat /home/vagrant/Playbook
   stat:
-    path: /home/vagrant/DevOps_Project1
+    path: /home/vagrant/Playbook
   register: repoStat
 
 - name: Ensure that directory exists for cloning
   file:
-    path: /home/vagrant/DevOps_Project1
+    path: /home/vagrant/Playbook
     state: directory
   when: repoStat.stat.exists == False
 
-- name: Clone checkbox private repository
+- name: Clone checkbx playbook private repository
   git:
-    repo: git@github.ncsu.edu:asaxena5/Devops-Project1.git
-    dest: /home/vagrant/DevOps_Project1
+    repo: git@github.com:richadua/checkbox-env.git
+    dest: /home/vagrant/Playbook
     accept_hostkey: yes
-    version: Milestone3
-    key_file: /home/vagrant/.ssh/id_rsa_github3
+    # version: Milestone3
+    key_file: /home/vagrant/.ssh/rsa_gihub_checkbox
   when: repoStat.stat.exists == false
   become: true

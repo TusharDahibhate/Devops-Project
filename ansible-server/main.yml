@@ -10,7 +10,7 @@
     - jenkins_build_job
     - mysql   
     - itrust_env
-    # - EC2_Setup
-    # - clone_repo
-    # - deploy_checkbox
+    - EC2_Setup
+    - clone_repo
+    - deploy_checkbox
     

@@ -81,4 +81,11 @@
   - name: Copy post-receive script
     template: src=roles/checkbox_env/templates/hooks/postreceive.j2 dest={{ git_repository_path }}/hooks/post-receive mode=0755
     become: yes
-    
+  
+  - name: Stop nginx service
+    command: /etc/init.d/nginx stop
+    become: true
+
+  - name: Start nginx service
+    command: /etc/init.d/nginx start
+    become: true

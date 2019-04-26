@@ -1,6 +1,0 @@
----
-- hosts: awsserver
-  gather_facts: no
-  become: true
-  roles:
-    - role: checkbox_env
