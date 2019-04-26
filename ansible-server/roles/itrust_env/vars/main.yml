@@ -1,5 +1,6 @@
 jenkins_build_job: itrust
 repo_path: /jenkins-server/iTrust2-v4/
+deploy_repo_path: /home/vagrant/Provisioning/
 build_bare_repo_path: /jenkins-server/iTrustBuildBare/
 timezone: America/New_York
 git_email: sbhoyar@ncsu.edu
@@ -7,3 +8,4 @@ git_user_name: Shantanu Bhoyar
 git_rsa_path: /root/.ssh/id_rsa_github
 google_chrome_url: http://dl.google.com/linux/chrome/deb/
 google_chrome_key: https://dl-ssl.google.com/linux/linux_signing_key.pub
+

@@ -51,4 +51,42 @@
     copy:
       src: templates/post-receive
       dest: "{{build_bare_repo_path}}jenkins.git/hooks/"
+      mode: 0755
+  
+  - name: Check if deploy repo exists
+    stat: 
+      path: "{{deploy_repo_path}}"
+    register: deploy_repo
+
+  - name: Copy private_key file to server
+    template: 
+      src: files/github_pro_rsa
+      dest: /home/vagrant/.ssh/github_pro_rsa 
+      owner: root
+      group: root
+      mode: 0600
+    become: yes
+
+  - name: Clone EC2 deploy repo
+    git:
+      repo: git@github.ncsu.edu:tdahibh/Provisioning.git
+      dest: "{{deploy_repo_path}}"
+      accept_hostkey: yes
+      key_file: /home/vagrant/.ssh/github_pro_rsa
+    when: deploy_repo.stat.exists == False
+    become: true
+  
+  - name: Change permissions
+    file:
+      path: "{{deploy_repo_path}}ansible-server"
+      owner: jenkins
+      group: jenkins
+      mode: 0777
+  
+  - name: Change permissions
+    file:
+      path: "{{deploy_repo_path}}ansible-server/inventory"
+      owner: jenkins
+      group: jenkins
+      mode: 0777
 

@@ -56,6 +56,16 @@
      state: present
     become: true
   
+  - name: Install boto
+    pip:
+      name: boto3
+      state: latest
+  
+  - name: Install boto
+    pip:
+      name: botocore
+      state: latest
+
   - name: Configure jenkins to use port 8081
     lineinfile:
       path: /etc/default/jenkins
