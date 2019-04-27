@@ -72,6 +72,131 @@ itrust_env contains 3 playbooks:
  * jenkins_tasks.yml
     * Copies the Jenkinsfile, db.properties, email.properties to the cloned repo.
     * Configures Jenkins with database and email credentials. 
+    
+    
+### Initial setups:
+
+1. Navigate to the ansible-server directory and type vagrant up. This will create the VM.
+2. Navigate to the jenkins-server directory and type vagrant up. This will create the VM.
+3. Login into the ansible-server using vagrant ssh.
+4. Create a private key using ssh-keygen.
+5. Login into the kenkins-server and copy the public key of the ansible-server into the. authorized_keys.
+6. On the ansible server, copy the private key into the /keys directory and name it jenkins-server_id_rsa.
+
+### Setting up the secrets
+
+var/secrets.yml file
+The secrets file contains all the secrets necessary for the script to run. Following is the format of the file
+
+```
+---
+jenkins_user: 
+jenkins_password: 
+
+mongo_secrets:
+  user_password: 
+
+os_environment_secrets:
+  - key: MAIL_PASSWORD 
+    value : 
+  - key: MONGO_PASSWORD
+    value: 
+  - key: AWS_ACCESS_KEY_ID
+    value: (Enter your AWS access key Id)
+  - key: AWS_SECRET_ACCESS_KEY
+    value: (Enter your AWS access key)
+```
+
+### Required files
+
+Make sure the following files are present in the given locations:
+
+- db.properties - roles/itrust_env/files
+- email.properties - roles/itrust_env/files
+- github_pro_rsa - roles/itrust_env/files - deploy key for tdahibh/Provisioning repository
+- id_rsa_github - roles/itrust_env/files - deploy key for sbhoyar/iTrust2-v4 repository
+
+
+#### email.properties template:
+
+```
+from # Email Id
+username # User name
+password # Password
+host smtp.gmail.com
+```
+
+#### db.propertes template:
+```
+url jdbc:mysql://localhost:3306/iTrust2?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=EST&allowPublicKeyRetrieval=true
+username root
+```
+
+### Execution of ansible playbook
+
+#### Encryption
+
+After the secrets have been set, encrypt them using the following command
+
+```
+$ cd ansible-server/vars
+$ ansible-vault encrypt secrets.yml
+```
+
+#### Execution
+
+```
+$ ansible-playbook -i inventory --ask-vault-pass main.yml
+```
+
+### Steps for AWS:
+
+- Create a key-pair by navigating to Network interfaces and name it deploy_key
+- Place the downloaded key into the /home/jenkins folder of the jenkins server.
+- Change the user to root:root and set the permission to 600
+
+### Adding permissions to jenkins user
+
+```
+sudo visudo
+
+```
+
+Add the following line jenkins ALL=(ALL:ALL) ALL
+	
+### Server configuration
+
+iTrust EC2 Production server configuration has been set to the following. This configuration will be found on Jenkins Server at the following location /home/vagrant/Provisioning/ansible-server/vars.yml
+
+```
+---
+  instance_type: t2.micro
+  security_group: devops_deploy
+  image: ami-028d6461780695a43
+  region: us-east-1
+  keypair: deploy_key
+  count: 1
+  instance_name: "Production-server"
+```
+
+### Deploying the iTrust server
+
+1. Navigate to /jenkins-server/iTrust2-v4
+2. Make any changes and commit those changes.
+3. Push those changes to the bare repo by using the following command:
+
+```
+$ git push jenkins master
+```
+
+4. This action will trigger the git hook, which inturn triggers a Jenkins build. 
+5. After the build is successful, 2 ansible playbooks will be triggered serially. 
+6. The first ansible play book will create an ec2 instance. 
+7. The second playbook will then configure and deploy iTrust on the ec2 instance.
+8. Navigate to the ec2 dashboard to get the public ip of the iTrust server
+9. Open the following url - http://[IP Address]:8080/iTrust2 to access iTrust
+
+
 
 ## Setting up checkbox.io
 
