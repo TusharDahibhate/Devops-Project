@@ -1,4 +1,4 @@
-# Configuration Management and Build Milestone 1
+# Final Milestone
 
 ### Team Members:
 1. Shantanu Bhoyar - sbhoyar 
@@ -7,20 +7,15 @@
 4. Tushar Dahibhate - tdahibh
 
 ### In this milestone, we performed the following tasks:
-1. Provisioned and configured a Jenkins server on a remote VM using ansible.
+1. Provisioned and configured a Jenkins server on a local VM using ansible.
 2. Setup build jobs for 2 applications:
    * checkbox.io
    * iTrust
-3. Created a test script to start and stop the checkbox.io service on the server
+3. Deployed iTrust and checkbox.io on AWS EC2 instances.
 4. Created a simple git hook to trigger a build when a push is made to the repository.
-
-### Tools used:
-1. Ansible
-2. Jenkins 
-3. Git
-4. Baker
-5. Maven
-6. NodeJS
+5. Used Redis for managing feature flags that can be used to turn off/on features on iTrust in production. 
+6. Made improvements to the infrastructure of checkbox.io.
+7. Special Component: 
 
 # Tasks
 
