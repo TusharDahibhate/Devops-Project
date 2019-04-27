@@ -47,40 +47,14 @@ jenkins_build_job contains a single playbook main.yml which create jenkins jobs 
 
 
 ## Setting up iTrust
-
-### Steps
-We have created 2 roles for setting up iTrust environment and build jobs:
-  * mysql
-  * itrust_env
-  
-#### mysql
-- This role basically installs and configures mysql on the jenkins server. 
-
-#### itrust_env
-itrust_env contains 3 playbooks:
-  * setup.yml
-    * Installs google chrome.
-    * Sets timezone to America/New_York
-    * Configures git email, username, ssh key.
-    
- * git_tasks.yml
-    * This playbook clones the source repository from GitHub.
-    * Creates a bare repository which serves as the remote for the cloned repository.
-    * Congigures git push options.
-    * Copies the post receive hook to the bare repository.     
- 
- * jenkins_tasks.yml
-    * Copies the Jenkinsfile, db.properties, email.properties to the cloned repo.
-    * Configures Jenkins with database and email credentials. 
-    
     
 ### Initial setups:
 
-1. Navigate to the ansible-server directory and type vagrant up. This will create the VM.
-2. Navigate to the jenkins-server directory and type vagrant up. This will create the VM.
+1. Navigate to the ansible-server directory and type vagrant up. This will create the ansible server.
+2. Navigate to the jenkins-server directory and type vagrant up. This will create the jenkins server.
 3. Login into the ansible-server using vagrant ssh.
-4. Create a private key using ssh-keygen.
-5. Login into the kenkins-server and copy the public key of the ansible-server into the. authorized_keys.
+4. Create a ssh key using ssh-keygen.
+5. Login into the jenkins-server and copy the public key of the ansible-server into the authorized_keys.
 6. On the ansible server, copy the private key into the /keys directory and name it jenkins-server_id_rsa.
 
 ### Setting up the secrets
@@ -166,7 +140,9 @@ Add the following line jenkins ALL=(ALL:ALL) ALL
 	
 ### Server configuration
 
-iTrust EC2 Production server configuration has been set to the following. This configuration will be found on Jenkins Server at the following location /home/vagrant/Provisioning/ansible-server/vars.yml
+iTrust EC2 Production server configuration has been set to the following. This configuration will be found on Jenkins Server at the following location /home/vagrant/Provisioning/ansible-server/vars.yml.
+
+This the Provision repository: https://github.ncsu.edu/tdahibh/Provisioning
 
 ```
 ---
