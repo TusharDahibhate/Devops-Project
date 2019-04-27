@@ -1,0 +1,8 @@
+---
+- hosts: deploy-server
+  
+  vars_files:
+   - var/secrets.yml
+
+  roles:
+    - marqdown_service

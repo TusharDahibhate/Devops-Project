@@ -1,0 +1,8 @@
+name: deploy-server
+vm:
+  ip: 192.168.33.12
+  memory: 4096
+config:
+  - keys:
+    - ansible-server
+

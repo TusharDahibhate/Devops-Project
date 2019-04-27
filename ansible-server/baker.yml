@@ -6,3 +6,4 @@ tools:
 config:
   - keys:
     - jenkins-server
+    - deploy-server

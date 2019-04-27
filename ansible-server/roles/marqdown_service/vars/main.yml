@@ -1,0 +1,30 @@
+---
+user: vagrant
+
+versions:
+  awscli: 1.11.73
+  kubectl: v1.14.1
+  kops: 1.11.1
+
+kubectl:
+  download_path: "https://storage.googleapis.com/kubernetes-release/release/{{ versions.kubectl }}/bin/linux/amd64/kubectl"
+
+kops:
+  ssh_public_key_file: /home/{{ user }}/.ssh/id_rsa_kops.pub
+  version: 
+  user: vagrant
+  download_path: "https://github.com/kubernetes/kops/releases/download/{{ versions.kops }}/kops-linux-amd64"
+  ig_spec_file: /home/{{ user }}/ig-spec.yaml
+
+cluster:
+  name: marqdown-srv.k8s.local
+  region: us-east-1a 
+
+state_store: s3://checkbox.io-nodejs-k8s-store
+
+mq_service:
+  name: my-app
+  image: 135612764994.dkr.ecr.us-east-1.amazonaws.com/marqdown:v3
+  replications: 3
+  port: 8086
+  lb_port: 8080

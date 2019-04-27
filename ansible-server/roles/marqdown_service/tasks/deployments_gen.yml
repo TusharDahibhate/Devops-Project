@@ -1,0 +1,42 @@
+---
+- name: Run 3 replicas on the cluser
+  shell: "kubectl run --replicas={{ mq_service.replications }} {{ mq_service.name }} --image={{ mq_service.image }} --port={{ mq_service.port }}" 
+  become: "{{ kops.user }}"
+
+
+- name: Expose replicas on the cluser
+  shell: "kubectl expose deployment {{ mq_service.name }} --type=LoadBalancer --port={{ mq_service.lb_port }} --target-port={{ mq_service.port }}"
+  become: "{{ kops.user }}"
+
+- name: Check service creation
+  shell: "kubectl get svc"
+  register: service_result
+  until: service_result.stdout.find('pending') == -1
+  become: "{{ kops.user }}"
+  retries: 20
+  delay: 60
+
+- name: Capture loadbalancer hostname
+  shell: "kubectl get svc -o jsonpath='{.items[1].status.loadBalancer.ingress[0].hostname}'"
+  register: lb_hostname
+  become: "{{ kops.user }}"
+
+- debug:
+    var: lb_hostname
+
+- name: Set facts for LoadBalancer hostname
+  set_fact:
+    lb_hostname: "{{ lb_hostname.stdout }}"
+    cacheable: true
+
+- name: Create microservice inventory
+  template:
+    src: microservice_inventory.j2
+    dest: "/home/vagrant/microservice_inventory"
+  become: true
+
+- name: Synchronization of two paths both on the control machine
+  synchronize:
+    mode: pull
+    src: /home/vagrant/microservice_inventory
+    dest: /home/vagrant/

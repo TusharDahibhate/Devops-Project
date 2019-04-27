@@ -1,0 +1,89 @@
+---
+- name: Download Kops binaries
+  get_url:
+    url: "{{ kops.download_path }}"
+    dest: /usr/local/bin/kops
+    owner: root
+    group: root
+    mode: 0755
+    force: yes
+
+- name: Copy kops instance group specification file  
+  template: 
+    src: roles/marqdown_service/templates/kops/ig-spec.yaml 
+    dest: "{{ kops.ig_spec_file }}"
+    mode: 0755
+  become: yes
+
+- name: Copy public key for kops  
+  template: 
+    src: roles/marqdown_service/templates/kops/id_rsa_kops.pub 
+    dest: "{{ kops.ssh_public_key_file }}"
+    mode: 0755
+  become: yes
+
+- name: check if {{ cluster.name }} already exist
+  shell: "kops get clusters --state {{ state_store }} {{ cluster.name }}"
+  register: kops_get_clusters
+  become: "{{ kops.user }}"
+  changed_when: no
+  failed_when: no
+
+- debug:
+    var: kops_get_clusters
+
+- name: Create a cluster (zone, state, name)
+  shell: "kops create cluster --state {{ state_store }} --zones {{ cluster.region }} {{ cluster.name }}"
+  become: "{{ kops.user }}"
+  when: "kops_get_clusters.stderr.find('not found') != -1"
+  register: kops_create_clusters
+  changed_when: no
+  failed_when: no
+  ignore_errors: yes 
+
+- debug:
+    var: kops_create_clusters
+
+- name: kops check secret
+  shell: "kops get secrets admin -oplaintext --name {{ cluster.name }} --state {{ state_store }}"
+  become: "{{ kops.user }}"
+  register: kops_get_secrets
+  changed_when: no
+  failed_when: no
+  ignore_errors: yes 
+
+- debug:
+    var: kops_get_secrets
+
+- name: kops create secret
+  shell: "kops create secret --state {{ state_store }} --name {{ cluster.name }} sshpublickey admin -i {{ kops.ssh_public_key_file }}"
+  become: "{{ kops.user }}"
+  when: "kops_get_secrets.stderr.find('Secret not found') != -1"
+  # when: "kops_get_secrets.stderr.find('SSHPublicKey cannot (currently) be exported as plaintext') != -1"
+
+- name: kops replace (zone, state, name)
+  shell: "kops replace --state {{ state_store }} -f {{ kops.ig_spec_file }} --force"
+  become: "{{ kops.user }}"
+
+- name: Build the cluser (state, name)
+  shell: "kops update cluster --state {{ state_store }} --name {{ cluster.name }} --yes" 
+  become: "{{ kops.user }}"
+
+- name: Verify that all Kubernetes nodes are ready
+  shell: "kops validate cluster --name {{ cluster.name }} --state {{ state_store }}"
+  register: cmd_result
+  until: cmd_result.stdout.find('Your cluster ' + cluster.name + ' is ready') != -1
+  become: "{{ kops.user }}"
+  retries: 20
+  delay: 60
+
+- debug:
+    var: cmd_result
+
+- name: Configure kubectl using kops
+  shell: "kops export kubecfg --name {{ cluster.name }} --state {{ state_store }}"
+  become: "{{ kops.user }}"
+  register: export_result
+
+- debug:
+    var: export_result
