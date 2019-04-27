@@ -79,3 +79,11 @@
     src: checkbox_inventory.j2
     dest: "/home/vagrant/checkbox_inventory"
   become: True
+
+- name: Populate /etc/environment
+  lineinfile:
+    dest: "/etc/environment"
+    state: present
+    regexp: "^MICROSERVICE_HOSTNAME"
+    line: 'MICROSERVICE_HOSTNAME="{{ HOSTNAME }}"'
+  become: true
