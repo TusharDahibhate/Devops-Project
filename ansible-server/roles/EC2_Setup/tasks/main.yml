@@ -80,10 +80,15 @@
     dest: "/home/vagrant/checkbox_inventory"
   become: True
 
+- name: 
+  set_fact:
+    hostname: "{{ lookup('file', '../home/vagrant/microservice_inventory') }}"
+    cacheable: true
+
 - name: Populate /etc/environment
   lineinfile:
     dest: "/etc/environment"
     state: present
     regexp: "^MICROSERVICE_HOSTNAME"
-    line: 'MICROSERVICE_HOSTNAME="{{ HOSTNAME }}"'
+    line: 'MICROSERVICE_HOSTNAME="{{ hostname }}"'
   become: true
