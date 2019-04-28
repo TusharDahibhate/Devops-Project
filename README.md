@@ -47,6 +47,8 @@ jenkins_build_job contains a single playbook main.yml which create jenkins jobs 
 
 
 ## Setting up iTrust
+
+![alt iTrust image](https://github.ncsu.edu/asaxena5/Devops-Project1/blob/Milestone3/imgs/iTrust.png)
     
 ### Initial setups:
 
