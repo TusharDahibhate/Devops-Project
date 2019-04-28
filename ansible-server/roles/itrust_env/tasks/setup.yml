@@ -36,7 +36,7 @@
       value: "{{git_user_name}}"
       scope: global
   
-  - name: Add github ssh key
+  - name: Add github ssh key for cloning iTrust2
     copy:
       src: files/id_rsa_github
       dest: "{{git_rsa_path}}"

@@ -21,8 +21,8 @@ pipeline {
     }
     post { 
         success {
-            sh 'cd /home/vagrant/Provisioning/ansible-server && sudo ansible-playbook provision.yml'
-            sh 'cd /home/vagrant/Provisioning/ansible-server && sudo ansible-playbook -i inventory main.yml'
+            sh 'cd /home/vagrant/Provisioning/ansible-server && ansible-playbook provision.yml'
+            sh 'cd /home/vagrant/Provisioning/ansible-server && sudo ansible-playbook -i blue_inventory blue_main.yml'
         }
     }
 }
