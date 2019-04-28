@@ -13,12 +13,16 @@
     when: src_repo.stat.exists == False
     become: true
 
-  - name: Configure git post-receive push options
+  - name: Configure git post-receive push options - jenkins user
     command: chdir="{{repo_path}}" git config --local push.pushOption {{jenkins_user}}
     when: src_repo.stat.exists == False
   
-  - name: Configure git post-receive push options
+  - name: Configure git post-receive push options - jenkins password
     command: chdir="{{repo_path}}" git config --local push.pushOption {{jenkins_password}} {{jenkins_password}}
+    when: src_repo.stat.exists == False
+  
+  - name: Configure git post-receive push options - jenkins job
+    command: chdir="{{repo_path}}" git config --local push.pushOption itrust itrust
     when: src_repo.stat.exists == False
 
   - name: Create bare repository for hook

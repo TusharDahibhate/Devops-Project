@@ -8,7 +8,10 @@
 db.properties
 email.properties
 id_rsa_github
-id_rsa_github.pub
+github_blue_green
+github_pro_rsa
+*.pem
+*.pub
 iTrust2-v4/
 jenkins-server/copy_creds_to_jenkins.sh
-github_pro_rsa
+

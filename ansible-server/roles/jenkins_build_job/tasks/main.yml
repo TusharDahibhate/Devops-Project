@@ -29,6 +29,16 @@
       state: present
     become: true
   
+  - name: Create a jenkins job for iTrust2 blue environment using basic authentication
+    jenkins_job:
+      config: "{{ lookup('file', 'templates/iTrustBlueJenkinsConfig.xml') }}"
+      name: itrust_blue
+      password: "{{jenkins_password}}"
+      url: http://localhost:8081
+      user: "{{jenkins_user}}"
+      state: present
+    become: true
+  
   - name: Set the python interpreter back to version 3
     set_fact:
       ansible_python_interpreter: '/usr/bin/python3'

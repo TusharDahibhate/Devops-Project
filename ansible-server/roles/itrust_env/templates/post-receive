@@ -3,4 +3,4 @@
 crumbLine=$(curl --user $GIT_PUSH_OPTION_0:$GIT_PUSH_OPTION_1 'http://localhost:8081/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,":",//crumb)')
 
 
-curl -X POST http://localhost:8081/job/itrust/build?TOKEN=itrust --user $GIT_PUSH_OPTION_0:$GIT_PUSH_OPTION_1 -H "$crumbLine"
+curl -X POST http://localhost:8081/job/$GIT_PUSH_OPTION_2/build?TOKEN=itrust --user $GIT_PUSH_OPTION_0:$GIT_PUSH_OPTION_1 -H "$crumbLine"

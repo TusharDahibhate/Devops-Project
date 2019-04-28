@@ -1,0 +1,94 @@
+---
+  - name: Check if src repo exists
+    stat: 
+      path: "{{blue_repo_path}}"
+    register: src_repo
+  
+  - name: Clone from GitHub
+    git:
+      repo: git@github.ncsu.edu:sbhoyar/iTrust2-v4.git
+      dest: "{{blue_repo_path}}"
+      accept_hostkey: yes
+      key_file: /root/.ssh/id_rsa_github
+    when: src_repo.stat.exists == False
+    become: true
+
+  - name: Configure git post-receive push options - jenkins user
+    command: chdir="{{blue_repo_path}}" git config --local push.pushOption {{jenkins_user}}
+    when: src_repo.stat.exists == False
+  
+  - name: Configure git post-receive push options - jenkins pwd
+    command: chdir="{{blue_repo_path}}" git config --local push.pushOption {{jenkins_password}} {{jenkins_password}}
+    when: src_repo.stat.exists == False
+
+  - name: Configure git post-receive push options - jenkins job
+    command: chdir="{{blue_repo_path}}" git config --local push.pushOption itrust_blue itrust_blue
+    when: src_repo.stat.exists == False
+
+  - name: Create bare repository for hook
+    command: git init --bare "{{blue_build_bare_repo_path}}jenkins.git/"
+    become: true
+    when: src_repo.stat.exists == False
+
+  - name: Configure bare repo to receive push options
+    git_config:
+      name: receive.advertisePushOptions
+      value: true
+      scope: local
+      repo: "{{blue_build_bare_repo_path}}jenkins.git/"
+
+  - name: Add jenkins remote url
+    git_config:
+      name: remote.jenkins.url
+      value: "{{blue_build_bare_repo_path}}jenkins.git/"
+      scope: local
+      repo: "{{blue_repo_path}}"
+  
+  - name: Add jenkins remote refs for jenkins
+    git_config:
+      name: remote.jenkins.fetch
+      value: +refs/heads/*:refs/remotes/jenkins/*
+      scope: local
+      repo: "{{blue_repo_path}}"
+  
+  - name: Copy post receive hook to jenkins
+    copy:
+      src: templates/post-receive
+      dest: "{{blue_build_bare_repo_path}}jenkins.git/hooks/"
+      mode: 0755
+  
+  - name: Copy Jenkinsfile for Jenkins use
+    copy:
+      src: files/JenkinsfileBlue
+      dest: "{{blue_repo_path}}iTrust2/Jenkinsfile"
+      
+  - name: Copy db properties file for Jenkins use
+    copy:
+      src: files/db.properties
+      dest: "{{blue_repo_path}}iTrust2/src/main/java/db.properties"
+
+  - name: Copy email properties file for Jenkins use
+    copy:
+      src: files/email.properties
+      dest: "{{blue_repo_path}}iTrust2/src/main/java/email.properties"
+  
+  - name: Create jenkins home directory
+    file:
+      path: /home/jenkins
+      state: directory
+  
+  - name: Copy deploy key for AWS
+    copy:
+      src: files/deploy_key.pem
+      dest: "/home/jenkins/deploy_key.pem"
+      owner: root
+      group: root
+      mode: 0400
+
+  - name: Copy Github key for 
+    copy:
+      src: files/github_blue_green
+      dest: "/home/jenkins/github_blue_green"
+      owner: root
+      group: root
+      mode: 0400

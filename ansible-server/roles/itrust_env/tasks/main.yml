@@ -5,3 +5,5 @@
   
   - import_tasks: jenkins_tasks.yml
 
+  - import_tasks: blue_deploy.yml
+
