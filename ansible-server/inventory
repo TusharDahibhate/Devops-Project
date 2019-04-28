@@ -4,6 +4,5 @@
 ansible_python_interpreter=/usr/bin/python3
 [deploy-server]
 192.168.33.12 ansible_ssh_user=vagrant ansible_ssh_private_key_file=/keys/deploy-server_id_rsa
-ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 [deploy-server:vars]
 ansible_python_interpreter=/usr/bin/python3
