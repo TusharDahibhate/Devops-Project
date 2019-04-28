@@ -1,0 +1,16 @@
+--- # Set up ansible on Jenkins Server
+- name: Add ansible repository
+  apt_repository:
+    repo: 'ppa:ansible/ansible'
+    state: present
+    update_cache: yes
+
+- name: Installing other required packages
+  apt:
+    pkg: ['git', 'git-core', 'python-software-properties', 'ansible', 'python-pip']
+    state: present
+  
+- name: Install pip packages
+  pip:
+    name: ['python-jenkins', 'lxml']
+    state: present

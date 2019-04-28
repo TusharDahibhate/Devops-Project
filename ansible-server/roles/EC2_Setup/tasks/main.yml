@@ -1,0 +1,89 @@
+---
+- name: Install boto
+  pip:
+   name: boto
+   state: latest
+  become: yes
+
+- name: Install boto3
+  pip:
+    name: boto3
+    state: latest
+  become: yes
+
+- name: Create checkbox_inventory
+  template:
+    src: AWSKey.pem
+    dest: /home/vagrant/.ssh/awsKey.pem
+    mode: 0600
+  become: True
+
+- name: Create a security group
+  ec2_group:
+    name: sec_grp
+    description: New Security Group
+    region: "{{ aws_region }}"
+    aws_secret_key: "{{ aws_secret_key }}"
+    aws_access_key: "{{ aws_access_key }}"
+    rules:
+      - proto: tcp  # ssh
+        from_port: 22
+        to_port: 22
+        cidr_ip: 0.0.0.0/0
+      - proto: tcp  # http
+        from_port: 80
+        to_port: 80
+        cidr_ip: 0.0.0.0/0
+      - proto: tcp  # https
+        from_port: 443
+        to_port: 443
+        cidr_ip: 0.0.0.0/0
+    rules_egress:
+      - proto: all
+        cidr_ip: 0.0.0.0/0
+  register: security_group
+
+- name: Create EC2 Instance
+  ec2:
+    aws_access_key: "{{ aws_access_key }}"
+    aws_secret_key: "{{ aws_secret_key }}"
+    key_name: "{{ key_name }}"
+    instance_type: t2.micro
+    group: sec_grp
+    image: "{{ image_name }}"
+    instance_tags:
+        Env: "production"
+        Name: "aws-01"
+    exact_count: 1
+    count_tag: 
+      Env: "production"
+      Name: "aws-01"
+    vpc_subnet_id: "{{ subnet_id }}"
+    region: "{{ aws_region }}"
+    assign_public_ip: yes
+    wait: true
+  register: ec2_instance
+
+- name: Wait for the instances to boot by checking the ssh port
+  wait_for: host="{{item.public_ip}}" port=22 delay=60 timeout=320 state=started
+  with_items: "{{ec2_instance.instances}}"
+
+- name: Set facts for AWS Key and IP
+  set_fact:
+    aws_server_ip: "{{ec2_instance.tagged_instances[0].public_ip}}"
+    aws_key_file: "/home/vagrant/.ssh/awsKey.pem"
+    cacheable: true
+
+- name: Create checkbox_inventory
+  template:
+    src: checkbox_inventory.j2
+    dest: "/home/vagrant/checkbox_inventory"
+  become: True
+
+- name: Populate /etc/environment
+  lineinfile:
+    dest: "/etc/environment"
+    state: present
+    regexp: "^MICROSERVICE_HOSTNAME"
+    line: 'MICROSERVICE_HOSTNAME="{{ HOSTNAME }}"'
+  become: true

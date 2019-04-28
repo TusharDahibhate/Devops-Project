@@ -1,0 +1,7 @@
+---
+  - include_vars: ../vars/main.yml
+  - include_vars: ../vars/secrets.yml
+  
+  - import_tasks: aws_setup.yml
+  - import_tasks: kops_setup.yml
+  - import_tasks: deployments_gen.yml

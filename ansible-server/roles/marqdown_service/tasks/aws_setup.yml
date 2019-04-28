@@ -1,0 +1,42 @@
+---
+- name: Install the package "python3-pip"
+  apt:
+    name: python3-pip
+  become: yes  
+
+- name: Install pip
+  become: yes
+  apt:
+    name: python-pip
+    state: present
+    
+- name: Install awscli via pip.
+  pip: 
+    name: awscli 
+    version: "{{ versions.awscli }}"
+
+- name: Creates a directory for aws
+  file:
+    path: /home/{{ user }}/.aws/
+    state: directory
+
+- name: Copy AWS CLI config to ~/.aws/
+  template: 
+    src: roles/marqdown_service/templates/aws/config 
+    dest: /home/{{ user }}/.aws/ 
+    mode: 0755
+
+- name: Copy AWS CLI credentials to ~/.aws/
+  template: 
+    src: roles/marqdown_service/templates/aws/credentials.j2 
+    dest: /home/{{ user }}/.aws/credentials 
+    mode: 0755
+
+- name: Download Kubectl binaries
+  get_url:
+    url: "{{ kubectl.download_path }}"
+    dest: /usr/local/bin/kubectl
+    owner: root
+    group: root
+    mode: 0755
+    force: yes
