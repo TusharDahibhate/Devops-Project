@@ -1,29 +1,4 @@
 ---
-- name: Create a security group
-  ec2_group:
-    name: sec_grp
-    description: New Security Group
-    region: "{{ aws_region }}"
-    aws_secret_key: "{{ aws_secret_key }}"
-    aws_access_key: "{{ aws_access_key }}"
-    rules:
-      - proto: tcp  # ssh
-        from_port: 22
-        to_port: 22
-        cidr_ip: 0.0.0.0/0
-      - proto: tcp  # http
-        from_port: 80
-        to_port: 80
-        cidr_ip: 0.0.0.0/0
-      - proto: tcp  # https
-        from_port: 443
-        to_port: 443
-        cidr_ip: 0.0.0.0/0
-    rules_egress:
-      - proto: all
-        cidr_ip: 0.0.0.0/0
-  register: security_group
-
 - name: Create Checkbox EC2 Instance
   ec2:
     aws_access_key: "{{ aws_access_key }}"
