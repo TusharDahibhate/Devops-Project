@@ -1,0 +1,92 @@
+---
+- include_vars: ../vars/main.yml
+
+- name: Add Oracle Java Repository
+  apt_repository:
+    repo: ppa:openjdk-r/ppa
+  become: yes
+
+- name: Update and upgrade apt packages
+  become: yes
+  apt:
+    upgrade: dist
+    update_cache: yes
+
+- name: Agree to license
+  debconf: name='openjdk-8-jdk' question='shared/accepted-oracle-license-v1-1' value='true' vtype='select'
+  become: yes  
+
+- name: Install Java
+  apt:
+   pkg:
+     - openjdk-8-jdk
+   state: present
+  become: yes
+
+- name: HTTPS APT transport for Elasticsearch repository.
+  apt:
+    name: apt-transport-https
+    state: present
+  become: yes
+
+- name: Add Elasticsearch apt key.
+  apt_key:
+    url: https://artifacts.elastic.co/GPG-KEY-elasticsearch
+    state: present
+  become: yes
+
+- name: Add Logstash repository.
+  apt_repository:
+    repo: 'deb https://artifacts.elastic.co/packages/{{ logstash_version }}/apt stable main'
+    state: present
+  become: yes
+
+- name: Check if Logstash is already installed.
+  stat: path=/etc/init.d/logstash
+  register: logstash_installed
+  become: yes
+
+- name: Update apt cache if repository just added.
+  apt: update_cache=yes
+  when: logstash_installed.stat.exists == false
+  become: yes
+
+- name: Install Logstash.
+  apt:
+    name: logstash
+    state: present
+  become: yes
+
+- name: Populate /etc/environment
+  lineinfile:
+    dest: "/etc/environment"
+    state: present
+    regexp: "^LS_JAVA_OPTS"
+    line: 'LS_JAVA_OPTS="{{ LS_JAVA_OPTS }}"'
+  become: yes
+
+- name: Add Logstash user to adm group (Debian).
+  user:
+    name: logstash
+    group: logstash
+    groups: adm
+  become: yes
+
+- name: Restart logstash
+  service: 
+    name: logstash
+    state: restarted
+  become: yes
+- name: Copy logstash.conf file to {{ logstash_path }}
+  template: 
+    src: roles/logstash_install/templates/logstash.conf 
+    dest: "{{ logstash_path }}"
+    owner: logstash 
+    mode: 600
+  become: yes
+
+- name: Accept logs
+  shell: "./bin/logstash -f logstash.conf &"
+  args:
+    chdir: '{{ logstash_path }}'
+  become: logstash

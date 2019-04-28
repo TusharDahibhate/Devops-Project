@@ -8,3 +8,4 @@
 *.pub
 iTrust2-v4/
 jenkins-server/copy_creds_to_jenkins.sh
+ansible-server/logstash_inventory

@@ -5,3 +5,8 @@ key_name: AWSKey
 image_name: ami-08692d171e3cf02d6
 subnet_id: subnet-ffaf8686
 aws_region: us-west-2
+sec_grp_name: sec_grp
+
+ls_inventory_location: /ansible-server/
+ls_ec2_private_key_location: /ansible-server/roles/EC2_Setup/templates/AWSKey.pem
+ls_inventory_src_location: /home/vagrant/logstash_inventory

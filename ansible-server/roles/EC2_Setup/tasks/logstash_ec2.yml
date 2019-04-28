@@ -1,0 +1,44 @@
+---
+- name: Create Logstash EC2 Instance
+  ec2:
+    aws_access_key: "{{ aws_access_key }}"
+    aws_secret_key: "{{ aws_secret_key }}"
+    key_name: "{{ key_name }}"
+    instance_type: t2.medium
+    group: "{{ sec_grp_name }}"
+    image: "{{ image_name }}"
+    instance_tags:
+        Env: "production"
+        Name: "aws-02"
+    exact_count: 1
+    count_tag: 
+      Env: "production"
+      Name: "aws-02"
+    vpc_subnet_id: "{{ subnet_id }}"
+    region: "{{ aws_region }}"
+    assign_public_ip: yes
+    wait: true
+  register: ec2_instance
+
+- name: Wait for the Logstash instance to boot by checking the ssh port
+  wait_for: host="{{item.public_ip}}" port=22 delay=60 timeout=320 state=started
+  with_items: "{{ec2_instance.instances}}"
+
+- name: Set facts for AWS Key and Logstash IP
+  set_fact:
+    aws_server_ip: "{{ec2_instance.tagged_instances[0].public_ip}}"
+    aws_key_file: "{{ ls_ec2_private_key_location }}"
+    cacheable: true
+
+- name: Create logstash_inventory
+  template:
+    src: ec2_inventory.j2
+    dest: "{{ ls_inventory_src_location }}"
+  become: True
+
+
+- name: Copy the logstash_inventory file
+  synchronize:
+    mode: pull
+    src: "{{ ls_inventory_src_location }}"
+    dest: "{{ ls_inventory_location }}"

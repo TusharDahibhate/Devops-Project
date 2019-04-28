@@ -1,0 +1,8 @@
+---
+- hosts: awsserver
+  become: true
+  vars_files:
+   - var/secrets.yml
+
+  roles:
+    - logstash_install
