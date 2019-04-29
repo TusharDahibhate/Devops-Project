@@ -1,6 +1,4 @@
 ---
-aws_access_key: AKIAIZ7IWCI4THE33EAA
-aws_secret_key: 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
 key_name: AWSKey
 image_name: ami-08692d171e3cf02d6
 subnet_id: subnet-ffaf8686
