@@ -292,6 +292,15 @@ We perfoprmed Blue-green deployment to reduce downtime and risk by running two i
 ### Milestobe 3 Screencast:
 https://youtu.be/7apmPA5DueQ
 
+### Complete Pipeline Video:
+
+
+### Links to linked repositories:
+https://github.ncsu.edu/asaxena5/checkbox.io-private
+https://github.com/richadua/checkbox-env
+https://github.ncsu.edu/asaxena5/marqdown-srv
+https://github.ncsu.edu/asaxena5/itrust-fuzzer
+
 ### References:
   * https://www.tecmint.com/install-mongodb-on-ubuntu-18-04/
   * https://www.nginx.com/blog/setting-up-nginx/
