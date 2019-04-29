@@ -70,6 +70,6 @@
   lineinfile:
     dest: "/etc/environment"
     state: present
-    regexp: "^MICROSERVICE_HOSTNAME"
-    line: 'MICROSERVICE_HOSTNAME="{{ hostname }}"'
+    regexp: "^MICROSERVICE_IP"
+    line: 'MICROSERVICE_IP="{{ hostname }}"'
   become: true
