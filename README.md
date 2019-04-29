@@ -279,7 +279,7 @@ To delete deployment:
 Logstash is used to collect the data from disparate sources and normalize the data into the destination of your choice.
 The common use case of the log analysis is: debugging, performance analysis, security analysis, predictive analysis, IoT and logging. Log analysis helps to capture the application information and time of the service, that can be easy to analyze.
 
-*Filebeat is a log data shipper for local files. Filebeat agent will be installed on the server, which needs to monitor, and filebeat monitors all the logs in the log directory and forwards to Logstash. Filebeat works based on two components: prospectors/inputs and harvesters.
+Filebeat is a log data shipper for local files. Filebeat agent will be installed on the server, which needs to monitor, and filebeat monitors all the logs in the log directory and forwards to Logstash. Filebeat works based on two components: prospectors/inputs and harvesters.
 
 ![alt checkbox image](https://github.ncsu.edu/asaxena5/Devops-Project1/blob/master/imgs/Logstash.png)
 
@@ -289,17 +289,17 @@ We perfoprmed Blue-green deployment to reduce downtime and risk by running two i
 
 ![alt checkbox image](https://github.ncsu.edu/asaxena5/Devops-Project1/blob/master/imgs/bng.png)
 
-### Milestobe 3 Screencast:
+### Milestone 3 + Special Milestone Screencast:
 https://youtu.be/7apmPA5DueQ
 
 ### Complete Pipeline Video:
 
 
 ### Links to linked repositories:
-https://github.ncsu.edu/asaxena5/checkbox.io-private
-https://github.com/richadua/checkbox-env
-https://github.ncsu.edu/asaxena5/marqdown-srv
-https://github.ncsu.edu/asaxena5/itrust-fuzzer
+- https://github.ncsu.edu/asaxena5/checkbox.io-private
+- https://github.com/richadua/checkbox-env
+- https://github.ncsu.edu/asaxena5/marqdown-srv
+- https://github.ncsu.edu/asaxena5/itrust-fuzzer
 
 ### References:
   * https://www.tecmint.com/install-mongodb-on-ubuntu-18-04/
