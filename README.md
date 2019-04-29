@@ -177,7 +177,6 @@ $ git push jenkins master
 9. Open the following url - http://[IP Address]:8080/iTrust2 to access iTrust
 
 
-
 ## Setting up checkbox.io
 
 ![alt nodejs image](https://github.ncsu.edu/asaxena5/Devops-Project1/blob/master/imgs/checkbox_webserv.jpg)
@@ -211,7 +210,9 @@ To trigger a Jenkins build job:
 Make changes in any of the repository files, perform (w/ sudo) git add, commit & push the changes to the deploy remote that points to the deploy/production.git folder. This will trigger Jenkins to create a build as mentioned in the post-receive hook in the bare repository created in deploy/production.git folder.
 
 ![alt checkbox image](https://github.ncsu.edu/asaxena5/Devops-Project1/blob/master/imgs/checkbox_job.jpg)
-  
+
+* A private key for cloning the [private checkbox.io repo](https://github.ncsu.edu/asaxena5/checkbox.io-private) is required to be copied to [ansible-server/roles/checkbox_env/templates/key](ansible-server/roles/checkbox_env/templates/key).
+
 ### Ansible Vault files:
 * The passwords are stored in an ansible-vault created file @ ansible-server/vars/secrets.yml
 
@@ -240,6 +241,7 @@ Update "os_environment_secrets: MAIL_PASSWORD" value (shown above) and "os_envir
 Ansible playbook for deploying Marqdown service on AWS/Kubernetes cluster 
 * Spawns a kubernetes cluster with 3 nodes + 1 master node
 
+![alt checkbox image](https://github.ncsu.edu/asaxena5/Devops-Project1/blob/master/imgs/Kuber.jpg)
 
 - Cluster state managed in s3 bucket: ```s3://checkbox.io-nodejs-k8s-store``` (us-east-1 region)
 - Docker image for marqdown-srv managed in ECR: ```135612764994.dkr.ecr.us-east-1.amazonaws.com/marqdown:v3```
@@ -280,8 +282,6 @@ The common use case of the log analysis is: debugging, performance analysis, sec
 *Filebeat is a log data shipper for local files. Filebeat agent will be installed on the server, which needs to monitor, and filebeat monitors all the logs in the log directory and forwards to Logstash. Filebeat works based on two components: prospectors/inputs and harvesters.
 
 ![alt checkbox image](https://github.ncsu.edu/asaxena5/Devops-Project1/blob/master/imgs/Logstash.png)
-
-* A private key for cloning the [private checkbox.io repo](https://github.ncsu.edu/asaxena5/checkbox.io-private) is required to be copied to [ansible-server/roles/checkbox_env/templates/key](ansible-server/roles/checkbox_env/templates/key).
 
 ### Milestobe 3 Screencast:
 https://youtu.be/7apmPA5DueQ
