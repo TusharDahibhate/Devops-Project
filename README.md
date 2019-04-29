@@ -293,7 +293,7 @@ We perfoprmed Blue-green deployment to reduce downtime and risk by running two i
 https://youtu.be/7apmPA5DueQ
 
 ### Complete Pipeline Video:
-
+https://youtu.be/hWFzGFxZIRc
 
 ### Links to linked repositories:
 - https://github.ncsu.edu/asaxena5/checkbox.io-private
