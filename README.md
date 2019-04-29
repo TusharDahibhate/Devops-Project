@@ -283,6 +283,12 @@ The common use case of the log analysis is: debugging, performance analysis, sec
 
 ![alt checkbox image](https://github.ncsu.edu/asaxena5/Devops-Project1/blob/master/imgs/Logstash.png)
 
+### Special Milestone - Blue Green Deployment:
+
+We perfoprmed Blue-green deployment to reduce downtime and risk by running two identical production environments called Blue and Green. At any time, only one of the environments is live, with the live environment serving all production traffic. For this example, Blue is currently live and Green is idle. This technique can eliminate downtime due to app deployment. In addition, blue-green deployment reduces risk: if something unexpected happens with our new version on Green, we can immediately roll back to the last version by switching back to Blue.
+
+![alt checkbox image](https://github.ncsu.edu/asaxena5/Devops-Project1/blob/master/imgs/bng.png)
+
 ### Milestobe 3 Screencast:
 https://youtu.be/7apmPA5DueQ
 
