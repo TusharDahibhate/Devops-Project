@@ -15,9 +15,11 @@
 4. Created a simple git hook to trigger a build when a push is made to the repository.
 5. Used Redis for managing feature flags that can be used to turn off/on features on iTrust in production. 
 6. Made improvements to the infrastructure of checkbox.io.
-7. Special Component: 
+7. Special Component: Blue Gree Deployments & Logstash
 
 # Tasks
+
+![alt iTrust image](https://github.ncsu.edu/asaxena5/Devops-Project1/blob/master/imgs/Architecture.jpg)
 
 ## Provisioning and setting up of Jenkins Server
 
@@ -233,10 +235,56 @@ os_environment_secrets:
 Please recreate a file with the above format and names of the variables.  
 Update "os_environment_secrets: MAIL_PASSWORD" value (shown above) and "os_environment: MAIL_USER" value (in ansible-server/roles/checkbox_env/vars/main.yml) for using your own SMTP email.
 
+### Infrastructure Component:
+
+Ansible playbook for deploying Marqdown service on AWS/Kubernetes cluster 
+* Spawns a kubernetes cluster with 3 nodes + 1 master node
+
+
+- Cluster state managed in s3 bucket: ```s3://checkbox.io-nodejs-k8s-store``` (us-east-1 region)
+- Docker image for marqdown-srv managed in ECR: ```135612764994.dkr.ecr.us-east-1.amazonaws.com/marqdown:v3```
+- [Maqdown microservice](https://github.ncsu.edu/asaxena5/marqdown-srv)'s render api is exposed at ```/api/marqdown-srv/render```
+- Marqdown micoservice's express port exposed: 8086
+
+To run the playbook
+- ```ansible-playbook -i inventory main.yml -s --ask-vault-pass```
+
+To delete the cluster manually, run this from deploy-server:
+- ```kops delete cluster --state=<store_name> <cluster_name> --yes```
+
+To check the container instance, ssh into ec2 instance (kubernetes creates key on the VM, so direct ssh to dns will work)
+- run ```sudo docker ps -a``` to get list of containers deployed
+-	run ```sudo docker exec -it <containerid> ``` to interact with the container shell
+  
+To check kubernetes/aws deployments:
+- ```kubectl get pods```
+- ```kubectl get svc```
+
+
+To scale up/down deployments:
+- ```kubectl scale --replicas=1 deployment/my-app```
+
+
+To get the log details of a pod:
+- ```kubectl logs```
+
+To delete deployment:
+- ```kubectl delete services my-app```
+- ```kubectl delete deployment my-app```
+
+### Special Milestone - Logstash:
+
+Logstash is used to collect the data from disparate sources and normalize the data into the destination of your choice.
+The common use case of the log analysis is: debugging, performance analysis, security analysis, predictive analysis, IoT and logging. Log analysis helps to capture the application information and time of the service, that can be easy to analyze.
+
+*Filebeat is a log data shipper for local files. Filebeat agent will be installed on the server, which needs to monitor, and filebeat monitors all the logs in the log directory and forwards to Logstash. Filebeat works based on two components: prospectors/inputs and harvesters.
+
+![alt checkbox image](https://github.ncsu.edu/asaxena5/Devops-Project1/blob/master/imgs/Logstash.png)
+
 * A private key for cloning the [private checkbox.io repo](https://github.ncsu.edu/asaxena5/checkbox.io-private) is required to be copied to [ansible-server/roles/checkbox_env/templates/key](ansible-server/roles/checkbox_env/templates/key).
 
-### Screencast:
-https://www.youtube.com/watch?v=sLBIyCZKpxE
+### Milestobe 3 Screencast:
+https://youtu.be/7apmPA5DueQ
 
 ### References:
   * https://www.tecmint.com/install-mongodb-on-ubuntu-18-04/
