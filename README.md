@@ -286,6 +286,7 @@ Filebeat is a log data shipper for local files. Filebeat agent will be installed
 ### Special Milestone - Blue Green Deployment:
 
 We perfoprmed Blue-green deployment to reduce downtime and risk by running two identical production environments called Blue and Green. At any time, only one of the environments is live, with the live environment serving all production traffic. For this example, Blue is currently live and Green is idle. This technique can eliminate downtime due to app deployment. In addition, blue-green deployment reduces risk: if something unexpected happens with our new version on Green, we can immediately roll back to the last version by switching back to Blue.
+[private blue-green repository](https://github.ncsu.edu/sbhoyar/Blue-Green)
 
 ![alt checkbox image](https://github.ncsu.edu/asaxena5/Devops-Project1/blob/master/imgs/bng.png)
 
